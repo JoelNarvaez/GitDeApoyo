@@ -433,11 +433,10 @@
             labelFecha.AutoSize = true;
             labelFecha.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             labelFecha.ForeColor = Color.SlateGray;
-            labelFecha.Location = new Point(286, 571);
+            labelFecha.Location = new Point(336, 567);
             labelFecha.Name = "labelFecha";
-            labelFecha.Size = new Size(62, 21);
+            labelFecha.Size = new Size(0, 21);
             labelFecha.TabIndex = 45;
-            labelFecha.Text = "label9";
             // 
             // pictureBox38
             // 
@@ -454,11 +453,10 @@
             labelHora.AutoSize = true;
             labelHora.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point);
             labelHora.ForeColor = SystemColors.Highlight;
-            labelHora.Location = new Point(401, 535);
+            labelHora.Location = new Point(452, 533);
             labelHora.Name = "labelHora";
-            labelHora.Size = new Size(55, 18);
+            labelHora.Size = new Size(0, 18);
             labelHora.TabIndex = 44;
-            labelHora.Text = "label8";
             // 
             // panel2
             // 
