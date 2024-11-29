@@ -135,7 +135,7 @@ namespace WinFormsPortada2
 
         private void pictureBox37_Click(object sender, EventArgs e)
         {
-
+           int i = 0;
         }
     }
 }
