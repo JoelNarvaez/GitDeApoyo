@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsPortada2", "WinFormsPortada2.csproj", "{064B96C5-7596-4EB6-9DCE-1FC033C636F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsPortada2", "WinFormsPortada2.csproj", "{064B96C5-7596-4EB6-9DCE-1FC033C636F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "projectM", "..\..\..\..\source\repos\projectMa\projectM\projectM\projectM\projectM.csproj", "{1D59BE7A-ED7D-486D-B09E-72056051B7B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{064B96C5-7596-4EB6-9DCE-1FC033C636F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{064B96C5-7596-4EB6-9DCE-1FC033C636F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{064B96C5-7596-4EB6-9DCE-1FC033C636F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D59BE7A-ED7D-486D-B09E-72056051B7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D59BE7A-ED7D-486D-B09E-72056051B7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D59BE7A-ED7D-486D-B09E-72056051B7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D59BE7A-ED7D-486D-B09E-72056051B7B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
