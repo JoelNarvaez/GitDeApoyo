@@ -34,3 +34,30 @@ C:\Users\joeln\source\repos\WinFormsPortada\obj\Debug\net6.0-windows\refint\WinF
 C:\Users\joeln\source\repos\WinFormsPortada\obj\Debug\net6.0-windows\WinFormsPortada2.pdb
 C:\Users\joeln\source\repos\WinFormsPortada\obj\Debug\net6.0-windows\WinFormsPortada2.genruntimeconfig.cache
 C:\Users\joeln\source\repos\WinFormsPortada\obj\Debug\net6.0-windows\ref\WinFormsPortada2.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.Portada.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\projectM.Acerca.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\projectM.Editar.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\projectM.FormAdmin.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\projectM.FormUsuario.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\projectM.Gaming.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\projectM.Grafica.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\projectM.home.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\projectM.Perifericos.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.projectMa.projectM.projectM.projectM.Properties.Resources.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.Properties.Resources.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.csproj.GenerateResource.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.AssemblyInfoInputs.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.AssemblyInfo.cs
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.csproj.CoreCompileInputs.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.sourcelink.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\bin\Debug\net6.0-windows\WinFormsPortada2.exe
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\bin\Debug\net6.0-windows\WinFormsPortada2.deps.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\bin\Debug\net6.0-windows\WinFormsPortada2.runtimeconfig.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\bin\Debug\net6.0-windows\WinFormsPortada2.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\bin\Debug\net6.0-windows\WinFormsPortada2.pdb
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\refint\WinFormsPortada2.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.pdb
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\WinFormsPortada2.genruntimeconfig.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\obj\Debug\net6.0-windows\ref\WinFormsPortada2.dll
