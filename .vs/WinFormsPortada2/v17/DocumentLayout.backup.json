@@ -3,7 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\GitDeApoyo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F580A97-FE7C-4E63-BE8D-2945B10BC331}|..\\..\\..\\..\\Downloads\\WinFormLoginT\\WinFormLogin\\WinFormLogin.csproj|c:\\users\\joeln\\downloads\\winformlogint\\winformlogin\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DE7A85CF-B929-4A9D-B450-D91D52D45B1F}|WinFormsPortada\\WinFormsPortada2.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\gitdeapoyo\\winformsportada\\winformsportada2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DE7A85CF-B929-4A9D-B450-D91D52D45B1F}|WinFormsPortada\\WinFormsPortada2.csproj|solutionrelative:winformsportada\\winformsportada2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD6BD5F-0CD8-4A35-B9FD-D6F525DE3883}|projectMa\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\gitdeapoyo\\projectma\\projectm\\projectm\\projectm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDD6BD5F-0CD8-4A35-B9FD-D6F525DE3883}|projectMa\\projectM\\projectM\\projectM\\projectM.csproj|solutionrelative:projectma\\projectm\\projectm\\projectm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDD6BD5F-0CD8-4A35-B9FD-D6F525DE3883}|projectMa\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\gitdeapoyo\\projectma\\projectm\\projectm\\projectm\\projectm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FDD6BD5F-0CD8-4A35-B9FD-D6F525DE3883}|projectMa\\projectM\\projectM\\projectM\\projectM.csproj|solutionrelative:projectma\\projectm\\projectm\\projectm\\projectm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joeln\\Downloads\\WinFormLoginT\\WinFormLogin\\FormLogin.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\WinFormLoginT\\WinFormLogin\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\joeln\\Downloads\\WinFormLoginT\\WinFormLogin\\FormLogin.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\WinFormLoginT\\WinFormLogin\\FormLogin.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\GitDeApoyo\\projectMa\\projectM\\projectM\\projectM\\Program.cs",
+              "RelativeDocumentMoniker": "projectMa\\projectM\\projectM\\projectM\\Program.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\GitDeApoyo\\projectMa\\projectM\\projectM\\projectM\\Program.cs",
+              "RelativeToolTip": "projectMa\\projectM\\projectM\\projectM\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:49:02.593Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-02T19:38:15.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "projectM.csproj",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\GitDeApoyo\\projectMa\\projectM\\projectM\\projectM\\projectM.csproj",
+              "RelativeDocumentMoniker": "projectMa\\projectM\\projectM\\projectM\\projectM.csproj",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\GitDeApoyo\\projectMa\\projectM\\projectM\\projectM\\projectM.csproj",
+              "RelativeToolTip": "projectMa\\projectM\\projectM\\projectM\\projectM.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-02T19:37:14.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WinFormsPortada2.csproj",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\GitDeApoyo\\WinFormsPortada\\WinFormsPortada2.csproj",
+              "RelativeDocumentMoniker": "WinFormsPortada\\WinFormsPortada2.csproj",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\GitDeApoyo\\WinFormsPortada\\WinFormsPortada2.csproj",
+              "RelativeToolTip": "WinFormsPortada\\WinFormsPortada2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-02T19:37:44.218Z",
+              "EditorCaption": ""
             }
           ]
         }

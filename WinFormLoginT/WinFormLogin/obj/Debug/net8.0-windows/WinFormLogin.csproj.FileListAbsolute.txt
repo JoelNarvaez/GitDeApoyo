@@ -1,0 +1,59 @@
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.exe
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.deps.json
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.runtimeconfig.json
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.dll
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.pdb
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.GenerateResource.cache
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.AssemblyInfoInputs.cache
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.AssemblyInfo.cs
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.CoreCompileInputs.cache
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.dll
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\refint\WinFormLogin.dll
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.pdb
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.genruntimeconfig.cache
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\ref\WinFormLogin.dll
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.Properties.Resources.resources
+C:\Users\Tania\OneDrive\Escritorio\Progra2\Proyecto\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.FormLogin.resources
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.exe
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.deps.json
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.runtimeconfig.json
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.dll
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.pdb
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.FormLogin.resources
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.Properties.Resources.resources
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.GenerateResource.cache
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.AssemblyInfoInputs.cache
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.AssemblyInfo.cs
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.CoreCompileInputs.cache
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.dll
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\refint\WinFormLogin.dll
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.pdb
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.genruntimeconfig.cache
+C:\Users\joeln\Downloads\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\ref\WinFormLogin.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.FormLogin.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.Properties.Resources.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.GenerateResource.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.AssemblyInfoInputs.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.AssemblyInfo.cs
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.CoreCompileInputs.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.sourcelink.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\refint\WinFormLogin.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.pdb
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.AssemblyReference.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\projectM.deps.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\projectM.runtimeconfig.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\projectM.exe
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.exe
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.deps.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.runtimeconfig.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.pdb
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\projectM.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\bin\Debug\net8.0-windows\projectM.pdb
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormL.903AE1BB.Up2Date
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.genruntimeconfig.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\obj\Debug\net8.0-windows\ref\WinFormLogin.dll

@@ -3,7 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\GitDeApoyo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F580A97-FE7C-4E63-BE8D-2945B10BC331}|..\\..\\..\\..\\Downloads\\WinFormLoginT\\WinFormLogin\\WinFormLogin.csproj|c:\\users\\joeln\\downloads\\winformlogint\\winformlogin\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DE7A85CF-B929-4A9D-B450-D91D52D45B1F}|WinFormsPortada\\WinFormsPortada2.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\gitdeapoyo\\winformsportada\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE7A85CF-B929-4A9D-B450-D91D52D45B1F}|WinFormsPortada\\WinFormsPortada2.csproj|solutionrelative:winformsportada\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,14 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joeln\\Downloads\\WinFormLoginT\\WinFormLogin\\FormLogin.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\WinFormLoginT\\WinFormLogin\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\joeln\\Downloads\\WinFormLoginT\\WinFormLogin\\FormLogin.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\WinFormLoginT\\WinFormLogin\\FormLogin.cs [Design]",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\GitDeApoyo\\WinFormsPortada\\Program.cs",
+              "RelativeDocumentMoniker": "WinFormsPortada\\Program.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\GitDeApoyo\\WinFormsPortada\\Program.cs",
+              "RelativeToolTip": "WinFormsPortada\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:49:02.593Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-02T19:42:24.115Z",
+              "EditorCaption": ""
             }
           ]
         }

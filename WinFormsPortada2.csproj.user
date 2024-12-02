@@ -28,5 +28,8 @@
     <Compile Update="projectMa\projectM\projectM\projectM\Perifericos.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="WinFormLoginT\WinFormLogin\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
