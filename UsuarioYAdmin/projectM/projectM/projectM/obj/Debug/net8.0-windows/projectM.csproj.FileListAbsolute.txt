@@ -1,0 +1,68 @@
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\bin\Debug\net8.0-windows\projectM.exe
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\bin\Debug\net8.0-windows\projectM.deps.json
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\bin\Debug\net8.0-windows\projectM.runtimeconfig.json
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\bin\Debug\net8.0-windows\projectM.dll
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\bin\Debug\net8.0-windows\projectM.pdb
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.Form1.resources
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.csproj.GenerateResource.cache
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.AssemblyInfoInputs.cache
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.AssemblyInfo.cs
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.csproj.CoreCompileInputs.cache
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.dll
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\refint\projectM.dll
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.pdb
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.genruntimeconfig.cache
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\ref\projectM.dll
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.Properties.Resources.resources
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.home.resources
+C:\Users\BrayanCape\Documents\MyPersonal_Projects\C\projectM\projectM\obj\Debug\net8.0-windows\projectM.Gaming.resources
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.dll
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\refint\projectM.dll
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.pdb
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Gaming.resources
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.home.resources
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Perifericos.resources
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Properties.Resources.resources
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.csproj.GenerateResource.cache
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.AssemblyInfoInputs.cache
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.AssemblyInfo.cs
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.csproj.CoreCompileInputs.cache
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\bin\Debug\net8.0-windows\projectM.exe
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\bin\Debug\net8.0-windows\projectM.deps.json
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\bin\Debug\net8.0-windows\projectM.runtimeconfig.json
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\bin\Debug\net8.0-windows\projectM.dll
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\bin\Debug\net8.0-windows\projectM.pdb
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.genruntimeconfig.cache
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\ref\projectM.dll
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Acerca.resources
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.FormAdmin.resources
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.FormUsuario.resources
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Editar.resources
+C:\Users\marie\OneDrive\Documents\TERCER SEMESTRE\TERCER SEMESTRE\PROGRAMACION II\PROYECTO FINAL\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Grafica.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\refint\projectM.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.pdb
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\projectM.exe
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\projectM.deps.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\projectM.runtimeconfig.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\projectM.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\projectM.pdb
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Acerca.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Editar.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.FormAdmin.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.FormUsuario.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Gaming.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Grafica.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.home.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Perifericos.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.Properties.Resources.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.csproj.GenerateResource.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.AssemblyInfoInputs.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.AssemblyInfo.cs
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.csproj.CoreCompileInputs.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.sourcelink.json
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.genruntimeconfig.cache
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\ref\projectM.dll

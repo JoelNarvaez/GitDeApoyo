@@ -1,0 +1,98 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marie\\OneDrive\\Documents\\TERCER SEMESTRE\\TERCER SEMESTRE\\PROGRAMACION II\\PROYECTO FINAL\\projectM\\projectM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{780FD0B2-9E98-43AC-8E6F-B340771CCD9B}|projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\tercer semestre\\tercer semestre\\programacion ii\\proyecto final\\projectm\\projectm\\projectm\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{780FD0B2-9E98-43AC-8E6F-B340771CCD9B}|projectM\\projectM.csproj|solutionrelative:projectm\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{780FD0B2-9E98-43AC-8E6F-B340771CCD9B}|projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\tercer semestre\\tercer semestre\\programacion ii\\proyecto final\\projectm\\projectm\\projectm\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{780FD0B2-9E98-43AC-8E6F-B340771CCD9B}|projectM\\projectM.csproj|solutionrelative:projectm\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{780FD0B2-9E98-43AC-8E6F-B340771CCD9B}|projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\tercer semestre\\tercer semestre\\programacion ii\\proyecto final\\projectm\\projectm\\projectm\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{780FD0B2-9E98-43AC-8E6F-B340771CCD9B}|projectM\\projectM.csproj|solutionrelative:projectm\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{780FD0B2-9E98-43AC-8E6F-B340771CCD9B}|projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\tercer semestre\\tercer semestre\\programacion ii\\proyecto final\\projectm\\projectm\\projectm\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{780FD0B2-9E98-43AC-8E6F-B340771CCD9B}|projectM\\projectM.csproj|solutionrelative:projectm\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\TERCER SEMESTRE\\TERCER SEMESTRE\\PROGRAMACION II\\PROYECTO FINAL\\projectM\\projectM\\projectM\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "projectM\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\TERCER SEMESTRE\\TERCER SEMESTRE\\PROGRAMACION II\\PROYECTO FINAL\\projectM\\projectM\\projectM\\FormAdmin.cs",
+              "RelativeToolTip": "projectM\\FormAdmin.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAvwLQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T19:57:29.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\TERCER SEMESTRE\\TERCER SEMESTRE\\PROGRAMACION II\\PROYECTO FINAL\\projectM\\projectM\\projectM\\FormUsuario.cs",
+              "RelativeDocumentMoniker": "projectM\\FormUsuario.cs",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\TERCER SEMESTRE\\TERCER SEMESTRE\\PROGRAMACION II\\PROYECTO FINAL\\projectM\\projectM\\projectM\\FormUsuario.cs",
+              "RelativeToolTip": "projectM\\FormUsuario.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAMwNAAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T19:49:01.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\TERCER SEMESTRE\\TERCER SEMESTRE\\PROGRAMACION II\\PROYECTO FINAL\\projectM\\projectM\\projectM\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "projectM\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\TERCER SEMESTRE\\TERCER SEMESTRE\\PROGRAMACION II\\PROYECTO FINAL\\projectM\\projectM\\projectM\\FormAdmin.cs [Design]",
+              "RelativeToolTip": "projectM\\FormAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T19:37:04.819Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormUsuario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\TERCER SEMESTRE\\TERCER SEMESTRE\\PROGRAMACION II\\PROYECTO FINAL\\projectM\\projectM\\projectM\\FormUsuario.cs",
+              "RelativeDocumentMoniker": "projectM\\FormUsuario.cs",
+              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\TERCER SEMESTRE\\TERCER SEMESTRE\\PROGRAMACION II\\PROYECTO FINAL\\projectM\\projectM\\projectM\\FormUsuario.cs [Design]",
+              "RelativeToolTip": "projectM\\FormUsuario.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T18:37:59.799Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
