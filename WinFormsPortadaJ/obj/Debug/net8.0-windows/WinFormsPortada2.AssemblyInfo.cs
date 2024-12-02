@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsPortada2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16bb51f93d301c2d12107b684c289f94e4e42fea")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5ed7d0e103ab23ba5d0e36b8a8ad325ea2db023")]
+>>>>>>> 9dd4e971a3f782f01e4c9942f66b5f9f1bbad3ea
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsPortada2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsPortada2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

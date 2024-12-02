@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\",
   "Documents": [
     {
@@ -8,6 +9,12 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{064B96C5-7596-4EB6-9DCE-1FC033C636F3}|WinFormsPortada2.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\winformsportadaj\\portada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+=======
+  "WorkspaceRootPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\calis\\GitDeApoyo\\WinFormsPortadaJ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{064B96C5-7596-4EB6-9DCE-1FC033C636F3}|WinFormsPortada2.csproj|c:\\users\\joeln\\onedrive\\desktop\\calis\\gitdeapoyo\\winformsportadaj\\portada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+>>>>>>> 9dd4e971a3f782f01e4c9942f66b5f9f1bbad3ea
       "RelativeMoniker": "D:0:0:{064B96C5-7596-4EB6-9DCE-1FC033C636F3}|WinFormsPortada2.csproj|solutionrelative:portada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -23,6 +30,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "Portada.cs",
               "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\Portada.cs",
               "RelativeDocumentMoniker": "Portada.cs",
@@ -40,6 +48,12 @@
               "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\Portada.cs",
               "RelativeDocumentMoniker": "Portada.cs",
               "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\Portada.cs [Design]",
+=======
+              "Title": "Portada.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\calis\\GitDeApoyo\\WinFormsPortadaJ\\Portada.cs",
+              "RelativeDocumentMoniker": "Portada.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\calis\\GitDeApoyo\\WinFormsPortadaJ\\Portada.cs [Design]",
+>>>>>>> 9dd4e971a3f782f01e4c9942f66b5f9f1bbad3ea
               "RelativeToolTip": "Portada.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T23:54:25.04Z",

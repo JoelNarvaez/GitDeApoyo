@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "rzhlN3OU44s=",
+=======
+  "dgSpecHash": "5lQnQeHemRc=",
+>>>>>>> 9dd4e971a3f782f01e4c9942f66b5f9f1bbad3ea
   "success": true,
-  "projectFilePath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
+  "projectFilePath": "C:\\Users\\joeln\\OneDrive\\Desktop\\calis\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
