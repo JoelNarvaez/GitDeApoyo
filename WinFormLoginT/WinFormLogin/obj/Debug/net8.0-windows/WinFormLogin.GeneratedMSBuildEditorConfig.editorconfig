@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WinFormLogin
-build_property.ProjectDir = C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\GitDeApoyo\WinFormLoginT\WinFormLogin\
+build_property.ProjectDir = C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormLoginT\WinFormLogin\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
