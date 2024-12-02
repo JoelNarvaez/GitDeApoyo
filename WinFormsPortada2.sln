@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsPortada2", "WinForm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "projectM", "..\..\..\..\source\repos\projectMa\projectM\projectM\projectM\projectM.csproj", "{1D59BE7A-ED7D-486D-B09E-72056051B7B8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormLogin", "..\..\..\..\Downloads\WinFormLoginT\WinFormLogin\WinFormLogin.csproj", "{8F580A97-FE7C-4E63-BE8D-2945B10BC331}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1D59BE7A-ED7D-486D-B09E-72056051B7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D59BE7A-ED7D-486D-B09E-72056051B7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D59BE7A-ED7D-486D-B09E-72056051B7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F580A97-FE7C-4E63-BE8D-2945B10BC331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F580A97-FE7C-4E63-BE8D-2945B10BC331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F580A97-FE7C-4E63-BE8D-2945B10BC331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F580A97-FE7C-4E63-BE8D-2945B10BC331}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
