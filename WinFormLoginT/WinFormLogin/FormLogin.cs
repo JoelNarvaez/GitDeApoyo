@@ -136,10 +136,6 @@ namespace WinFormLogin
             }
         }
 
-        private void pPrincipal_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btnOpcion_Click(object sender, EventArgs e)
         {

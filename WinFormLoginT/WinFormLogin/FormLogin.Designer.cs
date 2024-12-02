@@ -81,7 +81,6 @@
             pPrincipal.Name = "pPrincipal";
             pPrincipal.Size = new Size(1184, 716);
             pPrincipal.TabIndex = 0;
-            pPrincipal.Paint += pPrincipal_Paint;
             // 
             // panel2
             // 
