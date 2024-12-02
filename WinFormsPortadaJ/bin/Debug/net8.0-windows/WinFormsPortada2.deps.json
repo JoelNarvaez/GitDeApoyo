@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "WinFormsPortada2/1.0.0": {
+        "dependencies": {
+          "WinFormLogin": "1.0.0"
+        },
         "runtime": {
           "WinFormsPortada2.dll": {}
+        }
+      },
+      "WinFormLogin/1.0.0": {
+        "runtime": {
+          "WinFormLogin.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "WinFormsPortada2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WinFormLogin/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices;
+using WinFormLogin;
 
 namespace WinFormsPortada2
 {
@@ -135,7 +136,12 @@ namespace WinFormsPortada2
 
         private void pictureBox37_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bienveinido");
+            
+            FormLogin nuevoFormulario = new FormLogin();
+            
+            nuevoFormulario.Show();
+
+            this.Hide();
         }
     }
 }
