@@ -23,6 +23,7 @@ namespace WinFormsPortada2
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 9, 9));
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -128,20 +129,36 @@ namespace WinFormsPortada2
                         }
                         break;
                 }
-
-                labelHora.Text = DateTime.Now.ToLongTimeString();
-                labelFecha.Text = DateTime.Now.ToLongDateString();
             }
+            labelHrs.Text = DateTime.Now.ToLongTimeString();
+            labelFech.Text = DateTime.Now.ToLongDateString();
         }
 
         private void pictureBox37_Click(object sender, EventArgs e)
         {
-            
             FormLogin nuevoFormulario = new FormLogin();
-            
             nuevoFormulario.Show();
-
             this.Hide();
         }
+
+        private void btnMaximized_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+
+        }
+
+        private void btnMinimized_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

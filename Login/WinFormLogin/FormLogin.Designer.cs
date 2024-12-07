@@ -30,22 +30,27 @@
         {
             components = new System.ComponentModel.Container();
             pPrincipal = new Panel();
-            panel2 = new Panel();
-            panel1 = new Panel();
             label8 = new Label();
             label7 = new Label();
-            pictureBox3 = new PictureBox();
             label6 = new Label();
+            label10 = new Label();
+            botonRedondo2 = new botonRedondo();
             pictureBox2 = new PictureBox();
-            btnOpcion = new Button();
-            panelOpc = new Panel();
-            btnInv = new Button();
-            btnAdmin = new Button();
-            btnUsu = new Button();
             label2 = new Label();
+            labelHora = new Label();
+            labelFech = new Label();
+            panel4 = new Panel();
+            btnMinimized = new Button();
+            btnMaximized = new Button();
+            btnClose = new Button();
+            pictureBox3 = new PictureBox();
             label1 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             pContenedor = new Panel();
+            panel5 = new Panel();
+            buttonMinCont = new Button();
+            buttonMaxCont = new Button();
+            buttonCloseCont = new Button();
             btnEntrar = new Button();
             pContra = new Panel();
             txtContra = new TextBox();
@@ -56,201 +61,226 @@
             label3 = new Label();
             pictureBox1 = new PictureBox();
             pPrincipal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panelOpc.SuspendLayout();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             pContenedor.SuspendLayout();
+            panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pPrincipal
             // 
             pPrincipal.BackColor = Color.White;
-            pPrincipal.Controls.Add(panel2);
-            pPrincipal.Controls.Add(panel1);
             pPrincipal.Controls.Add(label8);
             pPrincipal.Controls.Add(label7);
-            pPrincipal.Controls.Add(pictureBox3);
             pPrincipal.Controls.Add(label6);
+            pPrincipal.Controls.Add(label10);
+            pPrincipal.Controls.Add(botonRedondo2);
             pPrincipal.Controls.Add(pictureBox2);
-            pPrincipal.Controls.Add(btnOpcion);
-            pPrincipal.Controls.Add(panelOpc);
             pPrincipal.Controls.Add(label2);
+            pPrincipal.Controls.Add(labelHora);
+            pPrincipal.Controls.Add(labelFech);
+            pPrincipal.Controls.Add(panel4);
+            pPrincipal.Controls.Add(pictureBox3);
             pPrincipal.Controls.Add(label1);
             pPrincipal.Location = new Point(0, -1);
             pPrincipal.Name = "pPrincipal";
             pPrincipal.Size = new Size(1184, 716);
             pPrincipal.TabIndex = 0;
-            pPrincipal.Paint += pPrincipal_Paint;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.RoyalBlue;
-            panel2.Location = new Point(952, 305);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(120, 3);
-            panel2.TabIndex = 20;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.RoyalBlue;
-            panel1.Location = new Point(809, 609);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(234, 3);
-            panel1.TabIndex = 19;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Georgia", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.RoyalBlue;
-            label8.Location = new Point(952, 288);
+            label8.BackColor = Color.White;
+            label8.Font = new Font("Century Gothic", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.BlueViolet;
+            label8.Location = new Point(947, 565);
             label8.Name = "label8";
-            label8.Size = new Size(117, 14);
-            label8.TabIndex = 10;
-            label8.Text = "Registrate ahora";
+            label8.Size = new Size(130, 36);
+            label8.TabIndex = 68;
+            label8.Text = "NAVIGA";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Georgia", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.Black;
-            label7.Location = new Point(796, 288);
+            label7.BackColor = Color.White;
+            label7.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.MediumBlue;
+            label7.Location = new Point(731, 536);
             label7.Name = "label7";
-            label7.Size = new Size(150, 14);
-            label7.TabIndex = 9;
-            label7.Text = "No tienes una cuenta?";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.fondo;
-            pictureBox3.Location = new Point(0, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(644, 960);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 8;
-            pictureBox3.TabStop = false;
+            label7.Size = new Size(194, 25);
+            label7.TabIndex = 67;
+            label7.Text = "Y ve mas allá con";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Georgia", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.RoyalBlue;
-            label6.Location = new Point(809, 592);
+            label6.BackColor = Color.White;
+            label6.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.Black;
+            label6.Location = new Point(740, 353);
             label6.Name = "label6";
-            label6.Size = new Size(233, 14);
-            label6.TabIndex = 7;
-            label6.Text = "Olvidaste tu usuario o contraseña?";
-            label6.Click += label6_Click;
+            label6.Size = new Size(337, 25);
+            label6.TabIndex = 66;
+            label6.Text = "Sientete parte de nuestra tienda";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.White;
+            label10.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(708, 318);
+            label10.Name = "label10";
+            label10.Size = new Size(397, 25);
+            label10.TabIndex = 65;
+            label10.Text = "Los mejores productos al mejor precio";
+            // 
+            // botonRedondo2
+            // 
+            botonRedondo2.BackColor = Color.IndianRed;
+            botonRedondo2.BackgroundColor = Color.IndianRed;
+            botonRedondo2.BorderColor = Color.PaleVioletRed;
+            botonRedondo2.BorderRadius = 20;
+            botonRedondo2.BorderSize = 0;
+            botonRedondo2.FlatAppearance.BorderSize = 0;
+            botonRedondo2.FlatStyle = FlatStyle.Flat;
+            botonRedondo2.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            botonRedondo2.ForeColor = Color.White;
+            botonRedondo2.Location = new Point(801, 436);
+            botonRedondo2.Name = "botonRedondo2";
+            botonRedondo2.Size = new Size(219, 58);
+            botonRedondo2.TabIndex = 64;
+            botonRedondo2.Text = "Comparar YA";
+            botonRedondo2.TextColor = Color.White;
+            botonRedondo2.UseVisualStyleBackColor = false;
+            botonRedondo2.Click += botonRedondo2_Click;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.logo;
-            pictureBox2.Location = new Point(858, 83);
+            pictureBox2.Image = Properties.Resources.Screenshot_2024_12_06_210055;
+            pictureBox2.Location = new Point(801, 92);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(149, 126);
+            pictureBox2.Size = new Size(206, 166);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 6;
+            pictureBox2.TabIndex = 63;
             pictureBox2.TabStop = false;
-            // 
-            // btnOpcion
-            // 
-            btnOpcion.FlatAppearance.BorderSize = 0;
-            btnOpcion.FlatStyle = FlatStyle.Flat;
-            btnOpcion.Font = new Font("Georgia", 10F, FontStyle.Bold);
-            btnOpcion.ForeColor = Color.Black;
-            btnOpcion.Location = new Point(841, 400);
-            btnOpcion.Name = "btnOpcion";
-            btnOpcion.Padding = new Padding(10, 0, 0, 0);
-            btnOpcion.Size = new Size(184, 25);
-            btnOpcion.TabIndex = 4;
-            btnOpcion.Text = "Seleccionar             >";
-            btnOpcion.TextAlign = ContentAlignment.MiddleLeft;
-            btnOpcion.UseVisualStyleBackColor = true;
-            btnOpcion.Click += btnOpcion_Click;
-            // 
-            // panelOpc
-            // 
-            panelOpc.BackColor = Color.White;
-            panelOpc.Controls.Add(btnInv);
-            panelOpc.Controls.Add(btnAdmin);
-            panelOpc.Controls.Add(btnUsu);
-            panelOpc.Font = new Font("Georgia", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            panelOpc.Location = new Point(858, 431);
-            panelOpc.Name = "panelOpc";
-            panelOpc.Size = new Size(149, 96);
-            panelOpc.TabIndex = 3;
-            // 
-            // btnInv
-            // 
-            btnInv.BackColor = Color.Transparent;
-            btnInv.Dock = DockStyle.Top;
-            btnInv.FlatAppearance.BorderSize = 0;
-            btnInv.FlatAppearance.MouseDownBackColor = Color.Silver;
-            btnInv.FlatAppearance.MouseOverBackColor = Color.Silver;
-            btnInv.FlatStyle = FlatStyle.Flat;
-            btnInv.Font = new Font("Georgia", 8F);
-            btnInv.ForeColor = Color.Black;
-            btnInv.Location = new Point(0, 60);
-            btnInv.Name = "btnInv";
-            btnInv.Padding = new Padding(30, 0, 0, 0);
-            btnInv.Size = new Size(149, 30);
-            btnInv.TabIndex = 2;
-            btnInv.Text = "Invitado";
-            btnInv.TextAlign = ContentAlignment.MiddleLeft;
-            btnInv.UseVisualStyleBackColor = false;
-            btnInv.Click += btnInv_Click_1;
-            // 
-            // btnAdmin
-            // 
-            btnAdmin.BackColor = Color.Transparent;
-            btnAdmin.Dock = DockStyle.Top;
-            btnAdmin.FlatAppearance.BorderSize = 0;
-            btnAdmin.FlatAppearance.MouseDownBackColor = Color.Silver;
-            btnAdmin.FlatAppearance.MouseOverBackColor = Color.Silver;
-            btnAdmin.FlatStyle = FlatStyle.Flat;
-            btnAdmin.Font = new Font("Georgia", 8F);
-            btnAdmin.ForeColor = Color.Black;
-            btnAdmin.Location = new Point(0, 30);
-            btnAdmin.Name = "btnAdmin";
-            btnAdmin.Padding = new Padding(30, 0, 0, 0);
-            btnAdmin.Size = new Size(149, 30);
-            btnAdmin.TabIndex = 0;
-            btnAdmin.Text = "Administrador";
-            btnAdmin.TextAlign = ContentAlignment.MiddleLeft;
-            btnAdmin.UseVisualStyleBackColor = false;
-            btnAdmin.Click += btnAdmin_Click;
-            // 
-            // btnUsu
-            // 
-            btnUsu.BackColor = Color.Transparent;
-            btnUsu.Dock = DockStyle.Top;
-            btnUsu.FlatAppearance.BorderSize = 0;
-            btnUsu.FlatAppearance.MouseDownBackColor = Color.Silver;
-            btnUsu.FlatAppearance.MouseOverBackColor = Color.Silver;
-            btnUsu.FlatStyle = FlatStyle.Flat;
-            btnUsu.Font = new Font("Georgia", 8F);
-            btnUsu.ForeColor = Color.Black;
-            btnUsu.Location = new Point(0, 0);
-            btnUsu.Name = "btnUsu";
-            btnUsu.Padding = new Padding(30, 0, 0, 0);
-            btnUsu.Size = new Size(149, 30);
-            btnUsu.TabIndex = 1;
-            btnUsu.Text = "Usuario";
-            btnUsu.TextAlign = ContentAlignment.MiddleLeft;
-            btnUsu.UseVisualStyleBackColor = false;
-            btnUsu.Click += btnUsu_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Georgia", 16.5F, FontStyle.Bold);
+            label2.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(809, 352);
+            label2.Location = new Point(774, 281);
             label2.Name = "label2";
-            label2.Size = new Size(243, 27);
-            label2.TabIndex = 1;
-            label2.Text = "Iniciar sesion como:";
+            label2.Size = new Size(265, 25);
+            label2.TabIndex = 62;
+            label2.Text = "Conectate al futuro, HOY";
+            // 
+            // labelHora
+            // 
+            labelHora.AutoSize = true;
+            labelHora.BackColor = Color.Transparent;
+            labelHora.Dock = DockStyle.Left;
+            labelHora.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelHora.ForeColor = Color.Brown;
+            labelHora.ImageAlign = ContentAlignment.MiddleRight;
+            labelHora.Location = new Point(54, 0);
+            labelHora.Name = "labelHora";
+            labelHora.Size = new Size(43, 18);
+            labelHora.TabIndex = 61;
+            labelHora.Text = "Hora";
+            // 
+            // labelFech
+            // 
+            labelFech.AutoSize = true;
+            labelFech.BackColor = Color.Transparent;
+            labelFech.Dock = DockStyle.Left;
+            labelFech.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelFech.ForeColor = Color.Brown;
+            labelFech.ImageAlign = ContentAlignment.MiddleRight;
+            labelFech.Location = new Point(0, 0);
+            labelFech.Name = "labelFech";
+            labelFech.Size = new Size(54, 18);
+            labelFech.TabIndex = 60;
+            labelFech.Text = "Fecha";
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Gainsboro;
+            panel4.Controls.Add(btnMinimized);
+            panel4.Controls.Add(btnMaximized);
+            panel4.Controls.Add(btnClose);
+            panel4.Location = new Point(1110, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(78, 24);
+            panel4.TabIndex = 59;
+            // 
+            // btnMinimized
+            // 
+            btnMinimized.BackColor = Color.DarkCyan;
+            btnMinimized.Dock = DockStyle.Right;
+            btnMinimized.FlatAppearance.BorderSize = 0;
+            btnMinimized.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnMinimized.FlatStyle = FlatStyle.Flat;
+            btnMinimized.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMinimized.ForeColor = Color.White;
+            btnMinimized.Location = new Point(3, 0);
+            btnMinimized.Margin = new Padding(0);
+            btnMinimized.Name = "btnMinimized";
+            btnMinimized.Size = new Size(25, 24);
+            btnMinimized.TabIndex = 2;
+            btnMinimized.Text = "-";
+            btnMinimized.UseVisualStyleBackColor = false;
+            btnMinimized.Click += btnMinimized_Click_1;
+            // 
+            // btnMaximized
+            // 
+            btnMaximized.BackColor = Color.DarkCyan;
+            btnMaximized.Dock = DockStyle.Right;
+            btnMaximized.FlatAppearance.BorderSize = 0;
+            btnMaximized.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnMaximized.FlatStyle = FlatStyle.Flat;
+            btnMaximized.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMaximized.ForeColor = Color.White;
+            btnMaximized.Location = new Point(28, 0);
+            btnMaximized.Margin = new Padding(0);
+            btnMaximized.Name = "btnMaximized";
+            btnMaximized.Size = new Size(25, 24);
+            btnMaximized.TabIndex = 1;
+            btnMaximized.Text = "O";
+            btnMaximized.UseVisualStyleBackColor = false;
+            btnMaximized.Click += btnMaximized_Click_1;
+            // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.DarkCyan;
+            btnClose.Dock = DockStyle.Right;
+            btnClose.FlatAppearance.BorderSize = 0;
+            btnClose.FlatAppearance.MouseDownBackColor = Color.FromArgb(252, 97, 97);
+            btnClose.FlatAppearance.MouseOverBackColor = Color.FromArgb(252, 97, 97);
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnClose.ForeColor = Color.White;
+            btnClose.Location = new Point(53, 0);
+            btnClose.Margin = new Padding(0);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(25, 24);
+            btnClose.TabIndex = 0;
+            btnClose.Text = "X";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click_1;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.LadoIzq1;
+            pictureBox3.Location = new Point(0, 0);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(620, 724);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 8;
+            pictureBox3.TabStop = false;
             // 
             // label1
             // 
@@ -270,6 +300,7 @@
             // pContenedor
             // 
             pContenedor.BackColor = Color.White;
+            pContenedor.Controls.Add(panel5);
             pContenedor.Controls.Add(btnEntrar);
             pContenedor.Controls.Add(pContra);
             pContenedor.Controls.Add(txtContra);
@@ -283,6 +314,72 @@
             pContenedor.Name = "pContenedor";
             pContenedor.Size = new Size(644, 713);
             pContenedor.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.Gainsboro;
+            panel5.Controls.Add(buttonMinCont);
+            panel5.Controls.Add(buttonMaxCont);
+            panel5.Controls.Add(buttonCloseCont);
+            panel5.Location = new Point(553, 0);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(78, 24);
+            panel5.TabIndex = 60;
+            // 
+            // buttonMinCont
+            // 
+            buttonMinCont.BackColor = Color.DarkCyan;
+            buttonMinCont.Dock = DockStyle.Right;
+            buttonMinCont.FlatAppearance.BorderSize = 0;
+            buttonMinCont.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            buttonMinCont.FlatStyle = FlatStyle.Flat;
+            buttonMinCont.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonMinCont.ForeColor = Color.White;
+            buttonMinCont.Location = new Point(3, 0);
+            buttonMinCont.Margin = new Padding(0);
+            buttonMinCont.Name = "buttonMinCont";
+            buttonMinCont.Size = new Size(25, 24);
+            buttonMinCont.TabIndex = 2;
+            buttonMinCont.Text = "-";
+            buttonMinCont.UseVisualStyleBackColor = false;
+            buttonMinCont.Click += buttonMinCont_Click_1;
+            // 
+            // buttonMaxCont
+            // 
+            buttonMaxCont.BackColor = Color.DarkCyan;
+            buttonMaxCont.Dock = DockStyle.Right;
+            buttonMaxCont.FlatAppearance.BorderSize = 0;
+            buttonMaxCont.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            buttonMaxCont.FlatStyle = FlatStyle.Flat;
+            buttonMaxCont.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonMaxCont.ForeColor = Color.White;
+            buttonMaxCont.Location = new Point(28, 0);
+            buttonMaxCont.Margin = new Padding(0);
+            buttonMaxCont.Name = "buttonMaxCont";
+            buttonMaxCont.Size = new Size(25, 24);
+            buttonMaxCont.TabIndex = 1;
+            buttonMaxCont.Text = "O";
+            buttonMaxCont.UseVisualStyleBackColor = false;
+            buttonMaxCont.Click += buttonMaxCont_Click_1;
+            // 
+            // buttonCloseCont
+            // 
+            buttonCloseCont.BackColor = Color.DarkCyan;
+            buttonCloseCont.Dock = DockStyle.Right;
+            buttonCloseCont.FlatAppearance.BorderSize = 0;
+            buttonCloseCont.FlatAppearance.MouseDownBackColor = Color.FromArgb(252, 97, 97);
+            buttonCloseCont.FlatAppearance.MouseOverBackColor = Color.FromArgb(252, 97, 97);
+            buttonCloseCont.FlatStyle = FlatStyle.Flat;
+            buttonCloseCont.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonCloseCont.ForeColor = Color.White;
+            buttonCloseCont.Location = new Point(53, 0);
+            buttonCloseCont.Margin = new Padding(0);
+            buttonCloseCont.Name = "buttonCloseCont";
+            buttonCloseCont.Size = new Size(25, 24);
+            buttonCloseCont.TabIndex = 0;
+            buttonCloseCont.Text = "X";
+            buttonCloseCont.UseVisualStyleBackColor = false;
+            buttonCloseCont.Click += buttonCloseCont_Click_1;
             // 
             // btnEntrar
             // 
@@ -298,6 +395,7 @@
             btnEntrar.TabIndex = 19;
             btnEntrar.Text = "Acceder";
             btnEntrar.UseVisualStyleBackColor = false;
+            btnEntrar.Click += btnEntrar_Click_1;
             // 
             // pContra
             // 
@@ -383,16 +481,19 @@
             ClientSize = new Size(1184, 711);
             Controls.Add(pPrincipal);
             Controls.Add(pContenedor);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FormLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             pPrincipal.ResumeLayout(false);
             pPrincipal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panelOpc.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             pContenedor.ResumeLayout(false);
             pContenedor.PerformLayout();
+            panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -401,7 +502,6 @@
 
         private Panel pPrincipal;
         private Label label1;
-        private Label label2;
         private System.Windows.Forms.Timer timer1;
         private Panel pContenedor;
         private Button btnEntrar;
@@ -413,17 +513,25 @@
         private Label label4;
         private Label label3;
         private PictureBox pictureBox1;
-        private Button btnOpcion;
-        private Panel panelOpc;
-        private Button btnUsu;
-        private Button btnAdmin;
-        private Button btnInv;
-        private PictureBox pictureBox2;
-        private Label label6;
         private PictureBox pictureBox3;
-        private Label label7;
+        private botonRedondo botonRedondo1;
+        private Panel panel4;
+        private Button btnMinimized;
+        private Button btnMaximized;
+        private Button btnClose;
+        private Label labelHora;
+        private Label labelFech;
+        private Panel panel5;
+        private Button buttonMinCont;
+        private Button buttonMaxCont;
+        private Button buttonCloseCont;
+        private PanelRedondo panelRedondo1;
+        private Label label10;
+        private botonRedondo botonRedondo2;
+        private PictureBox pictureBox2;
+        private Label label2;
         private Label label8;
-        private Panel panel2;
-        private Panel panel1;
+        private Label label7;
+        private Label label6;
     }
 }

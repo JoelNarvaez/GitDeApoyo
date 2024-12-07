@@ -1,3 +1,4 @@
+using MySql.Data.MySqlClient;
 namespace WinFormLogin
 {
     internal static class Program

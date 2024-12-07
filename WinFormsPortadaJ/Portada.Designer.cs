@@ -66,6 +66,12 @@
             pictureBox38 = new PictureBox();
             labelHora = new Label();
             panel2 = new Panel();
+            panel3 = new Panel();
+            labelHrs = new Label();
+            labelFech = new Label();
+            btnMinimized = new Button();
+            btnMaximized = new Button();
+            btnClose = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -93,6 +99,7 @@
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox38).BeginInit();
             panel2.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // timer1
@@ -103,40 +110,40 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Bahnschrift SemiLight", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(473, 596);
+            label7.Font = new Font("Corbel", 18F);
+            label7.Location = new Point(483, 583);
             label7.Name = "label7";
-            label7.Size = new Size(255, 28);
+            label7.Size = new Size(253, 29);
             label7.TabIndex = 6;
             label7.Text = "Mariel Villalpando Mota";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Bahnschrift SemiLight", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(469, 556);
+            label6.Font = new Font("Corbel", 18F);
+            label6.Location = new Point(478, 543);
             label6.Name = "label6";
-            label6.Size = new Size(259, 28);
+            label6.Size = new Size(258, 29);
             label6.TabIndex = 5;
             label6.Text = "Tania Paola Garcia Meza";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Bahnschrift SemiLight", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(473, 519);
+            label5.Font = new Font("Corbel", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(488, 501);
             label5.Name = "label5";
-            label5.Size = new Size(243, 28);
+            label5.Size = new Size(236, 29);
             label5.TabIndex = 4;
             label5.Text = "Joel Narvaez Martinez";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Myanmar Text", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(522, 463);
+            label4.Font = new Font("Myanmar Text", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(528, 445);
             label4.Name = "label4";
-            label4.Size = new Size(146, 44);
+            label4.Size = new Size(184, 56);
             label4.TabIndex = 3;
             label4.Text = "Integrates:";
             // 
@@ -144,40 +151,41 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Palatino Linotype", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Font = new Font("Palatino Linotype", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Brown;
-            label3.Location = new Point(456, 83);
+            label3.Location = new Point(451, 126);
             label3.Name = "label3";
-            label3.Size = new Size(315, 60);
+            label3.Size = new Size(342, 65);
             label3.TabIndex = 2;
             label3.Text = "NAVIGA elec.";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Montserrat Medium", 13.7999992F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(347, 220);
+            label2.Font = new Font("Montserrat Medium", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(358, 244);
             label2.Name = "label2";
-            label2.Size = new Size(521, 32);
+            label2.Size = new Size(538, 33);
             label2.TabIndex = 1;
             label2.Text = "Profesora Dra. Georgina Salazar Partida ";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(402, 161);
+            label1.Font = new Font("Century Gothic", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(426, 191);
             label1.Name = "label1";
-            label1.Size = new Size(391, 47);
+            label1.Size = new Size(358, 44);
             label1.TabIndex = 0;
             label1.Text = "PROGRAMACION II";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.marco_png;
-            pictureBox1.Location = new Point(12, 13);
+            pictureBox1.Location = new Point(10, 25);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1158, 10);
+            pictureBox1.Size = new Size(1013, 8);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -185,9 +193,10 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.marco_png;
-            pictureBox2.Location = new Point(12, 681);
+            pictureBox2.Location = new Point(12, 692);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(1158, 10);
+            pictureBox2.Size = new Size(1160, 8);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
@@ -195,9 +204,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.marco_png;
-            pictureBox3.Location = new Point(1160, 14);
+            pictureBox3.Location = new Point(1162, 26);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(10, 677);
+            pictureBox3.Size = new Size(10, 676);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 6;
             pictureBox3.TabStop = false;
@@ -205,9 +215,10 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.marco_png;
-            pictureBox4.Location = new Point(12, 13);
+            pictureBox4.Location = new Point(10, 29);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(10, 666);
+            pictureBox4.Size = new Size(10, 481);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 7;
             pictureBox4.TabStop = false;
@@ -215,9 +226,10 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.marco_png;
-            pictureBox9.Location = new Point(1139, 411);
+            pictureBox9.Location = new Point(1145, 490);
+            pictureBox9.Margin = new Padding(3, 2, 3, 2);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(31, 280);
+            pictureBox9.Size = new Size(27, 210);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 12;
             pictureBox9.TabStop = false;
@@ -225,9 +237,10 @@
             // pictureBox12
             // 
             pictureBox12.Image = Properties.Resources.marco_png;
-            pictureBox12.Location = new Point(28, 659);
+            pictureBox12.Location = new Point(12, 676);
+            pictureBox12.Margin = new Padding(3, 2, 3, 2);
             pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(327, 32);
+            pictureBox12.Size = new Size(286, 24);
             pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox12.TabIndex = 15;
             pictureBox12.TabStop = false;
@@ -235,9 +248,10 @@
             // pictureBox19
             // 
             pictureBox19.Image = Properties.Resources.azulCielo;
-            pictureBox19.Location = new Point(769, 355);
+            pictureBox19.Location = new Point(673, 266);
+            pictureBox19.Margin = new Padding(3, 2, 3, 2);
             pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(113, 38);
+            pictureBox19.Size = new Size(99, 28);
             pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox19.TabIndex = 23;
             pictureBox19.TabStop = false;
@@ -245,9 +259,10 @@
             // pictureBox21
             // 
             pictureBox21.Image = Properties.Resources.azulMar;
-            pictureBox21.Location = new Point(680, 249);
+            pictureBox21.Location = new Point(595, 187);
+            pictureBox21.Margin = new Padding(3, 2, 3, 2);
             pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(68, 38);
+            pictureBox21.Size = new Size(60, 28);
             pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox21.TabIndex = 25;
             pictureBox21.TabStop = false;
@@ -255,9 +270,10 @@
             // pictureBox24
             // 
             pictureBox24.Image = Properties.Resources.marco_png;
-            pictureBox24.Location = new Point(12, 13);
+            pictureBox24.Location = new Point(12, 25);
+            pictureBox24.Margin = new Padding(3, 2, 3, 2);
             pictureBox24.Name = "pictureBox24";
-            pictureBox24.Size = new Size(31, 280);
+            pictureBox24.Size = new Size(27, 210);
             pictureBox24.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox24.TabIndex = 28;
             pictureBox24.TabStop = false;
@@ -265,9 +281,10 @@
             // pictureBox25
             // 
             pictureBox25.Image = Properties.Resources.marco_png;
-            pictureBox25.Location = new Point(1139, 13);
+            pictureBox25.Location = new Point(1145, 42);
+            pictureBox25.Margin = new Padding(3, 2, 3, 2);
             pictureBox25.Name = "pictureBox25";
-            pictureBox25.Size = new Size(31, 280);
+            pictureBox25.Size = new Size(27, 210);
             pictureBox25.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox25.TabIndex = 29;
             pictureBox25.TabStop = false;
@@ -275,9 +292,10 @@
             // pictureBox26
             // 
             pictureBox26.Image = Properties.Resources.marco_png;
-            pictureBox26.Location = new Point(12, 411);
+            pictureBox26.Location = new Point(10, 490);
+            pictureBox26.Margin = new Padding(3, 2, 3, 2);
             pictureBox26.Name = "pictureBox26";
-            pictureBox26.Size = new Size(31, 280);
+            pictureBox26.Size = new Size(27, 210);
             pictureBox26.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox26.TabIndex = 30;
             pictureBox26.TabStop = false;
@@ -285,9 +303,10 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.marco_png;
-            pictureBox5.Location = new Point(843, 13);
+            pictureBox5.Location = new Point(871, 25);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(327, 32);
+            pictureBox5.Size = new Size(301, 24);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 31;
             pictureBox5.TabStop = false;
@@ -295,9 +314,10 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.marco_png;
-            pictureBox7.Location = new Point(843, 659);
+            pictureBox7.Location = new Point(886, 676);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(327, 32);
+            pictureBox7.Size = new Size(286, 24);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 32;
             pictureBox7.TabStop = false;
@@ -305,9 +325,10 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.marco_png;
-            pictureBox8.Location = new Point(28, 13);
+            pictureBox8.Location = new Point(35, 25);
+            pictureBox8.Margin = new Padding(3, 2, 3, 2);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(327, 32);
+            pictureBox8.Size = new Size(286, 24);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 33;
             pictureBox8.TabStop = false;
@@ -315,9 +336,10 @@
             // pictureBox17
             // 
             pictureBox17.Image = Properties.Resources.marco_png;
-            pictureBox17.Location = new Point(769, 249);
+            pictureBox17.Location = new Point(673, 187);
+            pictureBox17.Margin = new Padding(3, 2, 3, 2);
             pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(48, 93);
+            pictureBox17.Size = new Size(42, 70);
             pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox17.TabIndex = 40;
             pictureBox17.TabStop = false;
@@ -325,9 +347,10 @@
             // pictureBox18
             // 
             pictureBox18.Image = Properties.Resources.azulMar;
-            pictureBox18.Location = new Point(839, 312);
+            pictureBox18.Location = new Point(734, 234);
+            pictureBox18.Margin = new Padding(3, 2, 3, 2);
             pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(70, 30);
+            pictureBox18.Size = new Size(61, 22);
             pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox18.TabIndex = 41;
             pictureBox18.TabStop = false;
@@ -335,9 +358,10 @@
             // pictureBox20
             // 
             pictureBox20.Image = Properties.Resources.azulMar;
-            pictureBox20.Location = new Point(847, 405);
+            pictureBox20.Location = new Point(741, 304);
+            pictureBox20.Margin = new Padding(3, 2, 3, 2);
             pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(35, 54);
+            pictureBox20.Size = new Size(31, 40);
             pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox20.TabIndex = 42;
             pictureBox20.TabStop = false;
@@ -345,9 +369,10 @@
             // pictureBox16
             // 
             pictureBox16.Image = Properties.Resources.azulCielo;
-            pictureBox16.Location = new Point(158, 19);
+            pictureBox16.Location = new Point(138, 14);
+            pictureBox16.Margin = new Padding(3, 2, 3, 2);
             pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(39, 108);
+            pictureBox16.Size = new Size(34, 81);
             pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox16.TabIndex = 39;
             pictureBox16.TabStop = false;
@@ -355,9 +380,10 @@
             // pictureBox14
             // 
             pictureBox14.Image = Properties.Resources.azulCielo;
-            pictureBox14.Location = new Point(0, 19);
+            pictureBox14.Location = new Point(0, 2);
+            pictureBox14.Margin = new Padding(3, 2, 3, 2);
             pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(71, 38);
+            pictureBox14.Size = new Size(62, 28);
             pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox14.TabIndex = 38;
             pictureBox14.TabStop = false;
@@ -365,9 +391,10 @@
             // pictureBox22
             // 
             pictureBox22.Image = Properties.Resources.marco_png;
-            pictureBox22.Location = new Point(14, 85);
+            pictureBox22.Location = new Point(12, 64);
+            pictureBox22.Margin = new Padding(3, 2, 3, 2);
             pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(120, 42);
+            pictureBox22.Size = new Size(105, 32);
             pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox22.TabIndex = 43;
             pictureBox22.TabStop = false;
@@ -375,9 +402,10 @@
             // pictureBox28
             // 
             pictureBox28.Image = Properties.Resources.azulMar;
-            pictureBox28.Location = new Point(216, 19);
+            pictureBox28.Location = new Point(189, 14);
+            pictureBox28.Margin = new Padding(3, 2, 3, 2);
             pictureBox28.Name = "pictureBox28";
-            pictureBox28.Size = new Size(68, 34);
+            pictureBox28.Size = new Size(60, 26);
             pictureBox28.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox28.TabIndex = 45;
             pictureBox28.TabStop = false;
@@ -385,9 +413,10 @@
             // pictureBox29
             // 
             pictureBox29.Image = Properties.Resources.azulMar;
-            pictureBox29.Location = new Point(26, 133);
+            pictureBox29.Location = new Point(23, 100);
+            pictureBox29.Margin = new Padding(3, 2, 3, 2);
             pictureBox29.Name = "pictureBox29";
-            pictureBox29.Size = new Size(45, 96);
+            pictureBox29.Size = new Size(39, 72);
             pictureBox29.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox29.TabIndex = 46;
             pictureBox29.TabStop = false;
@@ -395,9 +424,10 @@
             // pictureBox30
             // 
             pictureBox30.Image = Properties.Resources.azulMar;
-            pictureBox30.Location = new Point(89, -5);
+            pictureBox30.Location = new Point(78, -4);
+            pictureBox30.Margin = new Padding(3, 2, 3, 2);
             pictureBox30.Name = "pictureBox30";
-            pictureBox30.Size = new Size(45, 77);
+            pictureBox30.Size = new Size(39, 58);
             pictureBox30.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox30.TabIndex = 47;
             pictureBox30.TabStop = false;
@@ -405,9 +435,10 @@
             // pictureBox37
             // 
             pictureBox37.Image = Properties.Resources.UAA;
-            pictureBox37.Location = new Point(510, 294);
+            pictureBox37.Location = new Point(512, 295);
+            pictureBox37.Margin = new Padding(3, 2, 3, 2);
             pictureBox37.Name = "pictureBox37";
-            pictureBox37.Size = new Size(175, 133);
+            pictureBox37.Size = new Size(202, 125);
             pictureBox37.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox37.TabIndex = 55;
             pictureBox37.TabStop = false;
@@ -423,39 +454,35 @@
             panel1.Controls.Add(pictureBox17);
             panel1.Controls.Add(pictureBox21);
             panel1.Controls.Add(pictureBox19);
-            panel1.Location = new Point(557, 51);
+            panel1.Location = new Point(628, 153);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(584, 602);
+            panel1.Size = new Size(511, 494);
             panel1.TabIndex = 56;
             // 
             // labelFecha
             // 
-            labelFecha.AutoSize = true;
-            labelFecha.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            labelFecha.ForeColor = Color.SlateGray;
-            labelFecha.Location = new Point(336, 567);
+            labelFecha.Location = new Point(0, 0);
             labelFecha.Name = "labelFecha";
-            labelFecha.Size = new Size(0, 21);
-            labelFecha.TabIndex = 45;
+            labelFecha.Size = new Size(100, 23);
+            labelFecha.TabIndex = 0;
             // 
             // pictureBox38
             // 
             pictureBox38.Image = Properties.Resources.azulCielo;
-            pictureBox38.Location = new Point(845, 225);
+            pictureBox38.Location = new Point(739, 169);
+            pictureBox38.Margin = new Padding(3, 2, 3, 2);
             pictureBox38.Name = "pictureBox38";
-            pictureBox38.Size = new Size(45, 79);
+            pictureBox38.Size = new Size(39, 59);
             pictureBox38.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox38.TabIndex = 43;
             pictureBox38.TabStop = false;
             // 
             // labelHora
             // 
-            labelHora.AutoSize = true;
-            labelHora.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            labelHora.ForeColor = SystemColors.Highlight;
-            labelHora.Location = new Point(452, 533);
+            labelHora.Location = new Point(0, 0);
             labelHora.Name = "labelHora";
-            labelHora.Size = new Size(0, 18);
+            labelHora.Size = new Size(100, 23);
             labelHora.TabIndex = 44;
             // 
             // panel2
@@ -467,17 +494,114 @@
             panel2.Controls.Add(pictureBox22);
             panel2.Controls.Add(pictureBox28);
             panel2.Controls.Add(pictureBox29);
-            panel2.Location = new Point(40, 47);
+            panel2.Location = new Point(35, 53);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(511, 606);
+            panel2.Size = new Size(536, 635);
             panel2.TabIndex = 57;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Gainsboro;
+            panel3.Controls.Add(labelHrs);
+            panel3.Controls.Add(labelFech);
+            panel3.Controls.Add(btnMinimized);
+            panel3.Controls.Add(btnMaximized);
+            panel3.Controls.Add(btnClose);
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1184, 24);
+            panel3.TabIndex = 58;
+            // 
+            // labelHrs
+            // 
+            labelHrs.AutoSize = true;
+            labelHrs.Dock = DockStyle.Left;
+            labelHrs.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelHrs.ForeColor = Color.Brown;
+            labelHrs.ImageAlign = ContentAlignment.MiddleRight;
+            labelHrs.Location = new Point(54, 0);
+            labelHrs.Name = "labelHrs";
+            labelHrs.Size = new Size(43, 18);
+            labelHrs.TabIndex = 8;
+            labelHrs.Text = "Hora";
+            // 
+            // labelFech
+            // 
+            labelFech.AutoSize = true;
+            labelFech.Dock = DockStyle.Left;
+            labelFech.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelFech.ForeColor = Color.Brown;
+            labelFech.ImageAlign = ContentAlignment.MiddleRight;
+            labelFech.Location = new Point(0, 0);
+            labelFech.Name = "labelFech";
+            labelFech.Size = new Size(54, 18);
+            labelFech.TabIndex = 7;
+            labelFech.Text = "Fecha";
+            // 
+            // btnMinimized
+            // 
+            btnMinimized.BackColor = Color.DarkCyan;
+            btnMinimized.Dock = DockStyle.Right;
+            btnMinimized.FlatAppearance.BorderSize = 0;
+            btnMinimized.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnMinimized.FlatStyle = FlatStyle.Flat;
+            btnMinimized.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMinimized.ForeColor = Color.White;
+            btnMinimized.Location = new Point(1109, 0);
+            btnMinimized.Margin = new Padding(0);
+            btnMinimized.Name = "btnMinimized";
+            btnMinimized.Size = new Size(25, 24);
+            btnMinimized.TabIndex = 2;
+            btnMinimized.Text = "-";
+            btnMinimized.UseVisualStyleBackColor = false;
+            btnMinimized.Click += btnMinimized_Click;
+            // 
+            // btnMaximized
+            // 
+            btnMaximized.BackColor = Color.DarkCyan;
+            btnMaximized.Dock = DockStyle.Right;
+            btnMaximized.FlatAppearance.BorderSize = 0;
+            btnMaximized.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnMaximized.FlatStyle = FlatStyle.Flat;
+            btnMaximized.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnMaximized.ForeColor = Color.White;
+            btnMaximized.Location = new Point(1134, 0);
+            btnMaximized.Margin = new Padding(0);
+            btnMaximized.Name = "btnMaximized";
+            btnMaximized.Size = new Size(25, 24);
+            btnMaximized.TabIndex = 1;
+            btnMaximized.Text = "O";
+            btnMaximized.UseVisualStyleBackColor = false;
+            btnMaximized.Click += btnMaximized_Click;
+            // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.DarkCyan;
+            btnClose.Dock = DockStyle.Right;
+            btnClose.FlatAppearance.BorderSize = 0;
+            btnClose.FlatAppearance.MouseDownBackColor = Color.FromArgb(252, 97, 97);
+            btnClose.FlatAppearance.MouseOverBackColor = Color.FromArgb(252, 97, 97);
+            btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnClose.ForeColor = Color.White;
+            btnClose.Location = new Point(1159, 0);
+            btnClose.Margin = new Padding(0);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(25, 24);
+            btnClose.TabIndex = 0;
+            btnClose.Text = "X";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
             // 
             // Portada
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1182, 703);
+            ClientSize = new Size(1184, 711);
+            Controls.Add(panel3);
             Controls.Add(pictureBox37);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -500,6 +624,8 @@
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Controls.Add(panel2);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Portada";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -529,9 +655,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox30).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox37).EndInit();
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox38).EndInit();
             panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -574,5 +701,11 @@
         private Panel panel2;
         private Label labelFecha;
         private Label labelHora;
+        private Panel panel3;
+        private Label labelHrs;
+        private Label labelFech;
+        private Button btnMinimized;
+        private Button btnMaximized;
+        private Button btnClose;
     }
 }

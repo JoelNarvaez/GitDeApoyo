@@ -13,8 +13,9 @@ namespace WinFormLogin
             txtContra.Leave += txtLeave;
             btnEntrar.MouseEnter += btnMouseEnter;
             btnEntrar.MouseLeave += btnMouseLeave;
+            labelHora.Text = DateTime.Now.ToLongTimeString();
+            labelFech.Text = DateTime.Now.ToLongDateString();
 
-            personDiseño();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -101,82 +102,67 @@ namespace WinFormLogin
             }
         }
 
-        private void btnIniciar_Click(object sender, EventArgs e)
+        private void btnEntrar_Click_1(object sender, EventArgs e)
         {
-            if (!timer1.Enabled)
-            {
-                pContenedor.Visible = true;
-                timer1.Start();
-            }
+            MessageBox.Show("si");
+            string username = txtUsu.Text;
+            string password = txtContra.Text;
+
+            BD bd = new BD();
+            bd.Login(username, password);
         }
 
-        private void personDiseño()
+        private void btnMinimized_Click_1(object sender, EventArgs e)
         {
-            panelOpc.Visible = false;
+
+            this.WindowState = FormWindowState.Minimized;
         }
 
-        private void ocultar()
+        private void btnMaximized_Click_1(object sender, EventArgs e)
         {
-            if (panelOpc.Visible == true)
-            {
-                panelOpc.Visible = false;
-            }
-        }
-
-        private void mostrar(Panel opc)
-        {
-            if (opc.Visible == false)
-            {
-                ocultar();
-                opc.Visible = true;
-            }
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
             else
-            {
-                opc.Visible = false;
-            }
+                this.WindowState = FormWindowState.Normal;
         }
 
-        private void pPrincipal_Paint(object sender, PaintEventArgs e)
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void btnOpcion_Click(object sender, EventArgs e)
+        private void buttonMinCont_Click_1(object sender, EventArgs e)
         {
-            mostrar(panelOpc);
+            this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnUsu_Click(object sender, EventArgs e)
+        private void buttonMaxCont_Click_1(object sender, EventArgs e)
         {
-            if (!timer1.Enabled)
-            {
-                pContenedor.Visible = true;
-                timer1.Start();
-            }
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
         }
 
-        private void btnAdmin_Click(object sender, EventArgs e)
+        private void buttonCloseCont_Click_1(object sender, EventArgs e)
         {
-            if (!timer1.Enabled)
-            {
-                pContenedor.Visible = true;
-                timer1.Start();
-            }
+            Application.Exit();
         }
 
 
-        private void btnInv_Click_1(object sender, EventArgs e)
+        private void botonRedondo2_Click(object sender, EventArgs e)
         {
             if (!timer1.Enabled)
             {
                 pContenedor.Visible = true;
                 timer1.Start();
+                panel4.Visible = false;
             }
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
         }
     }
+
+
+
+
+
 }
