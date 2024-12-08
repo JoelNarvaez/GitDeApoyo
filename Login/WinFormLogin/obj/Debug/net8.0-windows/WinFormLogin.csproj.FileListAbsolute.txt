@@ -53,3 +53,6 @@ C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Logi
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\projectM.pdb
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.AssemblyReference.cache
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormL.903AE1BB.Up2Date
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\Guna.UI2.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\System.Management.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll

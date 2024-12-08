@@ -16,7 +16,7 @@ namespace WinFormLogin
         // Fields
         private int borderSize = 3;
         private int borderRadius = 30;
-        private Color borderColor = Color.DeepSkyBlue;
+        private Color borderColor = Color.DarkGray;
 
         // Properties
         [Category("Custom Panel")]
@@ -94,7 +94,7 @@ namespace WinFormLogin
             {
                 using (GraphicsPath pathSurface = GetFigurePath(rectSurface, borderRadius))
                 using (GraphicsPath pathBorder = GetFigurePath(rectBorder, borderRadius - borderSize))
-                using (Pen penBorder = new Pen(Color.DeepSkyBlue, borderSize))
+                using (Pen penBorder = new Pen(borderColor, borderSize))
                 {
                     e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                     // Superficie del panel

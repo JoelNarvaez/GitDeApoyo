@@ -7,21 +7,21 @@ namespace WinFormLogin
         public FormLogin()
         {
             InitializeComponent();
-            txtUsu.Enter += txtEnter;
-            txtUsu.Leave += txtLeave;
-            txtContra.Enter += txtEnter;
-            txtContra.Leave += txtLeave;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            txtUsuario.Enter += txtEnter;
+            txtUsuario.Leave += txtLeave;
+            txtContrasena.Enter += txtEnter;
+            txtContrasena.Leave += txtLeave;
             btnEntrar.MouseEnter += btnMouseEnter;
             btnEntrar.MouseLeave += btnMouseLeave;
-            labelHora.Text = DateTime.Now.ToLongTimeString();
-            labelFech.Text = DateTime.Now.ToLongDateString();
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             pContenedor.Visible = false;
             pPrincipal.Visible = true;
+            labelFecha.Text = DateTime.Now.ToLongDateString();
+            labelHora.Text = DateTime.Now.ToLongTimeString();
         }
 
         private void btnMouseEnter(object sender, EventArgs e)
@@ -91,7 +91,6 @@ namespace WinFormLogin
             else
             {
                 pContenedor.Left -= 10;
-                pContra.BringToFront();
 
                 if (pContenedor.Left <= 0)
                 {
@@ -100,16 +99,6 @@ namespace WinFormLogin
                     controlTimer = false;
                 }
             }
-        }
-
-        private void btnEntrar_Click_1(object sender, EventArgs e)
-        {
-            MessageBox.Show("si");
-            string username = txtUsu.Text;
-            string password = txtContra.Text;
-
-            BD bd = new BD();
-            bd.Login(username, password);
         }
 
         private void btnMinimized_Click_1(object sender, EventArgs e)
@@ -126,23 +115,6 @@ namespace WinFormLogin
                 this.WindowState = FormWindowState.Normal;
         }
 
-        private void btnClose_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void buttonMinCont_Click_1(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void buttonMaxCont_Click_1(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
-            else
-                this.WindowState = FormWindowState.Normal;
-        }
 
         private void buttonCloseCont_Click_1(object sender, EventArgs e)
         {
@@ -156,13 +128,58 @@ namespace WinFormLogin
             {
                 pContenedor.Visible = true;
                 timer1.Start();
-                panel4.Visible = false;
             }
         }
+
+        private void btnEntrar_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("si");
+            string username = txtUsuario.Text;
+            string password = txtContrasena.Text;
+
+            BD bd = new BD(validoOno);
+            bd.Login(username, password);
+            bd.ActualizarTexto("Usuario o Contraseña invalidos");
+            bd.Disconnect();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            txtContrasena.UseSystemPasswordChar = !txtContrasena.UseSystemPasswordChar;
+        }
+
+
+        private void btnMaximized_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+
+        }
+
+        private void horaFecha_Tick(object sender, EventArgs e)
+        {
+
+            labelFecha.Text = DateTime.Now.ToLongDateString();
+            labelHora.Text = DateTime.Now.ToLongTimeString();
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimized_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
-
-
-
-
-
 }
+
+
+
+
+
+

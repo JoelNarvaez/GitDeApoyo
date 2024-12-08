@@ -130,8 +130,8 @@ namespace WinFormsPortada2
                         break;
                 }
             }
-            labelHrs.Text = DateTime.Now.ToLongTimeString();
-            labelFech.Text = DateTime.Now.ToLongDateString();
+            labelH.Text = DateTime.Now.ToLongTimeString();
+            labelF.Text = DateTime.Now.ToLongDateString();
         }
 
         private void pictureBox37_Click(object sender, EventArgs e)
@@ -160,5 +160,7 @@ namespace WinFormsPortada2
             Application.Exit();
         }
 
+        
+        
     }
 }

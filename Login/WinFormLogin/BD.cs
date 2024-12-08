@@ -10,16 +10,17 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 using projectM;
 using Microsoft.VisualBasic.Logging;
 
-
 namespace WinFormLogin
 {
     public class BD
     {
         private MySqlConnection connection;
+        private Label validoOno;
 
-        public BD()
+        public BD(Label valido)
         {
             this.Connect();
+            validoOno = valido;
         }
 
         public void Disconnect()
@@ -27,7 +28,6 @@ namespace WinFormLogin
             if (connection != null && connection.State == System.Data.ConnectionState.Open)
             {
                 connection.Close();
-                MessageBox.Show("Conexión cerrada correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -38,7 +38,6 @@ namespace WinFormLogin
             {
                 connection = new MySqlConnection(cadena);
                 connection.Open();
-                MessageBox.Show("Conexión establecida exitosamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -100,7 +99,16 @@ namespace WinFormLogin
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ActualizarTexto("Usuario o Contraseña Inválidos");
+            }
+        }
+
+
+        public void ActualizarTexto(string texto)
+        {
+            if (validoOno != null)
+            {
+                validoOno.Text = texto;
             }
         }
     }

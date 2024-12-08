@@ -62,16 +62,19 @@
             pictureBox30 = new PictureBox();
             pictureBox37 = new PictureBox();
             panel1 = new Panel();
-            labelFecha = new Label();
             pictureBox38 = new PictureBox();
             labelHora = new Label();
+            labelFecha = new Label();
             panel2 = new Panel();
             panel3 = new Panel();
-            labelHrs = new Label();
-            labelFech = new Label();
+            labelH = new Label();
+            labelF = new Label();
             btnMinimized = new Button();
             btnMaximized = new Button();
             btnClose = new Button();
+            pictureBox6 = new PictureBox();
+            label8 = new Label();
+            label12 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -100,6 +103,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox38).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // timer1
@@ -141,7 +145,8 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Myanmar Text", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(528, 445);
+            label4.ForeColor = Color.DeepPink;
+            label4.Location = new Point(512, 445);
             label4.Name = "label4";
             label4.Size = new Size(184, 56);
             label4.TabIndex = 3;
@@ -151,21 +156,21 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Palatino Linotype", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.Brown;
-            label3.Location = new Point(451, 126);
+            label3.Font = new Font("Century Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.BlueViolet;
+            label3.Location = new Point(447, 106);
             label3.Name = "label3";
-            label3.Size = new Size(342, 65);
+            label3.Size = new Size(350, 56);
             label3.TabIndex = 2;
             label3.Text = "NAVIGA elec.";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Montserrat Medium", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(358, 244);
+            label2.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(376, 246);
             label2.Name = "label2";
-            label2.Size = new Size(538, 33);
+            label2.Size = new Size(480, 28);
             label2.TabIndex = 1;
             label2.Text = "Profesora Dra. Georgina Salazar Partida ";
             // 
@@ -173,6 +178,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Black;
             label1.Location = new Point(426, 191);
             label1.Name = "label1";
             label1.Size = new Size(358, 44);
@@ -193,7 +199,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.marco_png;
-            pictureBox2.Location = new Point(12, 692);
+            pictureBox2.Location = new Point(12, 694);
             pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(1160, 8);
@@ -204,7 +210,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.marco_png;
-            pictureBox3.Location = new Point(1162, 26);
+            pictureBox3.Location = new Point(1174, 29);
             pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(10, 676);
@@ -215,7 +221,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.marco_png;
-            pictureBox4.Location = new Point(10, 29);
+            pictureBox4.Location = new Point(0, 26);
             pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(10, 481);
@@ -226,7 +232,7 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.marco_png;
-            pictureBox9.Location = new Point(1145, 490);
+            pictureBox9.Location = new Point(1157, 490);
             pictureBox9.Margin = new Padding(3, 2, 3, 2);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(27, 210);
@@ -237,7 +243,7 @@
             // pictureBox12
             // 
             pictureBox12.Image = Properties.Resources.marco_png;
-            pictureBox12.Location = new Point(12, 676);
+            pictureBox12.Location = new Point(12, 687);
             pictureBox12.Margin = new Padding(3, 2, 3, 2);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(286, 24);
@@ -270,7 +276,7 @@
             // pictureBox24
             // 
             pictureBox24.Image = Properties.Resources.marco_png;
-            pictureBox24.Location = new Point(12, 25);
+            pictureBox24.Location = new Point(0, 25);
             pictureBox24.Margin = new Padding(3, 2, 3, 2);
             pictureBox24.Name = "pictureBox24";
             pictureBox24.Size = new Size(27, 210);
@@ -281,7 +287,7 @@
             // pictureBox25
             // 
             pictureBox25.Image = Properties.Resources.marco_png;
-            pictureBox25.Location = new Point(1145, 42);
+            pictureBox25.Location = new Point(1157, 25);
             pictureBox25.Margin = new Padding(3, 2, 3, 2);
             pictureBox25.Name = "pictureBox25";
             pictureBox25.Size = new Size(27, 210);
@@ -292,7 +298,7 @@
             // pictureBox26
             // 
             pictureBox26.Image = Properties.Resources.marco_png;
-            pictureBox26.Location = new Point(10, 490);
+            pictureBox26.Location = new Point(0, 501);
             pictureBox26.Margin = new Padding(3, 2, 3, 2);
             pictureBox26.Name = "pictureBox26";
             pictureBox26.Size = new Size(27, 210);
@@ -306,7 +312,7 @@
             pictureBox5.Location = new Point(871, 25);
             pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(301, 24);
+            pictureBox5.Size = new Size(313, 24);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 31;
             pictureBox5.TabStop = false;
@@ -314,7 +320,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.marco_png;
-            pictureBox7.Location = new Point(886, 676);
+            pictureBox7.Location = new Point(898, 687);
             pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(286, 24);
@@ -325,7 +331,7 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.marco_png;
-            pictureBox8.Location = new Point(35, 25);
+            pictureBox8.Location = new Point(26, 26);
             pictureBox8.Margin = new Padding(3, 2, 3, 2);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(286, 24);
@@ -369,7 +375,7 @@
             // pictureBox16
             // 
             pictureBox16.Image = Properties.Resources.azulCielo;
-            pictureBox16.Location = new Point(138, 14);
+            pictureBox16.Location = new Point(136, 2);
             pictureBox16.Margin = new Padding(3, 2, 3, 2);
             pictureBox16.Name = "pictureBox16";
             pictureBox16.Size = new Size(34, 81);
@@ -446,7 +452,6 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(labelFecha);
             panel1.Controls.Add(pictureBox38);
             panel1.Controls.Add(labelHora);
             panel1.Controls.Add(pictureBox20);
@@ -454,18 +459,12 @@
             panel1.Controls.Add(pictureBox17);
             panel1.Controls.Add(pictureBox21);
             panel1.Controls.Add(pictureBox19);
-            panel1.Location = new Point(628, 153);
+            panel1.Controls.Add(labelFecha);
+            panel1.Location = new Point(720, 191);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(511, 494);
+            panel1.Size = new Size(436, 421);
             panel1.TabIndex = 56;
-            // 
-            // labelFecha
-            // 
-            labelFecha.Location = new Point(0, 0);
-            labelFecha.Name = "labelFecha";
-            labelFecha.Size = new Size(100, 23);
-            labelFecha.TabIndex = 0;
             // 
             // pictureBox38
             // 
@@ -485,6 +484,13 @@
             labelHora.Size = new Size(100, 23);
             labelHora.TabIndex = 44;
             // 
+            // labelFecha
+            // 
+            labelFecha.Location = new Point(16, 11);
+            labelFecha.Name = "labelFecha";
+            labelFecha.Size = new Size(100, 23);
+            labelFecha.TabIndex = 0;
+            // 
             // panel2
             // 
             panel2.BackColor = Color.Transparent;
@@ -497,48 +503,48 @@
             panel2.Location = new Point(35, 53);
             panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(536, 635);
+            panel2.Size = new Size(517, 630);
             panel2.TabIndex = 57;
             // 
             // panel3
             // 
             panel3.BackColor = Color.Gainsboro;
-            panel3.Controls.Add(labelHrs);
-            panel3.Controls.Add(labelFech);
+            panel3.Controls.Add(labelH);
+            panel3.Controls.Add(labelF);
             panel3.Controls.Add(btnMinimized);
             panel3.Controls.Add(btnMaximized);
             panel3.Controls.Add(btnClose);
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1184, 24);
+            panel3.Size = new Size(1185, 24);
             panel3.TabIndex = 58;
             // 
-            // labelHrs
+            // labelH
             // 
-            labelHrs.AutoSize = true;
-            labelHrs.Dock = DockStyle.Left;
-            labelHrs.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelHrs.ForeColor = Color.Brown;
-            labelHrs.ImageAlign = ContentAlignment.MiddleRight;
-            labelHrs.Location = new Point(54, 0);
-            labelHrs.Name = "labelHrs";
-            labelHrs.Size = new Size(43, 18);
-            labelHrs.TabIndex = 8;
-            labelHrs.Text = "Hora";
+            labelH.AutoSize = true;
+            labelH.Dock = DockStyle.Left;
+            labelH.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelH.ForeColor = Color.Brown;
+            labelH.ImageAlign = ContentAlignment.MiddleRight;
+            labelH.Location = new Point(54, 0);
+            labelH.Name = "labelH";
+            labelH.Size = new Size(43, 18);
+            labelH.TabIndex = 8;
+            labelH.Text = "Hora";
             // 
-            // labelFech
+            // labelF
             // 
-            labelFech.AutoSize = true;
-            labelFech.Dock = DockStyle.Left;
-            labelFech.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelFech.ForeColor = Color.Brown;
-            labelFech.ImageAlign = ContentAlignment.MiddleRight;
-            labelFech.Location = new Point(0, 0);
-            labelFech.Name = "labelFech";
-            labelFech.Size = new Size(54, 18);
-            labelFech.TabIndex = 7;
-            labelFech.Text = "Fecha";
+            labelF.AutoSize = true;
+            labelF.Dock = DockStyle.Left;
+            labelF.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelF.ForeColor = Color.Brown;
+            labelF.ImageAlign = ContentAlignment.MiddleRight;
+            labelF.Location = new Point(0, 0);
+            labelF.Name = "labelF";
+            labelF.Size = new Size(54, 18);
+            labelF.TabIndex = 7;
+            labelF.Text = "Fecha";
             // 
             // btnMinimized
             // 
@@ -549,7 +555,7 @@
             btnMinimized.FlatStyle = FlatStyle.Flat;
             btnMinimized.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMinimized.ForeColor = Color.White;
-            btnMinimized.Location = new Point(1109, 0);
+            btnMinimized.Location = new Point(1110, 0);
             btnMinimized.Margin = new Padding(0);
             btnMinimized.Name = "btnMinimized";
             btnMinimized.Size = new Size(25, 24);
@@ -567,7 +573,7 @@
             btnMaximized.FlatStyle = FlatStyle.Flat;
             btnMaximized.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMaximized.ForeColor = Color.White;
-            btnMaximized.Location = new Point(1134, 0);
+            btnMaximized.Location = new Point(1135, 0);
             btnMaximized.Margin = new Padding(0);
             btnMaximized.Name = "btnMaximized";
             btnMaximized.Size = new Size(25, 24);
@@ -586,7 +592,7 @@
             btnClose.FlatStyle = FlatStyle.Flat;
             btnClose.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnClose.ForeColor = Color.White;
-            btnClose.Location = new Point(1159, 0);
+            btnClose.Location = new Point(1160, 0);
             btnClose.Margin = new Padding(0);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(25, 24);
@@ -595,12 +601,49 @@
             btnClose.UseVisualStyleBackColor = false;
             btnClose.Click += btnClose_Click;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.NavigaLogo;
+            pictureBox6.Location = new Point(1039, 52);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(117, 97);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 59;
+            pictureBox6.TabStop = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(871, 53);
+            label8.Name = "label8";
+            label8.Size = new Size(193, 23);
+            label8.TabIndex = 63;
+            label8.Text = "Conectate al futuro,";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.DeepPink;
+            label12.Location = new Point(976, 82);
+            label12.Name = "label12";
+            label12.Size = new Size(57, 25);
+            label12.TabIndex = 72;
+            label12.Text = "HOY";
+            // 
             // Portada
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.White;
-            ClientSize = new Size(1184, 711);
+            ClientSize = new Size(1185, 714);
+            Controls.Add(label12);
+            Controls.Add(label8);
+            Controls.Add(pictureBox6);
             Controls.Add(panel3);
             Controls.Add(pictureBox37);
             Controls.Add(label7);
@@ -622,8 +665,8 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(panel1);
             Controls.Add(panel2);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Portada";
@@ -659,6 +702,7 @@
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -702,10 +746,13 @@
         private Label labelFecha;
         private Label labelHora;
         private Panel panel3;
-        private Label labelHrs;
-        private Label labelFech;
+        private Label labelH;
+        private Label labelF;
         private Button btnMinimized;
         private Button btnMaximized;
         private Button btnClose;
+        private PictureBox pictureBox6;
+        private Label label8;
+        private Label label12;
     }
 }

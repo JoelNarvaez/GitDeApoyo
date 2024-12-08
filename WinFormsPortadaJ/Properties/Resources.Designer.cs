@@ -83,16 +83,6 @@ namespace WinFormsPortada2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cloud {
-            get {
-                object obj = ResourceManager.GetObject("cloud", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap marco_png {
             get {
                 object obj = ResourceManager.GetObject("marco.png", resourceCulture);
@@ -103,9 +93,9 @@ namespace WinFormsPortada2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap puddle {
+        internal static System.Drawing.Bitmap MarcoMorado {
             get {
-                object obj = ResourceManager.GetObject("puddle", resourceCulture);
+                object obj = ResourceManager.GetObject("MarcoMorado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +103,9 @@ namespace WinFormsPortada2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap rain_L {
+        internal static System.Drawing.Bitmap NavigaLogo {
             get {
-                object obj = ResourceManager.GetObject("rain_L", resourceCulture);
+                object obj = ResourceManager.GetObject("NavigaLogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +113,9 @@ namespace WinFormsPortada2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Screenshot_2024_11_25_203822 {
+        internal static System.Drawing.Bitmap Rosa {
             get {
-                object obj = ResourceManager.GetObject("Screenshot 2024-11-25 203822", resourceCulture);
+                object obj = ResourceManager.GetObject("Rosa", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
