@@ -75,6 +75,7 @@
             pictureBox6 = new PictureBox();
             label8 = new Label();
             label12 = new Label();
+            pictureBox10 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -104,6 +105,7 @@
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             SuspendLayout();
             // 
             // timer1
@@ -517,7 +519,7 @@
             panel3.Dock = DockStyle.Top;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1185, 24);
+            panel3.Size = new Size(1184, 24);
             panel3.TabIndex = 58;
             // 
             // labelH
@@ -555,7 +557,7 @@
             btnMinimized.FlatStyle = FlatStyle.Flat;
             btnMinimized.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMinimized.ForeColor = Color.White;
-            btnMinimized.Location = new Point(1110, 0);
+            btnMinimized.Location = new Point(1109, 0);
             btnMinimized.Margin = new Padding(0);
             btnMinimized.Name = "btnMinimized";
             btnMinimized.Size = new Size(25, 24);
@@ -573,7 +575,7 @@
             btnMaximized.FlatStyle = FlatStyle.Flat;
             btnMaximized.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMaximized.ForeColor = Color.White;
-            btnMaximized.Location = new Point(1135, 0);
+            btnMaximized.Location = new Point(1134, 0);
             btnMaximized.Margin = new Padding(0);
             btnMaximized.Name = "btnMaximized";
             btnMaximized.Size = new Size(25, 24);
@@ -592,7 +594,7 @@
             btnClose.FlatStyle = FlatStyle.Flat;
             btnClose.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnClose.ForeColor = Color.White;
-            btnClose.Location = new Point(1160, 0);
+            btnClose.Location = new Point(1159, 0);
             btnClose.Margin = new Padding(0);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(25, 24);
@@ -633,6 +635,17 @@
             label12.TabIndex = 72;
             label12.Text = "HOY";
             // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = Properties.Resources.AudioImagen;
+            pictureBox10.Location = new Point(1039, 596);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(117, 87);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox10.TabIndex = 74;
+            pictureBox10.TabStop = false;
+            pictureBox10.Click += pictureBox10_Click;
+            // 
             // Portada
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -640,7 +653,8 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.White;
-            ClientSize = new Size(1185, 714);
+            ClientSize = new Size(1184, 710);
+            Controls.Add(pictureBox10);
             Controls.Add(label12);
             Controls.Add(label8);
             Controls.Add(pictureBox6);
@@ -703,6 +717,7 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -754,5 +769,6 @@
         private PictureBox pictureBox6;
         private Label label8;
         private Label label12;
+        private PictureBox pictureBox10;
     }
 }

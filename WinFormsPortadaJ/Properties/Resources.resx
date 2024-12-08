@@ -121,22 +121,28 @@
   <data name="marco.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marco.png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="azulCielo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\azulCielo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="azulMar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\azulMar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UAA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UAA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MarcoMorado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MarcoMorado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="azulCielo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\azulCielo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rosa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="musicaIntro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musicaIntro.wav;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UAA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UAA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="azulMar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\azulMar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NavigaLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NavigaLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AudioImagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AudioImagen.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

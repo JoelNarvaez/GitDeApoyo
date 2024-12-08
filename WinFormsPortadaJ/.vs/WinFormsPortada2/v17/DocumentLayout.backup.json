@@ -7,30 +7,8 @@
       "RelativeMoniker": "D:0:0:{064B96C5-7596-4EB6-9DCE-1FC033C636F3}|WinFormsPortada2.csproj|solutionrelative:portada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F89B8807-D5A7-41B6-A529-47DFF99542CB}|..\\Login\\WinFormLogin\\WinFormLogin.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\login\\winformlogin\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{064B96C5-7596-4EB6-9DCE-1FC033C636F3}|WinFormsPortada2.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\winformsportadaj\\portada.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{064B96C5-7596-4EB6-9DCE-1FC033C636F3}|WinFormsPortada2.csproj|solutionrelative:portada.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F89B8807-D5A7-41B6-A529-47DFF99542CB}|..\\Login\\WinFormLogin\\WinFormLogin.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\login\\winformlogin\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F89B8807-D5A7-41B6-A529-47DFF99542CB}|..\\Login\\WinFormLogin\\WinFormLogin.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\login\\winformlogin\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{064B96C5-7596-4EB6-9DCE-1FC033C636F3}|WinFormsPortada2.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\winformsportadaj\\portada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{064B96C5-7596-4EB6-9DCE-1FC033C636F3}|WinFormsPortada2.csproj|solutionrelative:portada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F89B8807-D5A7-41B6-A529-47DFF99542CB}|..\\Login\\WinFormLogin\\WinFormLogin.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\login\\winformlogin\\bd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,70 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
-              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
-              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T01:18:42.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormUsuario.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
-              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
-              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs [Design]",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T01:18:31.131Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormLogin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\Login\\WinFormLogin\\FormLogin.Designer.cs",
-              "RelativeDocumentMoniker": "..\\Login\\WinFormLogin\\FormLogin.Designer.cs",
-              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\Login\\WinFormLogin\\FormLogin.Designer.cs",
-              "RelativeToolTip": "..\\Login\\WinFormLogin\\FormLogin.Designer.cs",
-              "ViewState": "AgIAABICAAAAAAAAAAD4vx4CAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T01:15:11.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Portada.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\Portada.Designer.cs",
-              "RelativeDocumentMoniker": "Portada.Designer.cs",
-              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\Portada.Designer.cs",
-              "RelativeToolTip": "Portada.Designer.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAkwM8AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T23:51:09.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Portada.cs",
               "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\Portada.cs",
               "RelativeDocumentMoniker": "Portada.cs",
               "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\Portada.cs",
               "RelativeToolTip": "Portada.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAowBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T23:08:29.559Z",
+              "WhenOpened": "2024-12-08T03:05:02.731Z",
               "EditorCaption": ""
             },
             {
@@ -115,46 +42,8 @@
               "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\Portada.cs [Design]",
               "RelativeToolTip": "Portada.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T23:03:56.508Z",
+              "WhenOpened": "2024-12-08T03:04:16.08Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BD.cs",
-              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\Login\\WinFormLogin\\BD.cs",
-              "RelativeDocumentMoniker": "..\\Login\\WinFormLogin\\BD.cs",
-              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\Login\\WinFormLogin\\BD.cs",
-              "RelativeToolTip": "..\\Login\\WinFormLogin\\BD.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAlwCcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T03:09:13.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\Login\\WinFormLogin\\FormLogin.cs",
-              "RelativeDocumentMoniker": "..\\Login\\WinFormLogin\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\Login\\WinFormLogin\\FormLogin.cs [Design]",
-              "RelativeToolTip": "..\\Login\\WinFormLogin\\FormLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T02:47:12.94Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\Login\\WinFormLogin\\FormLogin.cs",
-              "RelativeDocumentMoniker": "..\\Login\\WinFormLogin\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\Login\\WinFormLogin\\FormLogin.cs",
-              "RelativeToolTip": "..\\Login\\WinFormLogin\\FormLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T02:47:09.373Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -59,6 +59,3 @@ C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinF
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\projectM.dll
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\projectM.pdb
-C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\Guna.UI2.dll
-C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\System.Management.dll
-C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\runtimes\win\lib\net7.0\System.Management.dll

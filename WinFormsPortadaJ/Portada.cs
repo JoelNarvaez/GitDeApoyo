@@ -1,10 +1,17 @@
+using System.Media;
+using System.Numerics;
 using System.Runtime.InteropServices;
 using WinFormLogin;
 
+
 namespace WinFormsPortada2
 {
+
     public partial class Portada : Form
     {
+        private SoundPlayer player;
+        private bool isPlaying = false; // Variable de estado
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
                 int left,
@@ -22,6 +29,8 @@ namespace WinFormsPortada2
         public Portada()
         {
             InitializeComponent();
+            player = new SoundPlayer(new MemoryStream(Properties.Resources.musicaIntro));
+            player.PlayLooping();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 9, 9));
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
@@ -159,8 +168,19 @@ namespace WinFormsPortada2
         {
             Application.Exit();
         }
-
-        
-        
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            if (isPlaying)
+            {
+                player.Stop();
+                isPlaying = false;
+                
+            }
+            else
+            {
+                player.PlayLooping();
+                isPlaying = true;
+            }
+        }
     }
 }
