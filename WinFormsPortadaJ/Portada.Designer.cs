@@ -74,8 +74,8 @@
             btnClose = new Button();
             pictureBox6 = new PictureBox();
             label8 = new Label();
-            label12 = new Label();
             pictureBox10 = new PictureBox();
+            label12 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -624,17 +624,6 @@
             label8.TabIndex = 63;
             label8.Text = "Conectate al futuro,";
             // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.DeepPink;
-            label12.Location = new Point(976, 82);
-            label12.Name = "label12";
-            label12.Size = new Size(57, 25);
-            label12.TabIndex = 72;
-            label12.Text = "HOY";
-            // 
             // pictureBox10
             // 
             pictureBox10.Image = Properties.Resources.AudioImagen;
@@ -645,6 +634,17 @@
             pictureBox10.TabIndex = 74;
             pictureBox10.TabStop = false;
             pictureBox10.Click += pictureBox10_Click;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.DeepPink;
+            label12.Location = new Point(976, 82);
+            label12.Name = "label12";
+            label12.Size = new Size(57, 25);
+            label12.TabIndex = 72;
+            label12.Text = "HOY";
             // 
             // Portada
             // 
@@ -768,7 +768,7 @@
         private Button btnClose;
         private PictureBox pictureBox6;
         private Label label8;
-        private Label label12;
         private PictureBox pictureBox10;
+        private Label label12;
     }
 }
