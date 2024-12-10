@@ -478,6 +478,9 @@
       "projectM/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MySql.Data": "9.1.0"
+        },
         "compile": {
           "bin/placeholder/projectM.dll": {}
         },
@@ -1649,24 +1652,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joeln\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\marie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
+      "projectUniqueName": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
       "projectName": "WinFormsPortada2",
-      "projectPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
-      "packagesPath": "C:\\Users\\joeln\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\obj\\",
+      "projectPath": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
+      "packagesPath": "C:\\Users\\marie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\WinFormsPortadaJ\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\joeln\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\marie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1674,15 +1672,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\Login\\WinFormLogin\\WinFormLogin.csproj": {
-              "projectPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\Login\\WinFormLogin\\WinFormLogin.csproj"
+            "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\Login\\WinFormLogin\\WinFormLogin.csproj": {
+              "projectPath": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\Login\\WinFormLogin\\WinFormLogin.csproj"
             }
           }
         }

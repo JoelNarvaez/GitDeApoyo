@@ -53,3 +53,41 @@ C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Logi
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\projectM.pdb
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.AssemblyReference.cache
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormL.903AE1BB.Up2Date
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\projectM.deps.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\projectM.runtimeconfig.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\projectM.exe
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.exe
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.deps.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.runtimeconfig.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\WinFormLogin.pdb
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\projectM.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\bin\Debug\net8.0-windows\projectM.pdb
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.AssemblyReference.cache
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.FormLogin.resources
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.Properties.Resources.resources
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.GenerateResource.cache
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.AssemblyInfoInputs.cache
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.AssemblyInfo.cs
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.csproj.CoreCompileInputs.cache
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.sourcelink.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormL.903AE1BB.Up2Date
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\refint\WinFormLogin.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.pdb
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.genruntimeconfig.cache
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\ref\WinFormLogin.dll

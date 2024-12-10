@@ -39,7 +39,6 @@
             btnSidebar = new Button();
             label4 = new Label();
             label3 = new Label();
-            buttonAdmin = new Button();
             label2 = new Label();
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
@@ -89,7 +88,6 @@
             panel3.Controls.Add(btnSidebar);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(label3);
-            panel3.Controls.Add(buttonAdmin);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(pictureBox2);
             panel3.Dock = DockStyle.Top;
@@ -130,7 +128,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(93, 101, 123);
+            label1.ForeColor = Color.FromArgb(0, 0, 192);
             label1.Location = new Point(75, 20);
             label1.Name = "label1";
             label1.Size = new Size(152, 19);
@@ -183,21 +181,11 @@
             label3.TabIndex = 7;
             label3.Text = "elec.";
             // 
-            // buttonAdmin
-            // 
-            buttonAdmin.Location = new Point(754, 11);
-            buttonAdmin.Name = "buttonAdmin";
-            buttonAdmin.Size = new Size(124, 41);
-            buttonAdmin.TabIndex = 7;
-            buttonAdmin.Text = "Admin";
-            buttonAdmin.UseVisualStyleBackColor = true;
-            buttonAdmin.Click += buttonAdmin_Click;
-            // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(32, 168, 225);
+            label2.ForeColor = Color.Magenta;
             label2.Location = new Point(63, 11);
             label2.Name = "label2";
             label2.Size = new Size(110, 28);
@@ -206,18 +194,18 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Image = Properties.Resources.NavigaLogo1;
             pictureBox2.Location = new Point(20, 10);
             pictureBox2.Margin = new Padding(0);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(40, 40);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(7, 40, 52);
+            panel2.BackColor = Color.Magenta;
             panel2.Controls.Add(labelHora);
             panel2.Controls.Add(labelFecha);
             panel2.Controls.Add(btnMinimized);
@@ -258,7 +246,7 @@
             // 
             // btnMinimized
             // 
-            btnMinimized.BackColor = Color.FromArgb(7, 40, 52);
+            btnMinimized.BackColor = Color.Magenta;
             btnMinimized.Dock = DockStyle.Right;
             btnMinimized.FlatAppearance.BorderSize = 0;
             btnMinimized.FlatAppearance.MouseDownBackColor = Color.Transparent;
@@ -276,7 +264,7 @@
             // 
             // btnMaximized
             // 
-            btnMaximized.BackColor = Color.FromArgb(7, 40, 52);
+            btnMaximized.BackColor = Color.Magenta;
             btnMaximized.Dock = DockStyle.Right;
             btnMaximized.FlatAppearance.BorderSize = 0;
             btnMaximized.FlatAppearance.MouseDownBackColor = Color.Transparent;
@@ -294,7 +282,7 @@
             // 
             // btnClose
             // 
-            btnClose.BackColor = Color.FromArgb(7, 40, 52);
+            btnClose.BackColor = Color.Magenta;
             btnClose.Dock = DockStyle.Right;
             btnClose.FlatAppearance.BorderSize = 0;
             btnClose.FlatAppearance.MouseDownBackColor = Color.FromArgb(252, 97, 97);
@@ -553,7 +541,6 @@
         private Panel panel4;
         private Button buttonCerrar;
         private Button btnPagaroComp;
-        private Button buttonAdmin;
         private Label labelFecha;
         private Label labelHora;
         private System.Windows.Forms.Timer HoraFecha;
