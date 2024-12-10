@@ -28,35 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(183, 224);
-            label1.Name = "label1";
-            label1.Size = new Size(372, 23);
-            label1.TabIndex = 0;
-            label1.Text = "Productos con las opciones de editarse";
             // 
             // Editar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            BackColor = Color.White;
+            ClientSize = new Size(1200, 660);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Editar";
             Text = "Editar";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
     }
 }

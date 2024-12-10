@@ -59,3 +59,46 @@ C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinF
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\projectM.dll
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\projectM.pdb
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinFormLogin.deps.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinFormLogin.runtimeconfig.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\projectM.deps.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\projectM.runtimeconfig.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\projectM.exe
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinFormLogin.exe
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinFormsPortada2.exe
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinFormsPortada2.deps.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinFormsPortada2.runtimeconfig.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinFormsPortada2.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinFormsPortada2.pdb
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\projectM.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinFormLogin.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinFormLogin.pdb
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\projectM.pdb
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.csproj.AssemblyReference.cache
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.Portada.resources
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.Properties.Resources.resources
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.csproj.GenerateResource.cache
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.AssemblyInfoInputs.cache
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.AssemblyInfo.cs
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.csproj.CoreCompileInputs.cache
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.sourcelink.json
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinForms.3D71F76E.Up2Date
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\refint\WinFormsPortada2.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.pdb
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.genruntimeconfig.cache
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\ref\WinFormsPortada2.dll

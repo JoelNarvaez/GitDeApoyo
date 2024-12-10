@@ -23,6 +23,14 @@ namespace projectM
         public FormAdmin()
         {
             InitializeComponent();
+            viewhome = new home()
+
+            {
+                MdiParent = this,
+                Dock = DockStyle.Fill
+            };
+
+            viewhome.Show();
         }
 
         private void btnDesp_Click(object sender, EventArgs e)

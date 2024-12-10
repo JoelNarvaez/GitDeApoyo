@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAdmin));
             panel1 = new Panel();
             panel3 = new Panel();
             btnPerifericos = new Button();
@@ -237,7 +236,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(32, 168, 225);
+            label2.ForeColor = Color.Indigo;
             label2.Location = new Point(997, 10);
             label2.Name = "label2";
             label2.Size = new Size(110, 28);
@@ -246,7 +245,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Image = Properties.Resources.NavigaLogo2;
             pictureBox2.Location = new Point(1151, 10);
             pictureBox2.Margin = new Padding(0);
             pictureBox2.Name = "pictureBox2";
@@ -257,13 +256,14 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.LightSteelBlue;
+            panel2.BackColor = Color.Indigo;
             panel2.Controls.Add(labelHora);
             panel2.Controls.Add(labelFecha);
             panel2.Controls.Add(buttonMin);
             panel2.Controls.Add(buttonMax);
             panel2.Controls.Add(buttonClose);
             panel2.Dock = DockStyle.Top;
+            panel2.ForeColor = Color.White;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(1200, 30);
@@ -274,7 +274,7 @@
             labelHora.AutoSize = true;
             labelHora.Dock = DockStyle.Left;
             labelHora.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelHora.ForeColor = Color.Navy;
+            labelHora.ForeColor = Color.White;
             labelHora.Location = new Point(54, 0);
             labelHora.Name = "labelHora";
             labelHora.Size = new Size(43, 18);
@@ -286,7 +286,7 @@
             labelFecha.AutoSize = true;
             labelFecha.Dock = DockStyle.Left;
             labelFecha.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelFecha.ForeColor = Color.Navy;
+            labelFecha.ForeColor = Color.White;
             labelFecha.Location = new Point(0, 0);
             labelFecha.Name = "labelFecha";
             labelFecha.Size = new Size(54, 18);

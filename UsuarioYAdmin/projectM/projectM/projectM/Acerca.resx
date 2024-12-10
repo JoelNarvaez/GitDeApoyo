@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Sobre Nosotros
+
+¡Bienvenido a NAVIGA!
+
+Somos tu recurso principal relacionado a productos electrónicos, nuestra misión es
+proporcionarte los productos mas inovadores, desde productos basicos hasta 
+elementos gaming para brindarte una experiencia agradable en el uso de tus equipos.
+
+Descubre más sobre nuestra historia, nuestra visión y las increíbles ofertas que tenemos para ti. </value>
+  </data>
 </root>

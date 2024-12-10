@@ -9,10 +9,23 @@ namespace projectM
         Perifericos viewPerifericos;
         Acerca viewAcerca;
         FormAdmin admin;
+        
         public FormUsuario()
         {
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            viewHome= new home()
+            
+                {
+                    MdiParent = this,
+                    Dock = DockStyle.Fill
+                };
+            
+            viewHome.Show();
+
+            admin = new FormAdmin();
+            admin.ShowDialog();
+
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -67,10 +80,7 @@ namespace projectM
                 {
                     sidebarExpand = false;
                     sidebarTransition.Stop();
-                    btnSignOut.Enabled = false;
-                    btnHome.Enabled = false;
-                    btnInfo.Enabled = false;
-                    btnSubMenu.Enabled = false;
+                    
                 }
             }
             else
@@ -80,10 +90,7 @@ namespace projectM
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();
-                    btnSignOut.Enabled = true;
-                    btnHome.Enabled = true;
-                    btnInfo.Enabled = true;
-                    btnSubMenu.Enabled = true;
+              
                 }
             }
         }

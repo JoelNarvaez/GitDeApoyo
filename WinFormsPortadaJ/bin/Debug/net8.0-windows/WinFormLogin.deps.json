@@ -206,6 +206,9 @@
         }
       },
       "projectM/1.0.0": {
+        "dependencies": {
+          "MySql.Data": "9.1.0"
+        },
         "runtime": {
           "projectM.dll": {
             "assemblyVersion": "1.0.0",
