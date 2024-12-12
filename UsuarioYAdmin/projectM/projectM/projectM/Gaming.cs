@@ -15,13 +15,21 @@ namespace projectM
     {
         List<productos> data;
         int margenX = 20, margenY=20;
-        int X=25, Y=50;
+        
         int ancho = 250, alto = 280;
         public Gaming()
         {
             InitializeComponent();
+            extraerLista();
+ 
+
+        }
+
+        public void extraerLista()
+        {
             ListaProductos obj = new ListaProductos();
             data = obj.crear();
+
             List<productos> gaming = new List<productos>();
             productos g = new productos();
 
@@ -32,14 +40,16 @@ namespace projectM
                     g = productos;
                     gaming.Add(g);
                 }
-                
+
             }
             mostrar(gaming);
+
         }
 
         public void mostrar(List<productos> gaming)
         {
-
+            this.Controls.Clear();
+            int X = 25, Y = 50;
             foreach (var productos in gaming)
             {
                 Panel panel = new Panel();

@@ -188,8 +188,9 @@ namespace projectM
 
         private void HoraFecha_Tick(object sender, EventArgs e)
         {
-            labelFecha.Text=DateTime.Now.ToLongDateString();
-            labelHora.Text=DateTime.Now.ToLongTimeString();
+            labelFecha.Text = DateTime.Now.ToLongDateString();
+            labelHora.Text = DateTime.Now.ToLongTimeString();
         }
+
     }
 }

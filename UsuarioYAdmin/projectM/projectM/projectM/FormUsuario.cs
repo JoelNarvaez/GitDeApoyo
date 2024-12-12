@@ -8,23 +8,19 @@ namespace projectM
         Gaming viewGaming;
         Perifericos viewPerifericos;
         Acerca viewAcerca;
-        FormAdmin admin;
-        
+
         public FormUsuario()
         {
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            viewHome= new home()
-            
-                {
-                    MdiParent = this,
-                    Dock = DockStyle.Fill
-                };
-            
-            viewHome.Show();
+            viewHome = new home()
 
-            admin = new FormAdmin();
-            admin.ShowDialog();
+            {
+                MdiParent = this,
+                Dock = DockStyle.Fill
+            };
+
+            viewHome.Show();
 
         }
 
@@ -80,7 +76,7 @@ namespace projectM
                 {
                     sidebarExpand = false;
                     sidebarTransition.Stop();
-                    
+
                 }
             }
             else
@@ -90,7 +86,7 @@ namespace projectM
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();
-              
+
                 }
             }
         }
@@ -145,7 +141,7 @@ namespace projectM
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -205,16 +201,17 @@ namespace projectM
             buttonCerrar.Visible = !buttonCerrar.Visible;
         }
 
-        private void buttonAdmin_Click(object sender, EventArgs e)
-        {
-            admin = new FormAdmin();
-            admin.ShowDialog();
-        }
+
 
         private void HoraFecha_Tick(object sender, EventArgs e)
         {
             labelHora.Text = DateTime.Now.ToLongTimeString();
-            labelFecha.Text= DateTime.Now.ToLongDateString();
+            labelFecha.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void buttonCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

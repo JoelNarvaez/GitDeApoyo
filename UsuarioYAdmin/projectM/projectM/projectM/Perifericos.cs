@@ -20,8 +20,14 @@ namespace projectM
         public Perifericos()
         {
             InitializeComponent();
+            extraerLista();
+        }
+
+        public void extraerLista()
+        {
             ListaProductos obj = new ListaProductos();
             data = obj.crear();
+
             List<productos> perifericos = new List<productos>();
             productos p = new productos();
 
@@ -35,12 +41,13 @@ namespace projectM
 
             }
             mostrar(perifericos);
-        }
 
+        }
 
         public void mostrar(List<productos> perifericos)
         {
-
+            this.Controls.Clear();
+            int X = 25, Y = 50;
             foreach (var productos in perifericos)
             {
                 Panel panel = new Panel();
