@@ -23,9 +23,6 @@ namespace projectM
             
             viewHome.Show();
 
-            admin = new FormAdmin();
-            admin.ShowDialog();
-
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
