@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using WinFormLogin;
 using ZstdSharp.Unsafe;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Microsoft.VisualBasic.Logging;
-using projectM;
 
-namespace WinFormLogin
+namespace projectM
 {
     public class BD
     {

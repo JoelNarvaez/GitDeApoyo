@@ -102,6 +102,8 @@ namespace projectM
         private void buttonCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+            FormLogin nuevoFormulario = new FormLogin();
+            nuevoFormulario.Show();
         }
 
         private void btnHome_Click(object sender, EventArgs e)

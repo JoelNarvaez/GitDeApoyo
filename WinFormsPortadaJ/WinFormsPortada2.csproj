@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Login\WinFormLogin\WinFormLogin.csproj" />
+    <ProjectReference Include="..\UsuarioYAdmin\projectM\projectM\projectM\projectM.csproj" />
   </ItemGroup>
 
   <ItemGroup>

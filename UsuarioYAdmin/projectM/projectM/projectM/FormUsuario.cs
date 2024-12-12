@@ -157,6 +157,8 @@ namespace projectM
         private void btnSignOut_Click(object sender, EventArgs e)
         {
             this.Close();
+            FormLogin nuevoFormulario = new FormLogin();
+            nuevoFormulario.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -227,6 +229,8 @@ namespace projectM
         private void buttonCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+            FormLogin nuevoFormulario = new FormLogin();
+            nuevoFormulario.Show();
         }
     }
 }

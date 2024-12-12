@@ -178,7 +178,7 @@
             btnDesp.FlatStyle = FlatStyle.Flat;
             btnDesp.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDesp.ForeColor = Color.FromArgb(93, 101, 123);
-            btnDesp.Location = new Point(117, 19);
+            btnDesp.Location = new Point(129, 19);
             btnDesp.Margin = new Padding(0);
             btnDesp.Name = "btnDesp";
             btnDesp.Size = new Size(25, 25);

@@ -102,9 +102,9 @@
             panel4.Controls.Add(label1);
             panel4.Controls.Add(pictureBox1);
             panel4.Dock = DockStyle.Right;
-            panel4.Location = new Point(933, 0);
+            panel4.Location = new Point(942, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(267, 60);
+            panel4.Size = new Size(258, 60);
             panel4.TabIndex = 10;
             // 
             // btnMenu
@@ -129,7 +129,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(0, 0, 192);
-            label1.Location = new Point(75, 20);
+            label1.Location = new Point(75, 23);
             label1.Name = "label1";
             label1.Size = new Size(152, 19);
             label1.TabIndex = 3;
@@ -139,7 +139,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.iconoUs;
-            pictureBox1.Location = new Point(32, 10);
+            pictureBox1.Location = new Point(23, 10);
             pictureBox1.Margin = new Padding(0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(40, 40);
