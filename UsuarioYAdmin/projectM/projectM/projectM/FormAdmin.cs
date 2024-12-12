@@ -18,6 +18,7 @@ namespace projectM
         Acerca viewacerca;
         Grafica viewgrafica;
         Editar vieweditar;
+        private string nombreUsuario;
 
         bool expandOpc = true;
         public FormAdmin()
@@ -64,6 +65,25 @@ namespace projectM
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        public FormAdmin(string nombreUsuario)
+        {
+            InitializeComponent();
+            this.nombreUsuario = nombreUsuario;
+            this.Load += FormAdmin_Load;
+            viewhome = new home()
+
+            {
+                MdiParent = this,
+                Dock = DockStyle.Fill
+            };
+
+            viewhome.Show();
+        }
+        private void FormAdmin_Load(object sender, EventArgs e)
+        {
+            labelAdmin.Text = nombreUsuario;
         }
 
         private void buttonMax_Click(object sender, EventArgs e)

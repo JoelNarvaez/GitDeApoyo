@@ -8,6 +8,7 @@ namespace projectM
         Gaming viewGaming;
         Perifericos viewPerifericos;
         Acerca viewAcerca;
+        private string nombreUsuario;
 
         public FormUsuario()
         {
@@ -24,6 +25,20 @@ namespace projectM
 
         }
 
+        public FormUsuario(string nombreUsuario)
+        {
+            InitializeComponent();
+            this.nombreUsuario = nombreUsuario;
+            viewHome = new home()
+
+            {
+                MdiParent = this,
+                Dock = DockStyle.Fill
+            };
+
+            viewHome.Show();
+        }
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -34,7 +49,7 @@ namespace projectM
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            label1.Text = nombreUsuario;
         }
 
         private void subMenuTransition_Tick(object sender, EventArgs e)

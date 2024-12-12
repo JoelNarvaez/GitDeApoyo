@@ -7,8 +7,8 @@ using MySql.Data.MySqlClient;
 using WinFormLogin;
 using ZstdSharp.Unsafe;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-using projectM;
 using Microsoft.VisualBasic.Logging;
+using projectM;
 
 namespace WinFormLogin
 {
@@ -45,51 +45,56 @@ namespace WinFormLogin
             }
         }
 
-        public (bool, string) consultaLogin(string username, string password)
+        public (bool, string, string) consultaLogin(string username, string password)
         {
             bool existe = false;
             string tipoUsuario = string.Empty;
+            string nombreUsuario = string.Empty;
 
             try
             {
-                string query = "SELECT tipo FROM Personas WHERE usuario = @username AND contraseña = @password";
+                string query = "SELECT tipo, nombre FROM Personas WHERE usuario = @username AND contraseña = @password";
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@username", username);
                 cmd.Parameters.AddWithValue("@password", password);
-                var result = cmd.ExecuteScalar();
+                MySqlDataReader reader = cmd.ExecuteReader();
 
-                if (result != null)
+                if (reader.Read())
                 {
                     existe = true;
-                    tipoUsuario = result.ToString();
+                    tipoUsuario = reader["tipo"].ToString();
+                    nombreUsuario = reader["nombre"].ToString();
                 }
+
+                reader.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            return (existe, tipoUsuario);
+            return (existe, tipoUsuario, nombreUsuario);
         }
+
 
         public void Login(string username, string password)
         {
-            var (existe, tipoUsuario) = consultaLogin(username, password);
+            var (existe, tipoUsuario, nombreUsuario) = consultaLogin(username, password);
 
             if (existe)
             {
                 switch (tipoUsuario)
                 {
                     case "administrador":
-                        FormAdmin formAdmin = new FormAdmin();
+                        FormAdmin formAdmin = new FormAdmin(nombreUsuario);
                         formAdmin.Show();
                         break;
                     case "usuario":
-                        FormUsuario formUsuario = new FormUsuario();
+                        FormUsuario formUsuario = new FormUsuario(nombreUsuario);
                         formUsuario.Show();
                         break;
                     case "invitado":
-                        FormUsuario formInvitado = new FormUsuario();
+                        FormUsuario formInvitado = new FormUsuario(nombreUsuario);
                         formInvitado.Show();
                         break;
                     default:
@@ -114,6 +119,4 @@ namespace WinFormLogin
     }
 
 }
-
-
 

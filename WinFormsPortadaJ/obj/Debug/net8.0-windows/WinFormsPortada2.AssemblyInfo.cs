@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsPortada2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92d98b46db605e15a1d03a2b829cdca3304123da")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+602d979975ba7b59ede1ec7632d4f2a8e966d24f")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bffb747ad019d3c842063d3321e7e64d5d32bb54")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsPortada2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsPortada2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

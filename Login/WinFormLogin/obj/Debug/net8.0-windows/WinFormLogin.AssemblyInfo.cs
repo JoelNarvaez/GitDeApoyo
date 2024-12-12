@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormLogin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92d98b46db605e15a1d03a2b829cdca3304123da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bffb747ad019d3c842063d3321e7e64d5d32bb54")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormLogin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormLogin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
