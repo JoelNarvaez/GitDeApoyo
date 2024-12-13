@@ -19,6 +19,7 @@ namespace projectM
         Grafica viewgrafica;
         Editar vieweditar;
         private string nombreUsuario;
+        private int idUsuario;
 
         bool expandOpc = true;
         public FormAdmin()
@@ -33,7 +34,24 @@ namespace projectM
 
             viewhome.Show();
         }
+        public FormAdmin(string nombreUsuario, int idUsuario)
+        {
+            InitializeComponent();
+            this.nombreUsuario = nombreUsuario;
+            this.idUsuario = idUsuario;
+            this.Load += FormAdmin_Load;
+            //viewgaming = new Gaming(idUsuario);
+            //viewperifericos = new Perifericos(idUsuario);
+            //vieweditar = new Editar(idUsuario);
+            viewhome = new home()
 
+            {
+                MdiParent = this,
+                Dock = DockStyle.Fill
+            };
+
+            viewhome.Show();
+        }
         private void btnDesp_Click(object sender, EventArgs e)
         {
             timerOpc.Start();
@@ -67,20 +85,6 @@ namespace projectM
             Application.Exit();
         }
 
-        public FormAdmin(string nombreUsuario)
-        {
-            InitializeComponent();
-            this.nombreUsuario = nombreUsuario;
-            this.Load += FormAdmin_Load;
-            viewhome = new home()
-
-            {
-                MdiParent = this,
-                Dock = DockStyle.Fill
-            };
-
-            viewhome.Show();
-        }
         private void FormAdmin_Load(object sender, EventArgs e)
         {
             labelAdmin.Text = nombreUsuario;
@@ -127,7 +131,7 @@ namespace projectM
         {
             if (viewperifericos == null)
             {
-                viewperifericos = new Perifericos
+                viewperifericos = new Perifericos(idUsuario)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill
@@ -144,7 +148,7 @@ namespace projectM
         {
             if (viewgaming == null)
             {
-                viewgaming = new Gaming
+                viewgaming = new Gaming(idUsuario)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill
@@ -178,7 +182,7 @@ namespace projectM
         {
             if (vieweditar == null)
             {
-                vieweditar = new Editar
+                vieweditar = new Editar(idUsuario)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill

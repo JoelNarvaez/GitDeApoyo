@@ -1,3 +1,4 @@
+using System.Drawing.Printing;
 using System.Runtime.InteropServices;
 
 namespace projectM
@@ -9,6 +10,7 @@ namespace projectM
         Perifericos viewPerifericos;
         Acerca viewAcerca;
         private string nombreUsuario;
+        private int idUsuario;
 
         public FormUsuario()
         {
@@ -24,11 +26,11 @@ namespace projectM
             viewHome.Show();
 
         }
-
-        public FormUsuario(string nombreUsuario)
+        public FormUsuario(string nombreUsuario, int idUsuario)
         {
             InitializeComponent();
             this.nombreUsuario = nombreUsuario;
+            this.idUsuario = idUsuario;
             viewHome = new home()
 
             {
@@ -163,9 +165,9 @@ namespace projectM
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (viewGaming == null)
+            if (viewGaming == null || viewGaming.IsDisposed)
             {
-                viewGaming = new Gaming
+                viewGaming = new Gaming(idUsuario)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill
@@ -180,9 +182,9 @@ namespace projectM
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (viewPerifericos == null)
+            if (viewPerifericos == null || viewPerifericos.IsDisposed)
             {
-                viewPerifericos = new Perifericos
+                viewPerifericos = new Perifericos(idUsuario)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill
@@ -232,5 +234,121 @@ namespace projectM
             FormLogin nuevoFormulario = new FormLogin();
             nuevoFormulario.Show();
         }
+
+        private void btnPagaroComp_Click(object sender, EventArgs e)
+        { 
+            pnlProductos.AutoScroll = true;
+            pnlProductos.Visible = true;
+            int X=20, Y=20;
+            int ancho = 750, alto = 80, margenY=10;
+            int Total=0;
+            List<carrito>carritoAux = new List<carrito>();
+
+            usuario obj  = new usuario();
+
+            carritoAux = obj.getcarrito(idUsuario);
+
+            if (carritoAux.Count == 0)
+            {
+                MessageBox.Show("NO HAY PRODUCTOS");
+                return; // Salir si no hay productos
+            }
+
+            foreach (var p  in carritoAux)
+            {
+                productos producto = obj.obtenerProductoPorId(p.IdProducto);
+                if (producto != null)
+                {
+
+                    Panel panelProd = new Panel();
+                    panelProd.Size = new Size(ancho, alto);
+                    panelProd.Location = new Point(X, Y);
+                    panelProd.BorderStyle = BorderStyle.FixedSingle;
+                    panelProd.BackColor = Color.White;
+
+                    Y += alto + margenY;
+
+
+
+                    PictureBox pictureBox = new PictureBox();
+                    pictureBox.Location = new Point(10, 10);
+                    pictureBox.Size = new Size(60, 60);
+
+                    try
+                    {
+                        var imagen = (Image)Properties.Resources.ResourceManager.GetObject(producto.Imagen.Split('.')[0]);
+                        if (imagen != null)
+                        {
+                            pictureBox.Image = imagen;
+                        }
+                    }
+                    catch { }
+                    panelProd.Controls.Add(pictureBox);
+
+                    Label label = new Label();
+                    label.Text = producto.Descripcion;
+                    label.ForeColor = Color.Black;
+                    label.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                    label.Location = new Point(80, 10);
+                    panelProd.Controls.Add(label);
+
+                    Label label2 = new Label();
+                    label2.Text = "Cantidad: " + p.Cantidad;
+                    label2.ForeColor = Color.Black;
+                    label2.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                    label2.Location = new Point(400, 10);
+                    panelProd.Controls.Add(label2);
+
+                    /*Button button = new Button();
+                    button.Image = Properties.Resources.comp;
+                    button.ImageAlign = ContentAlignment.MiddleCenter;
+                    button.Size = new Size(35, 35);
+                    button.Location = new Point(120, 10);
+                    button.FlatStyle = FlatStyle.Flat;
+                    button.Tag = p.Id;
+                    //button.Click += new EventHandler(button_Click);
+                    panelProd.Controls.Add(button);
+
+                    Label label2 = new Label();
+                    label2.Text = Convert.ToString(p.Existencias);
+                    label2.ForeColor = Color.Black;
+                    label2.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                    label2.Location = new Point(200, 10);
+                    panelProd.Controls.Add(label2);*/
+
+                    Label label3 = new Label();
+                    label3.Text = "$ " + producto.Precio.ToString("F2");
+                    label3.ForeColor = Color.Black;
+                    label3.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                    label3.Location = new Point(500, 10);
+                    panelProd.Controls.Add(label3);
+
+
+                    Label label4 = new Label();
+                    label4.Text = "Total " + (producto.Precio * p.Cantidad);
+                    label4.ForeColor = Color.Black;
+                    label4.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                    label4.Location = new Point(600, 10);
+                    panelProd.Controls.Add(label4);
+                    pnlProductos.Controls.Add(panelProd);
+                    
+                    Total += producto.Precio * p.Cantidad;
+
+                    if (p == carritoAux.Last())
+                    {
+                        Label label5 = new Label();
+                        label5.Text = "Total: " + (Total);
+                        label5.ForeColor = Color.Black;
+                        label5.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                        label5.Location = new Point(600, pnlProductos.Height+20);
+                        pnlProductos.Controls.Add(label5);
+                    }
+                }
+            }
+            pnlProductos.Height = Y+100;
+            pnlCarrito.Visible = !pnlCarrito.Visible;
+
+        }
+
     }
 }

@@ -16,12 +16,21 @@ namespace projectM
         List<productos> data;
         private Panel vistaPrevia;
         int margenX = 20, margenY = 20;
+        private int idUsuario;
 
         int ancho = 250, alto = 280;
+
         public Editar()
         {
             InitializeComponent();
             extraerLista();
+        }
+        public Editar(int idUsuario)
+        {
+            InitializeComponent();
+            extraerLista();
+            this.idUsuario = idUsuario;
+
         }
 
         public void extraerLista()
@@ -29,10 +38,10 @@ namespace projectM
             ListaProductos obj = new ListaProductos();
             data = obj.crear();
             mostrar(data);
-            Perifericos perifericos = new Perifericos();
-            perifericos.extraerLista();
-            Gaming gaming = new Gaming();
-            gaming.extraerLista();
+            //Perifericos perifericos = new Perifericos(idUsuario);
+            //perifericos.extraerLista();
+            //Gaming gaming = new Gaming(idUsuario);
+            //gaming.extraerLista();
         }
 
         public void mostrar(List<productos> data)

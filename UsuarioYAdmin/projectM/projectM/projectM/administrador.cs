@@ -35,11 +35,11 @@ namespace projectM
 
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.ExecuteNonQuery();
-                //MessageBox.Show(query + "\nRegistro Agregado");
+                
             }
             catch (Exception ex)
             {
-                //MessageBox.Show(query + "\nClave duplicada" + ex.Message);
+                
                 this.Disconnect();
             }
         }

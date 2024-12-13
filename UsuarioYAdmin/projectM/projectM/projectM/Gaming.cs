@@ -15,18 +15,26 @@ namespace projectM
     {
         List<productos> data;
         int margenX = 20, margenY=20;
-        
+        private int idUsuario;
         int ancho = 250, alto = 280;
+
         public Gaming()
         {
             InitializeComponent();
             extraerLista();
- 
+
+        }
+        public Gaming(int idUsuario)
+        {
+            InitializeComponent();
+            extraerLista();
+            this.idUsuario = idUsuario;
 
         }
 
         public void extraerLista()
         {
+            
             ListaProductos obj = new ListaProductos();
             data = obj.crear();
 
@@ -93,6 +101,8 @@ namespace projectM
                 button.Size = new Size(35, 35);
                 button.Location = new Point(200, 210);
                 button.FlatStyle = FlatStyle.Flat;
+                button.Tag = productos.Id;
+                button.Click += new EventHandler(button_Click);
                 panel.Controls.Add(button);
 
                 Label label2 = new Label();
@@ -110,6 +120,35 @@ namespace projectM
                 panel.Controls.Add(label3);
 
                 this.Controls.Add(panel);
+            }
+        }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            int idComprar = 0;
+            int cantidad = 0;
+            Button btn = sender as Button;
+
+            DialogResult result = MessageBox.Show("¿Agregar el producto al carrito?", "Confirmacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (btn != null)
+            {
+                idComprar = (int)btn.Tag;
+                if (result == DialogResult.OK)
+                {
+                    productos productoSeleccionado = data.FirstOrDefault(P => P.Id == idComprar);
+                    
+                    int precio = productoSeleccionado.Precio;
+
+                    usuario usuario = new usuario();
+                    usuario.agregaCarrito(idUsuario, idComprar, ++cantidad, precio);
+                }
+
+
+            }
+            else
+            {
+                MessageBox.Show("Se cancelo la compra");
             }
         }
     }

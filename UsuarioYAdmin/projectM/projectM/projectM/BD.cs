@@ -44,15 +44,16 @@ namespace projectM
             }
         }
 
-        public (bool, string, string) consultaLogin(string username, string password)
+        public (bool, string, string, int) consultaLogin(string username, string password)
         {
             bool existe = false;
             string tipoUsuario = string.Empty;
             string nombreUsuario = string.Empty;
+            int idUsuario=-1;
 
             try
             {
-                string query = "SELECT tipo, nombre FROM Personas WHERE usuario = @username AND contraseña = @password";
+                string query = "SELECT id, tipo, nombre FROM Personas WHERE usuario = @username AND contraseña = @password";
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 cmd.Parameters.AddWithValue("@username", username);
                 cmd.Parameters.AddWithValue("@password", password);
@@ -63,6 +64,8 @@ namespace projectM
                     existe = true;
                     tipoUsuario = reader["tipo"].ToString();
                     nombreUsuario = reader["nombre"].ToString();
+                    idUsuario=Convert.ToInt32(reader["id"]);
+                    MessageBox.Show($"el id es: {idUsuario}");
                 }
 
                 reader.Close();
@@ -72,30 +75,30 @@ namespace projectM
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            return (existe, tipoUsuario, nombreUsuario);
+            return (existe, tipoUsuario, nombreUsuario, idUsuario);
         }
 
 
         public void Login(string username, string password)
         {
-            var (existe, tipoUsuario, nombreUsuario) = consultaLogin(username, password);
+            var (existe, tipoUsuario, nombreUsuario, idUsuario) = consultaLogin(username, password);
 
             if (existe)
             {
                 switch (tipoUsuario)
                 {
                     case "administrador":
-                        FormAdmin formAdmin = new FormAdmin(nombreUsuario);
+                        FormAdmin formAdmin = new FormAdmin(nombreUsuario, idUsuario);
                         MessageBox.Show($"Bienvenido(a) a NAVIGA {nombreUsuario}");
                         formAdmin.Show();
                         break;
                     case "usuario":
-                        FormUsuario formUsuario = new FormUsuario(nombreUsuario);
+                        FormUsuario formUsuario = new FormUsuario(nombreUsuario, idUsuario);
                         MessageBox.Show($"Bienvenido(a) a NAVIGA {nombreUsuario}");
                         formUsuario.Show();
                         break;
                     case "invitado":
-                        FormUsuario formInvitado = new FormUsuario(nombreUsuario);
+                        FormUsuario formInvitado = new FormUsuario(nombreUsuario, idUsuario);
                         MessageBox.Show($"Bienvenido(a) a NAVIGA {nombreUsuario}");
                         formInvitado.Show();
                         break;
