@@ -14,8 +14,9 @@ namespace projectM
     public partial class Editar : Form
     {
         List<productos> data;
+        private Panel vistaPrevia;
         int margenX = 20, margenY = 20;
-        
+
         int ancho = 250, alto = 280;
         public Editar()
         {
@@ -26,7 +27,7 @@ namespace projectM
         public void extraerLista()
         {
             ListaProductos obj = new ListaProductos();
-            data=obj.crear();
+            data = obj.crear();
             mostrar(data);
             Perifericos perifericos = new Perifericos();
             perifericos.extraerLista();
@@ -123,8 +124,14 @@ namespace projectM
         }
 
         private void btnCerrarAgregar_Click(object sender, EventArgs e)
-        {
-            panelAgregar.Visible = false;
+        {  
+                if (vistaPrevia != null)
+                {
+                    this.Controls.Remove(vistaPrevia); // Quitar el panel de vista previa
+                    vistaPrevia = null; // Limpiar la referencia
+                }
+                panelAgregar.Visible = false;
+
         }
 
         private void btnAceptarAgregar_Click(object sender, EventArgs e)
@@ -134,19 +141,19 @@ namespace projectM
             string descripcion;
             int precio;
             int existencias;
-            string coleccion=string.Empty;
-            
+            string coleccion = string.Empty;
+
 
             id = Convert.ToInt32(txtBtId.Text);
-            imagen=txtBtImg.Text;
-            descripcion=txtBtDesc.Text;
-            precio=Convert.ToInt32(txtBtPrecio.Text);
+            imagen = txtBtImg.Text;
+            descripcion = txtBtDesc.Text;
+            precio = Convert.ToInt32(txtBtPrecio.Text);
             existencias = Convert.ToInt32(txtBtExistencias.Text);
-            if(radioBtnGaming.Checked)
+            if (radioBtnGaming.Checked)
             {
                 coleccion = "gaming";
             }
-            else if(radioBtnPerifericos.Checked)
+            else if (radioBtnPerifericos.Checked)
             {
                 coleccion = "perifericos";
             }
@@ -162,13 +169,11 @@ namespace projectM
             panelAgregar.Visible = false;
             extraerLista();
 
-
-
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int idEliminar=0;
+            int idEliminar = 0;
             Button btn = sender as Button;
 
             DialogResult result = MessageBox.Show("¿Seguro que desea eliminar el producto?", "Confirmacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -190,8 +195,108 @@ namespace projectM
             {
                 MessageBox.Show("Se cancelo la eliminación");
             }
-            
-            
+
+
         }
+
+        private void panelAgregar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Validar que los campos no estén vacíos
+            if (string.IsNullOrEmpty(txtBtId.Text) ||
+                string.IsNullOrEmpty(txtBtImg.Text) ||
+                string.IsNullOrEmpty(txtBtDesc.Text) ||
+                string.IsNullOrEmpty(txtBtPrecio.Text) ||
+                string.IsNullOrEmpty(txtBtExistencias.Text) ||
+                (!radioBtnGaming.Checked && !radioBtnPerifericos.Checked))
+            {
+                MessageBox.Show("Por favor, complete todos los campos y seleccione una colección antes de continuar.");
+                return;
+            }
+
+            if (vistaPrevia != null)
+            {
+                this.Controls.Remove(vistaPrevia); 
+            }
+
+            vistaPrevia = new Panel
+            {
+                Size = new Size(530, 390), 
+                Location = new Point(545, 110), 
+                BorderStyle = BorderStyle.FixedSingle,
+                BackColor = Color.White
+            };
+
+            PictureBox pictureBox = new PictureBox
+            {
+                Size = new Size(300, 275),
+                Location = new Point(25, 20),
+                BorderStyle = BorderStyle.None,
+                SizeMode = PictureBoxSizeMode.Zoom
+            };
+
+            try
+            {
+                var imagen = (Image)Properties.Resources.ResourceManager.GetObject(txtBtImg.Text.Split('.')[0]);
+                pictureBox.Image = imagen ?? Properties.Resources.NavigaLogoLog; // Imagen por defecto
+            }
+            catch
+            {
+                pictureBox.Image = Properties.Resources.NavigaLogoLog;
+            }
+
+            vistaPrevia.Controls.Add(pictureBox);
+
+            Label lblDescripcion = new Label
+            {
+                Text = txtBtDesc.Text,
+                Location = new Point(25, 300),
+                Size = new Size(250, 20),
+                Font = new Font("Century Gothic", 13, FontStyle.Bold),
+                ForeColor = Color.BlueViolet
+            };
+            vistaPrevia.Controls.Add(lblDescripcion);
+
+            Label lblPrecio = new Label
+            {
+                Text = "Precio: $" + txtBtPrecio.Text,
+                Location = new Point(335, 50),
+                Size = new Size(250, 20),
+                Font = new Font("Century Gothic", 12, FontStyle.Regular),
+                ForeColor = Color.Black
+            };
+            vistaPrevia.Controls.Add(lblPrecio);
+
+
+            Label lblExistencias = new Label
+            {
+                Text = "Existencias: " + txtBtExistencias.Text,
+                Location = new Point(335, 130),
+                Size = new Size(250, 20),
+                Font = new Font("Century Gothic", 12, FontStyle.Regular),
+                ForeColor = Color.Black
+            };
+            vistaPrevia.Controls.Add(lblExistencias);
+
+            Label lblColeccion = new Label
+            {
+                Text = "Colección: " + (radioBtnGaming.Checked ? "Gaming" : "Periféricos"),
+                Location = new Point(335, 90),
+                Size = new Size(250, 20),
+                Font = new Font("Century Gothic", 12, FontStyle.Regular),
+                ForeColor = Color.Black
+            };
+            vistaPrevia.Controls.Add(lblColeccion);
+
+            this.Controls.Add(vistaPrevia);
+            vistaPrevia.BringToFront();
+        }
+
     }
 }
