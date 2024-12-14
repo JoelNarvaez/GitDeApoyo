@@ -237,6 +237,7 @@ namespace projectM
 
         private void btnPagaroComp_Click(object sender, EventArgs e)
         {
+            int cuantos=0;
             pnlProductos.AutoScroll = true;
             pnlProductos.Size = new Size(550, 900);
             pnlProductos.Location = new Point(25, 25);
@@ -257,11 +258,10 @@ namespace projectM
             }
 
             foreach (var p in carritoAux)
-            {
+            { 
                 productos producto = obj.obtenerProductoPorId(p.IdProducto);
                 if (producto != null)
                 {
-
                     Panel panelProd = new Panel();
                     panelProd.Size = new Size(ancho, alto);
                     panelProd.Location = new Point(X, Y);
@@ -281,6 +281,7 @@ namespace projectM
                         if (imagen != null)
                         {
                             pictureBox.Image = imagen;
+                            cuantos ++;
                         }
                     }
                     catch { }
@@ -335,15 +336,38 @@ namespace projectM
 
                     Total += producto.Precio * p.Cantidad;
 
+
                     if (p == carritoAux.Last())
                     {
-                        Label label5 = new Label();
-                        label5.Text = "Total: " + (Total);
-                        label5.ForeColor = Color.Black;
-                        label5.Font = new Font("Century Gothic", 12, FontStyle.Regular);
-                        label5.Location = new Point(600, pnlProductos.Height + 20);
-                        pnlProductos.Controls.Add(label5);
+                        Label labelProductos = new Label();
+                        labelProductos.Text = $"Productos ({cuantos}):                   ${Total}";
+                        labelProductos.ForeColor = Color.Black;
+                        labelProductos.Font = new Font("Century Gothic", 12, FontStyle.Regular);
+                        labelProductos.AutoSize = false; // Desactiva AutoSize
+                        labelProductos.Size = new Size(300, 30); // Aumenta el tamaño de la etiqueta
+                        labelProductos.Location = new Point(600, 60);
+                        pnlCarrito.Controls.Add(labelProductos);
+
+                        Label labelEnvios = new Label();
+                        labelEnvios.Text = $"Envios ({cuantos}):                          Gratis";
+                        labelEnvios.ForeColor = Color.Black;
+                        labelEnvios.Font = new Font("Century Gothic", 12, FontStyle.Regular);
+                        labelEnvios.AutoSize = false;
+                        labelEnvios.Size = new Size(300, 30);
+                        labelEnvios.Location = new Point(600, 90);
+                        pnlCarrito.Controls.Add(labelEnvios);
+
+                        Label labelTotal = new Label();
+                        labelTotal.Text = $"Total a pagar:                     ${Total}";
+                        labelTotal.ForeColor = Color.Black;
+                        labelTotal.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                        labelTotal.AutoSize = false;
+                        labelTotal.Size = new Size(300, 30);
+                        labelTotal.Location = new Point(600, 160);
+                        pnlCarrito.Controls.Add(labelTotal);
+
                     }
+
                 }
             }
             pnlProductos.Height = Y + 100;

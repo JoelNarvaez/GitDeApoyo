@@ -182,38 +182,127 @@ namespace projectM
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int idEliminar = 0;
-            Button btn = sender as Button;
+                int idEliminar = 0;
+                Button btn = sender as Button;
 
-            DialogResult result = MessageBox.Show("¿Seguro que desea eliminar el producto?", "Confirmacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-
-            if (btn != null)
-            {
-                idEliminar = (int)btn.Tag;
-                if (result == DialogResult.OK)
+                if (btn != null)
                 {
+                    idEliminar = (int)btn.Tag;
                     administrador admin = new administrador();
-                    admin.eliminar(idEliminar);
+                    productos producto = admin.getProdAElimiar(idEliminar);
 
-                    extraerLista();
+                    if (producto != null)
+                    {
+                        // Mostrar vista previa del producto a eliminar
+                        MostrarVistaPrevia(producto);
+
+                        DialogResult result = MessageBox.Show("¿Seguro que desea eliminar el producto?", "Confirmacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                        if (result == DialogResult.OK)
+                        {
+                            admin.eliminar(idEliminar);
+                            extraerLista();
+                            this.Controls.Remove(eliminar);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Se canceló la eliminación");
+                            this.Controls.Remove(eliminar);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontró el producto a eliminar");
+                    }
                 }
 
+        }
 
-            }
-            else
+        private Panel eliminar;
+
+        private void MostrarVistaPrevia(productos producto)
+        {
+            if (eliminar != null)
             {
-                MessageBox.Show("Se cancelo la eliminación");
+                this.Controls.Remove(eliminar);
             }
 
+            eliminar = new Panel
+            {
+                Size = new Size(500, 250),
+                Location = new Point(340, 10),
+                BorderStyle = BorderStyle.FixedSingle,
+                BackColor = Color.Silver
+            };
 
+            PictureBox pictureBox = new PictureBox
+            {
+                Size = new Size(240, 215),
+                Location = new Point(10, 10),
+                BorderStyle = BorderStyle.None,
+                SizeMode = PictureBoxSizeMode.Zoom
+            };
+
+            try
+            {
+                var imagen = (Image)Properties.Resources.ResourceManager.GetObject(producto.Imagen.Split('.')[0]);
+                pictureBox.Image = imagen ?? Properties.Resources.NavigaLogoLog; // Imagen por defecto
+            }
+            catch
+            {
+                pictureBox.Image = Properties.Resources.NavigaLogoLog;
+            }
+
+            eliminar.Controls.Add(pictureBox);
+
+            Label lblDescripcion = new Label
+            {
+                Text = producto.Descripcion,
+                Location = new Point(305, 170),
+                Size = new Size(250, 20),
+                Font = new Font("Century Gothic", 13, FontStyle.Bold),
+                ForeColor = Color.BlueViolet
+            };
+            eliminar.Controls.Add(lblDescripcion);
+
+            Label lblPrecio = new Label
+            {
+                Text = "Precio: $" + producto.Precio,
+                Location = new Point(305, 50),
+                Size = new Size(250, 20),
+                Font = new Font("Century Gothic", 12, FontStyle.Regular),
+                ForeColor = Color.Black
+            };
+            eliminar.Controls.Add(lblPrecio);
+
+            Label lblExistencias = new Label
+            {
+                Text = "Existencias: " + producto.Existencias,
+                Location = new Point(305, 130),
+                Size = new Size(250, 20),
+                Font = new Font("Century Gothic", 12, FontStyle.Regular),
+                ForeColor = Color.Black
+            };
+            eliminar.Controls.Add(lblExistencias);
+
+            Label lblColeccion = new Label
+            {
+                Text = "Colección: " + producto.Coleccion,
+                Location = new Point(305, 90),
+                Size = new Size(250, 20),
+                Font = new Font("Century Gothic", 12, FontStyle.Regular),
+                ForeColor = Color.Black
+            };
+            eliminar.Controls.Add(lblColeccion);
+
+            this.Controls.Add(eliminar);
+            eliminar.BringToFront();
         }
 
         private void panelAgregar_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-       
 
         private void button1_Click(object sender, EventArgs e)
         {

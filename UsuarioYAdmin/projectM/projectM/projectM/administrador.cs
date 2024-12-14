@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,6 +62,38 @@ namespace projectM
                 //MessageBox.Show(query + "\nError " + ex.Message);
                 this.Disconnect();
             }
+        }
+        public productos getProdAElimiar(int idProducto)
+        {
+            productos producto = null;
+            try
+            {
+                string query = "SELECT * FROM productos WHERE id = @id";
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+                command.Parameters.AddWithValue("@id", idProducto);
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    int id = Convert.ToInt32(reader["id"]);
+                    string descripcion = Convert.ToString(reader["descripcion"]);
+                    int precio = Convert.ToInt32(reader["precio"]);
+                    string imagen = Convert.ToString(reader["imagen"]);
+                    string coleccion = Convert.ToString(reader["coleccion"]);
+                    int  existencia= Convert.ToInt32(reader["existencias"]);
+
+                    producto = new productos(id, imagen, descripcion, precio, existencia, coleccion);
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al obtener el producto: {ex.Message}");
+            }
+
+            return producto;
         }
 
         public List<productos> listExist()
