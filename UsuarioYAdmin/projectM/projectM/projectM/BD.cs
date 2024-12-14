@@ -79,7 +79,7 @@ namespace projectM
         }
 
 
-        public void Login(string username, string password)
+        public bool Login(string username, string password)
         {
             var (existe, tipoUsuario, nombreUsuario, idUsuario) = consultaLogin(username, password);
 
@@ -89,28 +89,31 @@ namespace projectM
                 {
                     case "administrador":
                         FormAdmin formAdmin = new FormAdmin(nombreUsuario, idUsuario);
-                        MessageBox.Show($"Bienvenido(a) a NAVIGA {nombreUsuario}");
+                        MessageBox.Show($"Bienvenido(a) a NAVIGA, {nombreUsuario}");
                         formAdmin.Show();
                         break;
                     case "usuario":
                         FormUsuario formUsuario = new FormUsuario(nombreUsuario, idUsuario);
-                        MessageBox.Show($"Bienvenido(a) a NAVIGA {nombreUsuario}");
+                        MessageBox.Show($"Bienvenido(a) a NAVIGA, {nombreUsuario}");
                         formUsuario.Show();
                         break;
                     case "invitado":
                         FormUsuario formInvitado = new FormUsuario(nombreUsuario, idUsuario);
-                        MessageBox.Show($"Bienvenido(a) a NAVIGA {nombreUsuario}");
+                        MessageBox.Show($"Bienvenido(a) a NAVIGA, {nombreUsuario}");
                         formInvitado.Show();
                         break;
                     default:
                         MessageBox.Show("Tipo de usuario desconocido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        break;
+                        return false;
                 }
+                return true;
             }
             else
             {
                 ActualizarTexto("Usuario o Contraseña Inválidos");
+                return false;
             }
+
         }
 
 

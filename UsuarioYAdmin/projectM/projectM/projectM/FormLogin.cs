@@ -137,13 +137,21 @@ namespace projectM
             string password = txtContrasena.Text;
 
             BD bd = new BD(validoOno);
-            bd.Login(username, password);
-            bd.ActualizarTexto("Usuario o Contraseña invalidos");
-            bd.Disconnect();
-            this.Close();
-        }
+            bool loginExitoso = bd.Login(username, password);
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+            if (loginExitoso)
+            {
+                bd.Disconnect();
+                this.Close();
+            }
+            else
+            {
+                bd.ActualizarTexto("Usuario o Contraseña invalidos");
+
+            }
+    }
+
+    private void pictureBox4_Click(object sender, EventArgs e)
         {
             txtContrasena.UseSystemPasswordChar = !txtContrasena.UseSystemPasswordChar;
         }

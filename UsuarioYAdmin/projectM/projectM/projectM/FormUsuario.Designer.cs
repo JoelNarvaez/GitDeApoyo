@@ -60,10 +60,10 @@
             sidebarTransition = new System.Windows.Forms.Timer(components);
             buttonCerrar = new Button();
             HoraFecha = new System.Windows.Forms.Timer(components);
-            pnlCarrito = new Panel();
             pnlProductos = new Panel();
-            btnBorrar = new Button();
-            btnPagar = new Button();
+            botonRedondo1 = new botonRedondo();
+            pnlCarrito = new Panel();
+            botonRedondo2 = new botonRedondo();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -490,44 +490,66 @@
             HoraFecha.Enabled = true;
             HoraFecha.Tick += HoraFecha_Tick;
             // 
+            // pnlProductos
+            // 
+            pnlProductos.AutoScroll = true;
+            pnlProductos.BackColor = Color.White;
+            pnlProductos.Location = new Point(26, 23);
+            pnlProductos.Name = "pnlProductos";
+            pnlProductos.Size = new Size(540, 400);
+            pnlProductos.TabIndex = 2;
+            // 
+            // botonRedondo1
+            // 
+            botonRedondo1.BackColor = Color.BlueViolet;
+            botonRedondo1.BackgroundColor = Color.BlueViolet;
+            botonRedondo1.BorderColor = Color.PaleVioletRed;
+            botonRedondo1.BorderRadius = 20;
+            botonRedondo1.BorderSize = 0;
+            botonRedondo1.FlatAppearance.BorderSize = 0;
+            botonRedondo1.FlatStyle = FlatStyle.Flat;
+            botonRedondo1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            botonRedondo1.ForeColor = Color.White;
+            botonRedondo1.Location = new Point(648, 271);
+            botonRedondo1.Name = "botonRedondo1";
+            botonRedondo1.Size = new Size(194, 52);
+            botonRedondo1.TabIndex = 3;
+            botonRedondo1.Text = "Continar Compra";
+            botonRedondo1.TextColor = Color.White;
+            botonRedondo1.UseVisualStyleBackColor = false;
+            botonRedondo1.Click += botonRedondo1_Click;
+            // 
             // pnlCarrito
             // 
-            pnlCarrito.BackColor = Color.White;
+            pnlCarrito.BackColor = Color.WhiteSmoke;
+            pnlCarrito.BorderStyle = BorderStyle.FixedSingle;
+            pnlCarrito.Controls.Add(botonRedondo2);
+            pnlCarrito.Controls.Add(botonRedondo1);
             pnlCarrito.Controls.Add(pnlProductos);
-            pnlCarrito.Controls.Add(btnBorrar);
-            pnlCarrito.Controls.Add(btnPagar);
             pnlCarrito.Location = new Point(237, 96);
             pnlCarrito.Name = "pnlCarrito";
             pnlCarrito.Size = new Size(904, 615);
             pnlCarrito.TabIndex = 7;
             pnlCarrito.Visible = false;
             // 
-            // pnlProductos
+            // botonRedondo2
             // 
-            pnlProductos.AutoScroll = true;
-            pnlProductos.BackColor = Color.Lavender;
-            pnlProductos.Location = new Point(57, 96);
-            pnlProductos.Name = "pnlProductos";
-            pnlProductos.Size = new Size(780, 400);
-            pnlProductos.TabIndex = 2;
-            // 
-            // btnBorrar
-            // 
-            btnBorrar.Location = new Point(593, 517);
-            btnBorrar.Name = "btnBorrar";
-            btnBorrar.Size = new Size(101, 36);
-            btnBorrar.TabIndex = 1;
-            btnBorrar.Text = "Borrar";
-            btnBorrar.UseVisualStyleBackColor = true;
-            // 
-            // btnPagar
-            // 
-            btnPagar.Location = new Point(239, 517);
-            btnPagar.Name = "btnPagar";
-            btnPagar.Size = new Size(127, 36);
-            btnPagar.TabIndex = 0;
-            btnPagar.Text = "comprar";
-            btnPagar.UseVisualStyleBackColor = true;
+            botonRedondo2.BackColor = Color.White;
+            botonRedondo2.BackgroundColor = Color.White;
+            botonRedondo2.BorderColor = Color.PaleVioletRed;
+            botonRedondo2.BorderRadius = 20;
+            botonRedondo2.BorderSize = 0;
+            botonRedondo2.FlatAppearance.BorderSize = 0;
+            botonRedondo2.FlatStyle = FlatStyle.Flat;
+            botonRedondo2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            botonRedondo2.ForeColor = Color.BlueViolet;
+            botonRedondo2.Location = new Point(648, 341);
+            botonRedondo2.Name = "botonRedondo2";
+            botonRedondo2.Size = new Size(194, 52);
+            botonRedondo2.TabIndex = 4;
+            botonRedondo2.Text = "Borrar el carrito";
+            botonRedondo2.TextColor = Color.BlueViolet;
+            botonRedondo2.UseVisualStyleBackColor = false;
             // 
             // FormUsuario
             // 
@@ -592,9 +614,9 @@
         private Label labelFecha;
         private Label labelHora;
         private System.Windows.Forms.Timer HoraFecha;
-        private Panel pnlCarrito;
-        private Button btnPagar;
-        private Button btnBorrar;
         private Panel pnlProductos;
+        private botonRedondo botonRedondo1;
+        private Panel pnlCarrito;
+        private botonRedondo botonRedondo2;
     }
 }
