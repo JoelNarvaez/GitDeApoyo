@@ -237,7 +237,7 @@ namespace projectM
 
         private void btnPagaroComp_Click(object sender, EventArgs e)
         {
-            int cuantos=0;
+            int cuantos = 0;
             pnlProductos.AutoScroll = true;
             pnlProductos.Size = new Size(550, 900);
             pnlProductos.Location = new Point(25, 25);
@@ -258,7 +258,7 @@ namespace projectM
             }
 
             foreach (var p in carritoAux)
-            { 
+            {
                 productos producto = obj.obtenerProductoPorId(p.IdProducto);
                 if (producto != null)
                 {
@@ -281,7 +281,7 @@ namespace projectM
                         if (imagen != null)
                         {
                             pictureBox.Image = imagen;
-                            cuantos ++;
+                            cuantos++;
                         }
                     }
                     catch { }
@@ -339,6 +339,12 @@ namespace projectM
 
                     if (p == carritoAux.Last())
                     {
+                        Label labelResumen = new Label();
+                        labelResumen.ForeColor = Color.Black;
+                        labelResumen.Font = new Font("Century Gothic", 16, FontStyle.Bold);
+                        labelResumen.Location = new Point(20, 20);
+                        pnlCarrito.Controls.Add(labelResumen);
+
                         Label labelProductos = new Label();
                         labelProductos.Text = $"Productos ({cuantos}):                   ${Total}";
                         labelProductos.ForeColor = Color.Black;
@@ -375,7 +381,62 @@ namespace projectM
 
         }
 
+        private FlowLayoutPanel ClonePanel(Panel originalPanel)
+        {
+            FlowLayoutPanel newPanel = new FlowLayoutPanel
+            {
+                Size = originalPanel.Size,
+                Location = originalPanel.Location,
+                BackColor = originalPanel.BackColor,
+                BorderStyle = originalPanel.BorderStyle,
+                AutoScroll = true,
+                FlowDirection = FlowDirection.TopDown,
+                WrapContents = false,
+                Padding = new Padding(0), // Sin relleno
+                Margin = new Padding(0)   // Sin margen
+            };
+
+            foreach (Control control in originalPanel.Controls)
+            {
+                Control newControl = (Control)Activator.CreateInstance(control.GetType());
+
+                // Copiar las propiedades del control original al nuevo control
+                newControl.Text = control.Text;
+                newControl.Size = new Size(newPanel.Width - 20, control.Height); // Ajustar ancho al newPanel
+                newControl.Font = control.Font;
+                newControl.ForeColor = control.ForeColor;
+                newControl.BackColor = control.BackColor;
+                newControl.Margin = new Padding(0, 5, 0, 0); // Sin margen superior, solo inferior
+
+                if (control is PictureBox pictureBox)
+                {
+                    PictureBox newPictureBox = new PictureBox
+                    {
+                        Size = new Size(newPanel.Width - 20, pictureBox.Height), // Ajustar ancho al newPanel
+                        Image = pictureBox.Image,
+                        SizeMode = pictureBox.SizeMode,
+                        BackColor = pictureBox.BackColor,
+                        Margin = new Padding(0, 5, 0, 0) // Sin margen superior, solo inferior
+                    };
+                    newControl = newPictureBox;
+                }
+
+                newPanel.Controls.Add(newControl);
+            }
+
+            return newPanel;
+        }
+
+
         private void botonRedondo1_Click(object sender, EventArgs e)
+        {
+            FlowLayoutPanel clonedPanel = ClonePanel(pnlCarrito) as FlowLayoutPanel;
+            FormPago formPago = new FormPago(clonedPanel);
+            formPago.Show();
+            this.Close();
+        }
+
+        private void labelFecha_Click(object sender, EventArgs e)
         {
 
         }

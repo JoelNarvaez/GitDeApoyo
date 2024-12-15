@@ -149,9 +149,9 @@ namespace projectM
                 bd.ActualizarTexto("Usuario o Contraseña invalidos");
 
             }
-    }
+        }
 
-    private void pictureBox4_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
             txtContrasena.UseSystemPasswordChar = !txtContrasena.UseSystemPasswordChar;
         }
@@ -183,6 +183,12 @@ namespace projectM
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void panelRedondo1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }
 

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj": {}
+    "D:\\Proyecto\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj": {
+    "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
+        "projectUniqueName": "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
         "projectName": "projectM",
-        "projectPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
-        "packagesPath": "C:\\Users\\joeln\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\obj\\",
+        "projectPath": "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
+        "packagesPath": "C:\\Users\\Tania\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\joeln\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tania\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -53,6 +53,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[9.1.0, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.6.0, )"
             }
           },
           "imports": [
@@ -74,24 +78,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj": {
+    "D:\\Proyecto\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
+        "projectUniqueName": "D:\\Proyecto\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
         "projectName": "WinFormsPortada2",
-        "projectPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
-        "packagesPath": "C:\\Users\\joeln\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\obj\\",
+        "projectPath": "D:\\Proyecto\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
+        "packagesPath": "C:\\Users\\Tania\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyecto\\GitDeApoyo\\WinFormsPortadaJ\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\joeln\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tania\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -100,15 +104,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj": {
-                "projectPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj"
+              "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj": {
+                "projectPath": "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj"
               }
             }
           }
@@ -121,12 +124,19 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -146,7 +156,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -248,6 +248,7 @@
             labelFecha.Size = new Size(54, 18);
             labelFecha.TabIndex = 7;
             labelFecha.Text = "Fecha";
+            labelFecha.Click += labelFecha_Click;
             // 
             // btnMinimized
             // 

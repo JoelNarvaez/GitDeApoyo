@@ -91,3 +91,6 @@ C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug
 C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.pdb
 C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.genruntimeconfig.cache
 C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\ref\WinFormLogin.dll
+D:\Proyecto\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.dll
+D:\Proyecto\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\refint\WinFormLogin.dll
+D:\Proyecto\GitDeApoyo\Login\WinFormLogin\obj\Debug\net8.0-windows\WinFormLogin.pdb

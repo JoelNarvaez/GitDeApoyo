@@ -151,6 +151,9 @@
   <data name="tecl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tecl.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tarjeta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tarjeta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="led" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\led.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -174,6 +177,9 @@
   </data>
   <data name="comp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\comp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LadoIzq1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LadoIzq1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iconoUs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconoUs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,7 +208,7 @@
   <data name="informacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\informacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LadoIzq1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LadoIzq1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="billete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\billete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

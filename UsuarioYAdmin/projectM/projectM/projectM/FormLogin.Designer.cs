@@ -50,6 +50,7 @@ namespace projectM
             label9 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             pContenedor = new Panel();
+            button1 = new Button();
             label11 = new Label();
             pictureBox5 = new PictureBox();
             panelRedondo1 = new PanelRedondo();
@@ -336,6 +337,7 @@ namespace projectM
             // pContenedor
             // 
             pContenedor.BackColor = Color.White;
+            pContenedor.Controls.Add(button1);
             pContenedor.Controls.Add(label9);
             pContenedor.Controls.Add(label11);
             pContenedor.Controls.Add(pictureBox5);
@@ -345,6 +347,13 @@ namespace projectM
             pContenedor.Name = "pContenedor";
             pContenedor.Size = new Size(644, 713);
             pContenedor.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(0, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 0;
             // 
             // label11
             // 
@@ -386,6 +395,7 @@ namespace projectM
             panelRedondo1.Name = "panelRedondo1";
             panelRedondo1.Size = new Size(444, 555);
             panelRedondo1.TabIndex = 61;
+            panelRedondo1.Paint += panelRedondo1_Paint;
             // 
             // validoOno
             // 
@@ -660,5 +670,6 @@ namespace projectM
         private Button btnMaximized;
         private Button btnClose;
         private System.Windows.Forms.Timer horaFecha;
+        private Button button1;
     }
 }
