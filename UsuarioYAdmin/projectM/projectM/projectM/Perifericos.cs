@@ -18,18 +18,20 @@ namespace projectM
         int X = 25, Y = 50;
         int ancho = 250, alto = 280;
         private int idUsuario;
+        private bool isUsuario;
 
         public Perifericos()
         {
             InitializeComponent();
             extraerLista();
         }
-        public Perifericos(int idUsuario)
+        public Perifericos(int idUsuario, bool isUsuario)
         {
 
             InitializeComponent();
             extraerLista();
             this.idUsuario = idUsuario;
+            this.isUsuario = isUsuario;
         }
 
         public void extraerLista()
@@ -55,7 +57,6 @@ namespace projectM
 
         public void mostrar(List<productos> perifericos)
         {
-            MessageBox.Show("Mostrando productos perifericos");
             this.Controls.Clear();
             int X = 25, Y = 50;
             foreach (var productos in perifericos)
@@ -94,15 +95,39 @@ namespace projectM
                 label.Location = new Point(14, 210);
                 panel.Controls.Add(label);
 
-                Button button = new Button();
-                button.Image = Properties.Resources.comp;
-                button.ImageAlign = ContentAlignment.MiddleCenter;
-                button.Size = new Size(35, 35);
-                button.Location = new Point(200, 210);
-                button.FlatStyle = FlatStyle.Flat;
-                button.Tag = productos.Id;
-                button.Click += new EventHandler(button_Click);
-                panel.Controls.Add(button);
+
+
+
+                if (this.isUsuario=true)
+                {
+                    Button button = new Button();
+                    button.Image = Properties.Resources.comp;
+                    button.ImageAlign = ContentAlignment.MiddleCenter;
+                    button.Size = new Size(35, 35);
+                    button.Location = new Point(200, 210);
+                    button.FlatStyle = FlatStyle.Flat;
+                    button.Tag = productos.Id;
+                    button.Click += new EventHandler(button_Click);
+
+                    if (productos.Existencias == 0)
+                    {
+                        button.Enabled = false; // Deshabilitar el botón si no hay existencias
+
+                        button.ForeColor = Color.Red; // Cambiar color del texto a rojo para resaltar
+
+                        Label label4 = new Label();
+                        label4.Text = "Sin Stock";
+                        label4.ForeColor = Color.Red;
+                        label4.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                        label4.Location = new Point(170, 250);
+                        panel.Controls.Add(label4);
+                    }
+
+                    panel.Controls.Add(button);
+
+                }
+               
+
 
                 Label label2 = new Label();
                 label2.Text = Convert.ToString(productos.Existencias);

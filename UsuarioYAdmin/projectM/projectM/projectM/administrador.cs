@@ -50,16 +50,30 @@ namespace projectM
             string query = "";
             try
             {
+                //Verificar cuantos productos hay en la base de datos
+                query = "SELECT COUNT(*) FROM productos";
+                MySqlCommand cmdCount = new MySqlCommand(query, connection);
+                int total=Convert.ToInt32(cmdCount.ExecuteScalar());
 
-                query = "DELETE FROM productos WHERE id=" + id + ";";
+                if (total > 6)//si hay mas de 6 productos
+                {
+                    query = "DELETE FROM productos WHERE id=" + id + ";";
 
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
-                //MessageBox.Show(query + "\nRegistro Eliminado");
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Se elimino correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("No se puede eliminar el producto, en la base de datos solo hay 6 productos");
+                }
+
+                
+                
             }
             catch (Exception ex)
             {
-                //MessageBox.Show(query + "\nError " + ex.Message);
+                MessageBox.Show("No se elimino");
                 this.Disconnect();
             }
         }

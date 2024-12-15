@@ -64,26 +64,53 @@ namespace projectM
 
         }
 
-        public void agregaCarrito(int id, int idProd, int cantidad, int precio)
+        public void agregaCarrito(int idUsuario, int idProd, int cantidad, int precio)
         {
             string query = "";
             try
             {
-                query = "INSERT INTO comprasaux (id,idProd,cantidad,precio) VALUES ("
-               + "'" + id + "',"
-               + "'" + idProd + "', "
-               + "'" + cantidad + "',"
-               + "'" + precio + "')";
+                //Comprobar si el producto ya esta en el carrito con el mismo usuario
+                query = "SELECT cantidad FROM comprasaux WHERE idUsuario = @idUsuario AND idProd = @idProd";
+
+                MySqlCommand cmdCheck = new MySqlCommand(query, connection);
+                cmdCheck.Parameters.AddWithValue("@idUsuario", idUsuario);
+                cmdCheck.Parameters.AddWithValue("@idProd", idProd);
+
+                var result = cmdCheck.ExecuteScalar(); 
+
+                if (result != null)//si ya se encuentra en el carrito para ese usuario se aumenta solo en cantidad
+                {
+                    int cantActual=Convert.ToInt32(result);
+                    int nuevaCant = cantActual + 1;
+                    query = "UPDATE comprasaux SET cantidad = @nuevaCant WHERE idUsuario = @idUsuario AND idProd = @idProd";
+                    MySqlCommand cmdUpdate = new MySqlCommand(query, connection);
+                    cmdUpdate.Parameters.AddWithValue("@nuevaCant", nuevaCant);
+                    cmdUpdate.Parameters.AddWithValue("@idUsuario", idUsuario);
+                    cmdUpdate.Parameters.AddWithValue("@idProd", idProd);
+
+                    cmdUpdate.ExecuteNonQuery ();
+                }
+                else
+                {
+                    query = "INSERT INTO comprasaux (idUsuario,idProd,cantidad,precio) VALUES ("
+                       + "'" + idUsuario + "',"
+                       + "'" + idProd + "', "
+                       + "'" + cantidad + "',"
+                       + "'" + precio + "')";
 
 
-                
-                MySqlCommand cmd = new MySqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
+
+                    MySqlCommand cmd = new MySqlCommand(query, connection);
+                    cmd.ExecuteNonQuery();
+                    
+                }
+
+                MessageBox.Show("Se agrego al carrito");
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Se agrego al carrito");
+                MessageBox.Show("No se agrego al carrito");
                 this.Disconnect();
             }
         }

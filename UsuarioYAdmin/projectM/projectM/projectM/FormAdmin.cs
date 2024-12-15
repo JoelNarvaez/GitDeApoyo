@@ -13,13 +13,14 @@ namespace projectM
     public partial class FormAdmin : Form
     {
         home viewhome;
-        Gaming viewgaming;
-        Perifericos viewperifericos;
+        Gaming viewGaming;
+        Perifericos viewPerifericos;
         Acerca viewacerca;
         Grafica viewgrafica;
         Editar vieweditar;
         private string nombreUsuario;
         private int idUsuario;
+        public bool isUsuario=false;
 
         bool expandOpc = true;
         public FormAdmin()
@@ -40,9 +41,6 @@ namespace projectM
             this.nombreUsuario = nombreUsuario;
             this.idUsuario = idUsuario;
             this.Load += FormAdmin_Load;
-            //viewgaming = new Gaming(idUsuario);
-            //viewperifericos = new Perifericos(idUsuario);
-            //vieweditar = new Editar(idUsuario);
             viewhome = new home()
 
             {
@@ -51,6 +49,7 @@ namespace projectM
             };
 
             viewhome.Show();
+            MessageBox.Show($"This: {this}");
         }
         private void btnDesp_Click(object sender, EventArgs e)
         {
@@ -62,7 +61,7 @@ namespace projectM
             if (!expandOpc)
             {
                 barOpc.Height += 5;
-                if (barOpc.Height >= 159)
+                if (barOpc.Height >= 209)
                 {
                     timerOpc.Stop();
                     expandOpc = true;
@@ -129,35 +128,37 @@ namespace projectM
 
         private void btnPerifericos_Click(object sender, EventArgs e)
         {
-            if (viewperifericos == null)
+            if (viewPerifericos == null)
             {
-                viewperifericos = new Perifericos(idUsuario)
+                viewPerifericos = new Perifericos(idUsuario, isUsuario)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill
+
                 };
-                viewperifericos.Show();
+                viewPerifericos.Show();
             }
             else
             {
-                viewperifericos.Activate();
+                viewPerifericos.Activate();
             }
         }
 
+
         private void btnGaming_Click(object sender, EventArgs e)
         {
-            if (viewgaming == null)
+            if (viewGaming == null)
             {
-                viewgaming = new Gaming(idUsuario)
+                viewGaming = new Gaming(idUsuario, isUsuario)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill
                 };
-                viewgaming.Show();
+                viewGaming.Show();
             }
             else
             {
-                viewgaming.Activate();
+                viewGaming.Activate();
             }
         }
 
@@ -218,5 +219,31 @@ namespace projectM
             labelHora.Text = DateTime.Now.ToLongTimeString();
         }
 
+        private void btnExist_Click(object sender, EventArgs e)
+        {
+            administrador obj = new administrador();
+            List<productos> existencias = obj.listExist();
+
+            dgvExistencias.Rows.Clear();
+
+            foreach (var producto in existencias)
+            {
+                int rowIndex = dgvExistencias.Rows.Add();
+
+                dgvExistencias.Rows[rowIndex].Cells["IdProducto"].Value = producto.Id;
+                dgvExistencias.Rows[rowIndex].Cells["descripcion"].Value = producto.Descripcion;
+                dgvExistencias.Rows[rowIndex].Cells["precio"].Value = producto.Precio;
+                dgvExistencias.Rows[rowIndex].Cells["existencias"].Value = producto.Existencias;
+                dgvExistencias.Rows[rowIndex].Cells["coleccion"].Value = producto.Coleccion;
+            }
+
+            pnlExist.Visible = !pnlExist.Visible;
+
+        }
+
+        private void btnCerrarExist_Click(object sender, EventArgs e)
+        {
+            pnlExist.Visible=false;
+        }
     }
 }

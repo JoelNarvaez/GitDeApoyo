@@ -522,6 +522,7 @@
             // 
             // pnlCarrito
             // 
+            pnlCarrito.AutoScroll = true;
             pnlCarrito.BackColor = Color.WhiteSmoke;
             pnlCarrito.BorderStyle = BorderStyle.FixedSingle;
             pnlCarrito.Controls.Add(botonRedondo2);

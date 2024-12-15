@@ -11,6 +11,7 @@ namespace projectM
         Acerca viewAcerca;
         private string nombreUsuario;
         private int idUsuario;
+        public bool isUsuario = true;
 
         public FormUsuario()
         {
@@ -167,7 +168,7 @@ namespace projectM
         {
             if (viewGaming == null || viewGaming.IsDisposed)
             {
-                viewGaming = new Gaming(idUsuario)
+                viewGaming = new Gaming(idUsuario, isUsuario)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill
@@ -184,7 +185,7 @@ namespace projectM
         {
             if (viewPerifericos == null || viewPerifericos.IsDisposed)
             {
-                viewPerifericos = new Perifericos(idUsuario)
+                viewPerifericos = new Perifericos(idUsuario, isUsuario)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill

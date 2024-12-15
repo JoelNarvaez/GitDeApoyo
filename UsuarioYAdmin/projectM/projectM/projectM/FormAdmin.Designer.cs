@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             panel1 = new Panel();
             panel3 = new Panel();
             btnPerifericos = new Button();
@@ -53,8 +55,19 @@
             barOpc = new FlowLayoutPanel();
             btnEditar = new Button();
             btnGrafica = new Button();
+            btnExist = new Button();
             timerOpc = new System.Windows.Forms.Timer(components);
             HoraFecha = new System.Windows.Forms.Timer(components);
+            pnlExist = new Panel();
+            dgvExistencias = new DataGridView();
+            IdProducto = new DataGridViewTextBoxColumn();
+            descripcion = new DataGridViewTextBoxColumn();
+            precio = new DataGridViewTextBoxColumn();
+            existencias = new DataGridViewTextBoxColumn();
+            coleccion = new DataGridViewTextBoxColumn();
+            panel6 = new Panel();
+            btnCerrarExist = new Button();
+            label1 = new Label();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
@@ -62,6 +75,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
             barOpc.SuspendLayout();
+            pnlExist.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvExistencias).BeginInit();
+            panel6.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -345,7 +361,7 @@
             buttonCerrar.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             buttonCerrar.Image = Properties.Resources.salida;
             buttonCerrar.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonCerrar.Location = new Point(3, 105);
+            buttonCerrar.Location = new Point(3, 156);
             buttonCerrar.Name = "buttonCerrar";
             buttonCerrar.Size = new Size(160, 45);
             buttonCerrar.TabIndex = 12;
@@ -359,8 +375,9 @@
             barOpc.BackColor = Color.White;
             barOpc.Controls.Add(btnEditar);
             barOpc.Controls.Add(btnGrafica);
+            barOpc.Controls.Add(btnExist);
             barOpc.Controls.Add(buttonCerrar);
-            barOpc.Location = new Point(0, 92);
+            barOpc.Location = new Point(0, 96);
             barOpc.Name = "barOpc";
             barOpc.Size = new Size(163, 0);
             barOpc.TabIndex = 2;
@@ -399,6 +416,22 @@
             btnGrafica.UseVisualStyleBackColor = true;
             btnGrafica.Click += btnGrafica_Click;
             // 
+            // btnExist
+            // 
+            btnExist.FlatAppearance.BorderSize = 0;
+            btnExist.FlatStyle = FlatStyle.Flat;
+            btnExist.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnExist.Image = Properties.Resources.flecha;
+            btnExist.ImageAlign = ContentAlignment.MiddleLeft;
+            btnExist.Location = new Point(3, 105);
+            btnExist.Name = "btnExist";
+            btnExist.Size = new Size(160, 45);
+            btnExist.TabIndex = 18;
+            btnExist.Text = "        Existencias";
+            btnExist.TextAlign = ContentAlignment.MiddleLeft;
+            btnExist.UseVisualStyleBackColor = true;
+            btnExist.Click += btnExist_Click;
+            // 
             // timerOpc
             // 
             timerOpc.Enabled = true;
@@ -410,11 +443,112 @@
             HoraFecha.Enabled = true;
             HoraFecha.Tick += HoraFecha_Tick;
             // 
+            // pnlExist
+            // 
+            pnlExist.AutoScroll = true;
+            pnlExist.BackColor = Color.White;
+            pnlExist.Controls.Add(dgvExistencias);
+            pnlExist.Controls.Add(panel6);
+            pnlExist.Location = new Point(330, 99);
+            pnlExist.Name = "pnlExist";
+            pnlExist.Size = new Size(619, 633);
+            pnlExist.TabIndex = 4;
+            pnlExist.Visible = false;
+            // 
+            // dgvExistencias
+            // 
+            dgvExistencias.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvExistencias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvExistencias.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvExistencias.Columns.AddRange(new DataGridViewColumn[] { IdProducto, descripcion, precio, existencias, coleccion });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dgvExistencias.DefaultCellStyle = dataGridViewCellStyle2;
+            dgvExistencias.Location = new Point(15, 64);
+            dgvExistencias.Name = "dgvExistencias";
+            dgvExistencias.Size = new Size(594, 545);
+            dgvExistencias.TabIndex = 1;
+            // 
+            // IdProducto
+            // 
+            IdProducto.HeaderText = "ID del Producto";
+            IdProducto.Name = "IdProducto";
+            // 
+            // descripcion
+            // 
+            descripcion.HeaderText = "Descripcion";
+            descripcion.Name = "descripcion";
+            // 
+            // precio
+            // 
+            precio.HeaderText = "Precio";
+            precio.Name = "precio";
+            // 
+            // existencias
+            // 
+            existencias.HeaderText = "Existencias";
+            existencias.Name = "existencias";
+            // 
+            // coleccion
+            // 
+            coleccion.HeaderText = "Coleccion";
+            coleccion.Name = "coleccion";
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.Purple;
+            panel6.Controls.Add(btnCerrarExist);
+            panel6.Controls.Add(label1);
+            panel6.Dock = DockStyle.Top;
+            panel6.Location = new Point(0, 0);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(619, 45);
+            panel6.TabIndex = 0;
+            // 
+            // btnCerrarExist
+            // 
+            btnCerrarExist.BackColor = Color.Purple;
+            btnCerrarExist.Dock = DockStyle.Right;
+            btnCerrarExist.FlatStyle = FlatStyle.Flat;
+            btnCerrarExist.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCerrarExist.ForeColor = Color.White;
+            btnCerrarExist.Location = new Point(583, 0);
+            btnCerrarExist.Name = "btnCerrarExist";
+            btnCerrarExist.Size = new Size(36, 45);
+            btnCerrarExist.TabIndex = 1;
+            btnCerrarExist.Text = "X";
+            btnCerrarExist.UseVisualStyleBackColor = false;
+            btnCerrarExist.Click += btnCerrarExist_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(48, 5);
+            label1.Name = "label1";
+            label1.Size = new Size(438, 28);
+            label1.TabIndex = 0;
+            label1.Text = "Listado de productos por existencias";
+            // 
             // FormAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1200, 750);
+            Controls.Add(pnlExist);
             Controls.Add(barOpc);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -432,6 +566,10 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             barOpc.ResumeLayout(false);
+            pnlExist.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvExistencias).EndInit();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -463,5 +601,16 @@
         private Label labelHora;
         private Label labelFecha;
         private System.Windows.Forms.Timer HoraFecha;
+        private Button btnExist;
+        private Panel pnlExist;
+        private Panel panel6;
+        private Label label1;
+        private Button btnCerrarExist;
+        private DataGridView dgvExistencias;
+        private DataGridViewTextBoxColumn IdProducto;
+        private DataGridViewTextBoxColumn descripcion;
+        private DataGridViewTextBoxColumn precio;
+        private DataGridViewTextBoxColumn existencias;
+        private DataGridViewTextBoxColumn coleccion;
     }
 }
