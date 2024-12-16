@@ -14,6 +14,10 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = projectM
+<<<<<<< Updated upstream
 build_property.ProjectDir = C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\
+=======
+build_property.ProjectDir = C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\
+>>>>>>> Stashed changes
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -166,5 +166,12 @@ D:\Proyecto\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0
 D:\Proyecto\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\ref\projectM.dll
 D:\Proyecto\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.FormPago.resources
 D:\Proyecto\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\QRCoder.dll
+<<<<<<< Updated upstream
 C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\QRCoder.dll
 C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.FormPago.resources
+=======
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\QRCoder.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.FormPago.resources
+>>>>>>> Stashed changes

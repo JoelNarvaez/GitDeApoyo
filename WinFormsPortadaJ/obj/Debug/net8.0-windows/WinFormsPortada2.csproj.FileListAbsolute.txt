@@ -131,4 +131,10 @@ D:\Proyecto\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada
 D:\Proyecto\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.genruntimeconfig.cache
 D:\Proyecto\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\ref\WinFormsPortada2.dll
 D:\Proyecto\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\QRCoder.dll
+<<<<<<< Updated upstream
 C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\QRCoder.dll
+=======
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\QRCoder.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+>>>>>>> Stashed changes

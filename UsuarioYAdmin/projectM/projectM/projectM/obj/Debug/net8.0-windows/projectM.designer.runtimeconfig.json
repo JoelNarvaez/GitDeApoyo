@@ -12,8 +12,14 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< Updated upstream
       "C:\\Users\\marie\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\marie\\.nuget\\packages"
+=======
+      "C:\\Users\\joeln\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\joeln\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+>>>>>>> Stashed changes
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

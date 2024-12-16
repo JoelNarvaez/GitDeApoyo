@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\WinFormsPortadaJ\\",
   "Documents": [
     {
@@ -25,6 +26,15 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\github\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\grafica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\grafica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -34,6 +44,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -59,10 +70,26 @@
               "ViewState": "AgIAAIkAAAAAAAAAAAAAAJQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T19:02:33.901Z",
+=======
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Grafica.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:16:48.151Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
               "Title": "FormAdmin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs",
@@ -148,6 +175,17 @@
               "ViewState": "AgIAAEoAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T18:06:31.033Z"
+=======
+              "DocumentIndex": 0,
+              "Title": "Grafica.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs [Design]",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:13:51.695Z",
+              "EditorCaption": " [Design]"
+>>>>>>> Stashed changes
             }
           ]
         }
