@@ -167,7 +167,7 @@ namespace projectM
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (viewGaming == null || viewGaming.IsDisposed)
+            if (viewGaming == null)
             {
                 viewGaming = new Gaming(idUsuario, isUsuario)
                 {
@@ -178,13 +178,20 @@ namespace projectM
             }
             else
             {
-                viewGaming.Activate();
+                viewGaming.Dispose();
+                viewGaming = new Gaming(idUsuario, isUsuario)
+                {
+                    MdiParent = this,
+                    Dock = DockStyle.Fill
+                };
+                viewGaming.Show();
+                
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (viewPerifericos == null || viewPerifericos.IsDisposed)
+            if (viewPerifericos == null)
             {
                 viewPerifericos = new Perifericos(idUsuario, isUsuario)
                 {
@@ -195,7 +202,13 @@ namespace projectM
             }
             else
             {
-                viewPerifericos.Activate();
+                viewPerifericos.Dispose();
+                viewPerifericos = new Perifericos(idUsuario, isUsuario)
+                {
+                    MdiParent = this,
+                    Dock = DockStyle.Fill
+                };
+                viewPerifericos.Show();
             }
         }
 

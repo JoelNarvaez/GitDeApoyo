@@ -49,7 +49,6 @@ namespace projectM
             };
 
             viewhome.Show();
-            MessageBox.Show($"This: {this}");
         }
         private void btnDesp_Click(object sender, EventArgs e)
         {
@@ -140,7 +139,15 @@ namespace projectM
             }
             else
             {
-                viewPerifericos.Activate();
+                viewPerifericos.Dispose();
+                viewPerifericos = new Perifericos(idUsuario, isUsuario)
+                {
+                    MdiParent = this,
+                    Dock = DockStyle.Fill
+
+                };
+                viewPerifericos.Show();
+        
             }
         }
 
@@ -158,7 +165,14 @@ namespace projectM
             }
             else
             {
-                viewGaming.Activate();
+                viewGaming.Dispose();
+                viewGaming = new Gaming(idUsuario, isUsuario)
+                {
+                    MdiParent = this,
+                    Dock = DockStyle.Fill
+                };
+                viewGaming.Show();
+                
             }
         }
 

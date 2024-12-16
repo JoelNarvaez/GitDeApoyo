@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panelAgregar = new Panel();
+            seleccionImg = new Button();
             button1 = new Button();
             panelRedondo6 = new PanelRedondo();
             radioBtnGaming = new RadioButton();
@@ -60,6 +61,7 @@
             // 
             panelAgregar.BackColor = Color.White;
             panelAgregar.BorderStyle = BorderStyle.FixedSingle;
+            panelAgregar.Controls.Add(seleccionImg);
             panelAgregar.Controls.Add(button1);
             panelAgregar.Controls.Add(panelRedondo6);
             panelAgregar.Controls.Add(panelRedondo5);
@@ -76,6 +78,17 @@
             panelAgregar.TabIndex = 8;
             panelAgregar.Visible = false;
             panelAgregar.Paint += panelAgregar_Paint;
+            // 
+            // seleccionImg
+            // 
+            seleccionImg.FlatStyle = FlatStyle.Flat;
+            seleccionImg.Location = new Point(348, 133);
+            seleccionImg.Name = "seleccionImg";
+            seleccionImg.Size = new Size(145, 40);
+            seleccionImg.TabIndex = 22;
+            seleccionImg.Text = "Selecciona Imagen";
+            seleccionImg.UseVisualStyleBackColor = true;
+            seleccionImg.Click += seleccionImg_Click;
             // 
             // button1
             // 
@@ -345,5 +358,6 @@
         private PanelRedondo panelRedondo5;
         private PanelRedondo panelRedondo4;
         private Button button1;
+        private Button seleccionImg;
     }
 }

@@ -23,7 +23,6 @@ namespace projectM
         public Editar()
         {
             InitializeComponent();
-            extraerLista();
         }
         public Editar(int idUsuario)
         {
@@ -38,10 +37,6 @@ namespace projectM
             ListaProductos obj = new ListaProductos();
             data = obj.crear();
             mostrar(data);
-            //Perifericos perifericos = new Perifericos(idUsuario);
-            //perifericos.extraerLista();
-            //Gaming gaming = new Gaming(idUsuario);
-            //gaming.extraerLista();
         }
 
         public void mostrar(List<productos> data)
@@ -51,6 +46,19 @@ namespace projectM
             int X = 25, Y = 50;
             foreach (var productos in data)
             {
+                if (data.Count==0)
+                {
+                    Button buttonAgregar = new Button();
+                    buttonAgregar.Text = "+";
+                    buttonAgregar.TextAlign = ContentAlignment.MiddleCenter;
+                    buttonAgregar.Font = new Font("Century Gothic", 35, FontStyle.Bold);
+                    buttonAgregar.Size = new Size(150, 150);
+                    buttonAgregar.Location = new Point(X, Y);
+                    buttonAgregar.FlatStyle = FlatStyle.Flat;
+                    buttonAgregar.Click += new EventHandler(ButtonAgregar_Click);
+                    this.Controls.Add(buttonAgregar);
+                }
+
                 Panel panel = new Panel();
                 panel.Size = new Size(ancho, alto);
                 panel.Location = new Point(X, Y);
@@ -70,10 +78,14 @@ namespace projectM
 
                 try
                 {
-                    var imagen = (Image)Properties.Resources.ResourceManager.GetObject(productos.Imagen.Split('.')[0]);
-                    if (imagen != null)
+                    string rutaImg = Path.Combine(Application.StartupPath, "ImagenesProducto", productos.Imagen);
+                    if (File.Exists(rutaImg))
                     {
-                        pictureBox.Image = imagen;
+                        pictureBox.Image = Image.FromFile(rutaImg);
+                    }
+                    else
+                    {
+                        //pictureBox.Image = Properties.Resources.ImgDefecto;
                     }
                 }
                 catch { }
@@ -133,16 +145,17 @@ namespace projectM
         }
 
         private void btnCerrarAgregar_Click(object sender, EventArgs e)
-        {  
-                if (vistaPrevia != null)
-                {
-                    this.Controls.Remove(vistaPrevia); // Quitar el panel de vista previa
-                    vistaPrevia = null; // Limpiar la referencia
-                }
-                panelAgregar.Visible = false;
+        {
+            if (vistaPrevia != null)
+            {
+                this.Controls.Remove(vistaPrevia); // Quitar el panel de vista previa
+                vistaPrevia = null; // Limpiar la referencia
+            }
+            panelAgregar.Visible = false;
 
         }
 
+        private string imagenSeleccionada = string.Empty;
         private void btnAceptarAgregar_Click(object sender, EventArgs e)
         {
             int id;
@@ -154,10 +167,21 @@ namespace projectM
 
 
             id = Convert.ToInt32(txtBtId.Text);
-            imagen = txtBtImg.Text;
             descripcion = txtBtDesc.Text;
             precio = Convert.ToInt32(txtBtPrecio.Text);
             existencias = Convert.ToInt32(txtBtExistencias.Text);
+
+
+            if (string.IsNullOrEmpty(imagenSeleccionada))
+            {
+                MessageBox.Show("Por favor, seleccione una imagen.");
+                return;
+            }
+            
+
+            imagen = imagenSeleccionada;
+            txtBtImg.Text = imagen;
+
             if (radioBtnGaming.Checked)
             {
                 coleccion = "gaming";
@@ -180,41 +204,45 @@ namespace projectM
 
         }
 
+
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-                int idEliminar = 0;
-                Button btn = sender as Button;
+            int idEliminar = 0;
+            Button btn = sender as Button;
 
-                if (btn != null)
+            if (btn != null)
+            {
+                idEliminar = (int)btn.Tag;
+                administrador admin = new administrador();
+                productos producto = admin.getProdAElimiar(idEliminar);
+
+                if (producto != null)
                 {
-                    idEliminar = (int)btn.Tag;
-                    administrador admin = new administrador();
-                    productos producto = admin.getProdAElimiar(idEliminar);
+                    // Mostrar vista previa del producto a eliminar
+                    MostrarVistaPrevia(producto);
 
-                    if (producto != null)
+                    DialogResult result = MessageBox.Show("¿Seguro que desea eliminar el producto?", "Confirmacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                    if (result == DialogResult.OK)
                     {
-                        // Mostrar vista previa del producto a eliminar
-                        MostrarVistaPrevia(producto);
+                        admin.eliminar(idEliminar);
 
-                        DialogResult result = MessageBox.Show("¿Seguro que desea eliminar el producto?", "Confirmacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                        this.Controls.Remove(eliminar);
 
-                        if (result == DialogResult.OK)
-                        {
-                            admin.eliminar(idEliminar);
-                            extraerLista();
-                            this.Controls.Remove(eliminar);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Se canceló la eliminación");
-                            this.Controls.Remove(eliminar);
-                        }
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró el producto a eliminar");
+                        MessageBox.Show("Se canceló la eliminación");
+                        this.Controls.Remove(eliminar);
                     }
                 }
+                else
+                {
+                    MessageBox.Show("No se encontró el producto a eliminar");
+                }
+            }
+            extraerLista();
 
         }
 
@@ -320,13 +348,13 @@ namespace projectM
 
             if (vistaPrevia != null)
             {
-                this.Controls.Remove(vistaPrevia); 
+                this.Controls.Remove(vistaPrevia);
             }
 
             vistaPrevia = new Panel
             {
-                Size = new Size(530, 390), 
-                Location = new Point(545, 110), 
+                Size = new Size(530, 390),
+                Location = new Point(545, 110),
                 BorderStyle = BorderStyle.FixedSingle,
                 BackColor = Color.White
             };
@@ -343,6 +371,7 @@ namespace projectM
             {
                 var imagen = (Image)Properties.Resources.ResourceManager.GetObject(txtBtImg.Text.Split('.')[0]);
                 pictureBox.Image = imagen ?? Properties.Resources.NavigaLogoLog; // Imagen por defecto
+
             }
             catch
             {
@@ -396,5 +425,35 @@ namespace projectM
             vistaPrevia.BringToFront();
         }
 
+        private void seleccionImg_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Archivos de imagen (*.jpg;*.jpeg;*.png)|*.jpg;*.jpeg;*.png";
+            openFileDialog.Title = "Seleccionar Imagen";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string rutaImagenSeleccionada = openFileDialog.FileName;
+                imagenSeleccionada = Path.GetFileName(rutaImagenSeleccionada);
+
+                string rutaDestino = Path.Combine(Application.StartupPath, "ImagenesProducto", imagenSeleccionada);
+                
+                MessageBox.Show(Application.StartupPath);
+
+                string folderPath = Path.Combine(Application.StartupPath, "ImagenesProducto");
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
+                File.Copy(rutaImagenSeleccionada, rutaDestino, true);
+            }
+            else
+            {
+                MessageBox.Show("No se seleccionó ninguna imagen.");
+            }
+        }
+
     }
 }
+    

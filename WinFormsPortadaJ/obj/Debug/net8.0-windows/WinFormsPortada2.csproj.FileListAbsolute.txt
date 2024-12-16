@@ -215,3 +215,5 @@ D:\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\refint\WinFormsPortada2.
 D:\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.pdb
 D:\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.genruntimeconfig.cache
 D:\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\ref\WinFormsPortada2.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll

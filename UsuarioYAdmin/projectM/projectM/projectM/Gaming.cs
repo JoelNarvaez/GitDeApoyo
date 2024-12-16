@@ -21,15 +21,15 @@ namespace projectM
         public Gaming()
         {
             InitializeComponent();
-            extraerLista();
-
         }
         public Gaming(int idUsuario, bool isUsuario)
         {
             InitializeComponent();
-            extraerLista();
+            
             this.idUsuario = idUsuario;
             this.isUsuario = isUsuario;
+
+            extraerLista();
         }
 
         public void extraerLista()
@@ -56,7 +56,12 @@ namespace projectM
 
         public void mostrar(List<productos> gaming)
         {
+
             this.Controls.Clear();
+            if (this.isUsuario == false)
+            {
+                this.Width = 1200;
+            }
             int X = 25, Y = 50;
             foreach (var productos in gaming)
             {
@@ -79,13 +84,20 @@ namespace projectM
                 
                 try
                 {
-                    var imagen = (Image)Properties.Resources.ResourceManager.GetObject(productos.Imagen.Split('.')[0]);
-                    if (imagen != null)
+                    string rutaImg = Path.Combine(Application.StartupPath, "ImagenesProducto", productos.Imagen);
+                    if (File.Exists(rutaImg))
                     {
-                        pictureBox.Image = imagen;
+                        pictureBox.Image=Image.FromFile(rutaImg);
+                    }
+                    else
+                    {
+                        //pictureBox.Image = Properties.Resources.ImgDefecto;
                     }
                 }
-                catch { }
+                catch
+                {
+
+                }
                 panel.Controls.Add(pictureBox);
 
                 Label label = new Label();
@@ -96,7 +108,7 @@ namespace projectM
                 panel.Controls.Add(label);
 
 
-                if (this.isUsuario = true)
+                if (this.isUsuario == true)
                 {
                     Button button = new Button();
                     button.Image = Properties.Resources.comp;
