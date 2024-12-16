@@ -171,3 +171,6 @@ C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\WinFormsProyectoFinal
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\WinFormsProyectoFinal\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.pdb
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\WinFormsProyectoFinal\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.genruntimeconfig.cache
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\WinFormsProyectoFinal\WinFormsPortadaJ\obj\Debug\net8.0-windows\ref\WinFormsPortada2.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\QRCoder.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll

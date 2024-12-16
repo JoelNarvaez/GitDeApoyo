@@ -1,12 +1,82 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\WinFormsProyectoFinal\\WinFormsPortadaJ\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\grafica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\grafica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\gaming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\projectm.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "projectM",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-16T01:47:51.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Grafica.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T01:45:15.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Grafica.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs [Design]",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T01:43:38.056Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Gaming.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs [Design]",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T01:43:26.781Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

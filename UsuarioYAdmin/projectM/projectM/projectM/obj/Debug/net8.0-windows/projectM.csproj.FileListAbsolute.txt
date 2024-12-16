@@ -211,3 +211,7 @@ C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\WinFormsProyectoFinal
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\WinFormsProyectoFinal\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.pdb
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\WinFormsProyectoFinal\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.genruntimeconfig.cache
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\WinFormsProyectoFinal\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\ref\projectM.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\QRCoder.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\obj\Debug\net8.0-windows\projectM.FormPago.resources
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll

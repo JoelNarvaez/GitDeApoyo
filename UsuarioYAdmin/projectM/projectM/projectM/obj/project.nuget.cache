@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1Vkb4nWrWMg=",
+  "dgSpecHash": "QBHoI0tatLM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\WinFormsProyectoFinal\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
+  "projectFilePath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joeln\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\joeln\\.nuget\\packages\\google.protobuf\\3.26.1\\google.protobuf.3.26.1.nupkg.sha512",
@@ -35,6 +35,7 @@
     "C:\\Users\\joeln\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\joeln\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\joeln\\.nuget\\packages\\system.windows.extensions\\8.0.0\\system.windows.extensions.8.0.0.nupkg.sha512",
+    "C:\\Users\\joeln\\.nuget\\packages\\winforms.datavisualization\\1.9.2\\winforms.datavisualization.1.9.2.nupkg.sha512",
     "C:\\Users\\joeln\\.nuget\\packages\\zstdsharp.port\\0.8.0\\zstdsharp.port.0.8.0.nupkg.sha512"
   ],
   "logs": []
