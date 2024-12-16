@@ -440,6 +440,7 @@
             buttonCerrar.Text = "Cerrar Sesión";
             buttonCerrar.UseVisualStyleBackColor = true;
             buttonCerrar.Visible = false;
+            buttonCerrar.Click += buttonCerrar_Click;
             // 
             // botonRedondo1
             // 

@@ -12,6 +12,7 @@ namespace projectM
         private string nombreUsuario;
         private int idUsuario;
         public bool isUsuario = true;
+        private List<carrito> carritoAux = new List<carrito>();
 
         public FormUsuario()
         {
@@ -430,9 +431,9 @@ namespace projectM
 
 
         private void botonRedondo1_Click(object sender, EventArgs e)
-        {
+        { 
             FlowLayoutPanel clonedPanel = ClonePanel(pnlCarrito) as FlowLayoutPanel;
-            FormPago formPago = new FormPago(clonedPanel);
+            FormPago formPago = new FormPago(clonedPanel, nombreUsuario, carritoAux);
             formPago.Show();
             this.Close();
         }
