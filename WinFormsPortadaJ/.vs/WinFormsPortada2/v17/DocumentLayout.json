@@ -1,40 +1,33 @@
 {
   "Version": 1,
-<<<<<<< Updated upstream
-  "WorkspaceRootPath": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\WinFormsPortadaJ\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\github\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\github\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\github\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\gaming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\github\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\perifericos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\github\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\github\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\github\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\marie\\onedrive\\documents\\github\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
   "WorkspaceRootPath": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\WinFormsPortadaJ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\grafica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\grafica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\gaming.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\perifericos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{118839DE-E9E2-411B-B58B-EF727C29C2C3}|..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj|c:\\users\\joeln\\onedrive\\desktop\\repositorio proyecto final\\final\\gitdeapoyo\\usuarioyadmin\\projectm\\projectm\\projectm\\formpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,148 +37,117 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< Updated upstream
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAJ4VAAAAAAAAAAASwN4VAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-12-16T00:38:06.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormAdmin.cs",
-              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs",
               "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs",
-              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs*",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs*",
               "ViewState": "AgIAAIkAAAAAAAAAAAAAAJQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T19:02:33.901Z",
-=======
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Grafica.cs",
-              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
-              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
-              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T00:16:48.151Z",
->>>>>>> Stashed changes
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 4,
-              "Title": "FormAdmin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs",
-              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs",
-              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs [Design]",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T19:29:18.075Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormPago.cs",
-              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormPago.cs",
-              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormPago.cs",
-              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormPago.cs",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormPago.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAABIAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:16:58.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Gaming.cs",
-              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs",
-              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs",
-              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAH0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:08:25.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Perifericos.cs",
-              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Perifericos.cs",
-              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Perifericos.cs",
-              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Perifericos.cs",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Perifericos.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:07:59.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
-              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
-              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAAAKoAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:07:15.588Z",
+              "WhenOpened": "2024-12-16T00:36:19.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "administrador.cs",
-              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\administrador.cs",
-              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\administrador.cs",
-              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\administrador.cs",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\administrador.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAAAD8AAAAUAAAAAAAAAA==",
+              "Title": "FormAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs [Design]*",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormAdmin.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:05:29.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T00:36:20.113Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormPago.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormPago.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormPago.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormPago.cs",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormPago.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAABIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:36:20.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Gaming.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Gaming.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAH0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:36:20.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Perifericos.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Perifericos.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Perifericos.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Perifericos.cs",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Perifericos.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:36:20.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\FormUsuario.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAAAKoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:36:20.124Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "administrador.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\administrador.cs",
+              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\administrador.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\administrador.cs",
+              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\administrador.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAD8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:36:20.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "usuario.cs",
-              "DocumentMoniker": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\usuario.cs",
+              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\usuario.cs",
               "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\usuario.cs",
-              "ToolTip": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\usuario.cs",
+              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\usuario.cs",
               "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\usuario.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T18:06:31.033Z"
-=======
-              "DocumentIndex": 0,
-              "Title": "Grafica.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
-              "RelativeDocumentMoniker": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs",
-              "ToolTip": "C:\\Users\\joeln\\OneDrive\\Desktop\\Repositorio Proyecto Final\\Final\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs [Design]",
-              "RelativeToolTip": "..\\UsuarioYAdmin\\projectM\\projectM\\projectM\\Grafica.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T00:13:51.695Z",
-              "EditorCaption": " [Design]"
->>>>>>> Stashed changes
+              "WhenOpened": "2024-12-16T00:36:20.128Z"
             }
           ]
         }
