@@ -266,3 +266,4 @@ D:\Proyecto\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0
 D:\Proyecto\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
 D:\Proyecto\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\itextsharp.dll
 C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\itextsharp.dll
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\itextsharp.dll

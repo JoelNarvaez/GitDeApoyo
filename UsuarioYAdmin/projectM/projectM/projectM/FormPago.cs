@@ -12,6 +12,7 @@ using MySql.Data.MySqlClient;
 using QRCoder;
 using static projectM.FormUsuario;
 using projectM;
+using Org.BouncyCastle.Pqc.Crypto.Saber;
 
 
 namespace projectM
@@ -22,11 +23,14 @@ namespace projectM
         private string nombreUsuario;
         private FlowLayoutPanel panelResumen;
         List<carrito> carritoPago;
+        private decimal monto;
+        private int idUsuario;
 
-        public FormPago(FlowLayoutPanel panelCarrito, string nombreUsuario, List<carrito> carritoPago)
+        public FormPago(FlowLayoutPanel panelCarrito, string nombreUsuario, List<carrito> carritoPago, int idUsuario)
         {
             InitializeComponent();
             this.nombreUsuario = nombreUsuario;
+            this.idUsuario = idUsuario;
             label1.Text = nombreUsuario;
             panelOxxo.Visible = false;
             panelOxxo.Size = new Size(600, 500);
@@ -144,7 +148,7 @@ namespace projectM
 
         private void botonRedondo1_Click_1(object sender, EventArgs e)
         {
-            FormUsuario formUsuario = new FormUsuario();
+            FormUsuario formUsuario = new FormUsuario(nombreUsuario, idUsuario);
             formUsuario.Show();
             this.Close();
         }
@@ -227,7 +231,9 @@ namespace projectM
             {
                 MessageBox.Show("Procesando informacion de pago.");
                 MostrarConfirmacion("OXXO", carritoPago, referencia);
-
+                agregarMonto();
+                modificarExistencias();
+                actualizarTablaVentasYBorrarCarrito();
             };
 
             btnAtras.Click += (sender, e) =>
@@ -538,6 +544,7 @@ namespace projectM
                     };
                     panelProd.Controls.Add(label);
 
+                    cuantos += p.Cantidad;
                     Label label2 = new Label
                     {
                         Text = "Cantidad: " + p.Cantidad,
@@ -569,12 +576,12 @@ namespace projectM
                     panelProd.Controls.Add(label4);
 
                     panelOxxo.Controls.Add(panelProd);
-
+                   
                     Total += producto.Precio * p.Cantidad;
-                    cuantos++;
+                   
                 }
             }
-
+            monto = Total;
             labelProductos.Text = $"Productos ({cuantos})";
 
             decimal totalFinal = Total * 1.06m;
@@ -639,7 +646,7 @@ namespace projectM
                     totalImpuestos,
                     totalFinal
                 );
-                FormUsuario formUsuario = new FormUsuario();
+                FormUsuario formUsuario = new FormUsuario(nombreUsuario, idUsuario);
                 formUsuario.Show();
                 this.Close();
             };
@@ -651,6 +658,26 @@ namespace projectM
             this.Close();
             FormLogin nuevoFormulario = new FormLogin();
             nuevoFormulario.Show();
+        }
+
+
+        public void agregarMonto()
+        {
+           usuario obj = new usuario();
+           obj.agregarPersonaMonto(monto, nombreUsuario);
+        }
+
+        public void modificarExistencias()
+        {
+            usuario obj = new usuario();
+            obj.compra(carritoPago);
+        }
+
+        public void actualizarTablaVentasYBorrarCarrito()
+        {
+            usuario obj = new usuario();
+            obj.actualVentas(carritoPago, idUsuario);
+            obj.borrarCarrito(idUsuario);
         }
     }
 }

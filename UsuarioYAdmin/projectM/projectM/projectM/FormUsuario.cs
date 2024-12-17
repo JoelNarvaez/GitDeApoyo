@@ -452,7 +452,7 @@ namespace projectM
         private void botonRedondo1_Click(object sender, EventArgs e)
         {
             FlowLayoutPanel clonedPanel = ClonePanel(pnlCarrito) as FlowLayoutPanel;
-            FormPago formPago = new FormPago(clonedPanel, nombreUsuario, carritoPago);
+            FormPago formPago = new FormPago(clonedPanel, nombreUsuario, carritoPago, idUsuario);
             formPago.Show();
             this.Close();
         }
