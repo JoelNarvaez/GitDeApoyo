@@ -515,7 +515,7 @@
             botonRedondo1.Name = "botonRedondo1";
             botonRedondo1.Size = new Size(194, 52);
             botonRedondo1.TabIndex = 3;
-            botonRedondo1.Text = "Continar Compra";
+            botonRedondo1.Text = "Continuar Compra";
             botonRedondo1.TextColor = Color.White;
             botonRedondo1.UseVisualStyleBackColor = false;
             botonRedondo1.Click += botonRedondo1_Click;

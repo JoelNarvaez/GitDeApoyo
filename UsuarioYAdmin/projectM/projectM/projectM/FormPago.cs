@@ -21,16 +21,16 @@ namespace projectM
         private PictureBox pictureBoxQR;
         private string nombreUsuario;
         private FlowLayoutPanel panelResumen;
-        List<carrito> carritoAux;
+        List<carrito> carritoPago;
 
-        public FormPago(FlowLayoutPanel panelCarrito, string nombreUsuario, List<carrito> carritoAux)
+        public FormPago(FlowLayoutPanel panelCarrito, string nombreUsuario, List<carrito> carritoPago)
         {
             InitializeComponent();
             this.nombreUsuario = nombreUsuario;
             label1.Text = nombreUsuario;
             panelOxxo.Visible = false;
             panelOxxo.Size = new Size(600, 500);
-            this.carritoAux = carritoAux;
+            this.carritoPago = carritoPago;
 
             rbtnOxxo.CheckedChanged += rbtnOxxo_CheckedChanged;
             rbtnTarjeta.CheckedChanged += rbtnTarjeta_CheckedChanged;
@@ -203,7 +203,7 @@ namespace projectM
             int margenHorizontal = 20;
             int margenVertical = 30;
 
-            Button btnAtras = new RoundedButton
+            Button btnAtras = new Button
             {
                 Text = "Atrás",
                 Font = new Font("Century Gothic", 12, FontStyle.Bold),
@@ -213,7 +213,7 @@ namespace projectM
                 ForeColor = Color.White
             };
 
-            Button btnFin = new RoundedButton
+            Button btnFin = new Button
             {
                 Text = "Finalizar Compra",
                 Font = new Font("Century Gothic", 12, FontStyle.Bold),
@@ -226,7 +226,7 @@ namespace projectM
             btnFin.Click += (sender, e) =>
             {
                 MessageBox.Show("Procesando informacion de pago.");
-                MostrarConfirmacion("OXXO", carritoAux, referencia);
+                MostrarConfirmacion("OXXO", carritoPago, referencia);
 
             };
 
@@ -347,7 +347,7 @@ namespace projectM
             int margenHorizontal = 20;
             int margenVertical = 30;
 
-            Button btnAtras = new RoundedButton
+            Button btnAtras = new Button
             {
                 Text = "Atrás",
                 Font = new Font("Century Gothic", 12, FontStyle.Bold),
@@ -363,7 +363,7 @@ namespace projectM
                 panelOxxo.Controls.Clear();
             };
 
-            Button btnFin = new RoundedButton
+            Button btnFin = new Button
             {
                 Text = "Finalizar Compra",
                 Font = new Font("Century Gothic", 12, FontStyle.Bold),
@@ -375,17 +375,9 @@ namespace projectM
 
             btnFin.Click += (sender, e) =>
             {
-                if (!ValidarTarjeta(txtNumeroTarjeta.Text))
-                {
-                    MessageBox.Show("Número de tarjeta inválido. Por favor verifica el formato.");
-                    return;
-                }
-
                 MessageBox.Show("Procesando informacion de pago.");
                 string numeroTarjeta = txtNumeroTarjeta.Text;
-                MostrarConfirmacion("Tarjeta de Crédito", carritoAux, txtNumeroTarjeta.Text);
-
-
+                MostrarConfirmacion("Tarjeta de Crédito", carritoPago, txtNumeroTarjeta.Text);
             };
 
             panelOxxo.Controls.Add(lblTitulo);
@@ -406,8 +398,6 @@ namespace projectM
             panelOxxo.Visible = true;
             panelOxxo.BringToFront();
         }
-
-
         private void btnMenu_Click(object sender, EventArgs e)
         {
             buttonCerrar.Visible = !buttonCerrar.Visible;
@@ -439,40 +429,21 @@ namespace projectM
 
         }
 
-        public class RoundedButton : Button
-        {
-            protected override void OnPaint(PaintEventArgs pevent)
-            {
-                base.OnPaint(pevent);
-                Graphics g = pevent.Graphics;
-                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-                using (GraphicsPath path = new GraphicsPath())
-                {
-                    path.AddArc(new Rectangle(0, 0, 20, 20), 180, 90);
-                    path.AddArc(new Rectangle(Width - 20, 0, 20, 20), 270, 90);
-                    path.AddArc(new Rectangle(Width - 20, Height - 20, 20, 20), 0, 90);
-                    path.AddArc(new Rectangle(0, Height - 20, 20, 20), 90, 90);
-                    path.CloseAllFigures();
-                    this.Region = new Region(path);
-                }
-            }
-        }
-        private void MostrarConfirmacion(string metodoPago, List<carrito> carritoAux, string referenciaOTarjeta)
+        private void MostrarConfirmacion(string metodoPago, List<carrito> carritoPago, string referenciaOTarjeta)
         {
             panelOxxo.Controls.Clear();
+            panelOxxo.AutoScroll = true;
+            panelResumen.Visible = false;
 
-            // Logo
             PictureBox logo = new PictureBox
             {
-                Image = Properties.Resources.NavigaLogo1, // Asegúrate de tener un recurso de logo agregado.
+                Image = Properties.Resources.NavigaLogoLog,
                 Size = new Size(100, 100),
                 SizeMode = PictureBoxSizeMode.StretchImage,
                 Location = new Point((panelOxxo.Width - 100) / 2, 10),
                 BackColor = Color.White
             };
 
-            // Eslogan
             Label eslogan = new Label
             {
                 Text = "Conecta con el futuro",
@@ -482,17 +453,15 @@ namespace projectM
                 Location = new Point((panelOxxo.Width - 200) / 2, logo.Bottom + 10)
             };
 
-            // Fecha y Hora
             Label fechaHora = new Label
             {
                 Text = DateTime.Now.ToString("F"),
                 Font = new Font("Century Gothic", 10),
                 ForeColor = Color.Black,
                 AutoSize = true,
-                Location = new Point((panelOxxo.Width - 200) / 2, eslogan.Bottom + 20)
+                Location = new Point((panelOxxo.Width - 300) / 2, eslogan.Bottom + 20)
             };
 
-            // Nombre de usuario
             Label lblUsuario = new Label
             {
                 Text = $"Nombre: {nombreUsuario}",
@@ -502,7 +471,6 @@ namespace projectM
                 Location = new Point(10, fechaHora.Bottom + 10)
             };
 
-            // Método de pago
             Label lblMetodoPago = new Label
             {
                 Text = $"Método de Pago: {metodoPago}",
@@ -512,7 +480,6 @@ namespace projectM
                 Location = new Point(10, lblUsuario.Bottom + 10)
             };
 
-            // Referencia o número de tarjeta
             Label lblReferenciaOTarjeta = new Label
             {
                 Text = metodoPago == "OXXO" ? $"Número de referencia: {referenciaOTarjeta}" : $"Número de tarjeta: {referenciaOTarjeta}",
@@ -529,72 +496,155 @@ namespace projectM
             panelOxxo.Controls.Add(lblMetodoPago);
             panelOxxo.Controls.Add(lblReferenciaOTarjeta);
 
-            // Productos
-            Button btnFinalizar = new RoundedButton
+            Label labelProductos = new Label
             {
-                Text = "Finalizar",
-                Font = new Font("Century Gothic", 12, FontStyle.Bold),
-                Size = new Size(100, 40),
-                Location = new Point((panelOxxo.Width - 100) / 2, lblReferenciaOTarjeta.Bottom + 20),
-                BackColor = Color.MediumSlateBlue,
-                ForeColor = Color.White
+                Text = $"Productos (0)",
+                ForeColor = Color.Black,
+                Font = new Font("Century Gothic", 12, FontStyle.Regular),
+                Location = new Point(20, lblReferenciaOTarjeta.Bottom + 20),
+                AutoSize = true
             };
+            panelOxxo.Controls.Add(labelProductos);
 
-            btnFinalizar.Click += (sender, e) =>
+            int X = 20, Y = labelProductos.Bottom + 20;
+            int ancho = 450, alto = 100, margenY = 10;
+            decimal Total = 0;
+            int cuantos = 0;
+
+            usuario obj = new usuario();
+
+            foreach (var p in carritoPago)
             {
-                int yPosition = lblReferenciaOTarjeta.Bottom + 50;
-                decimal total = 0;
-
-                foreach (var producto in carritoAux)
+                productos producto = obj.obtenerProductoPorId(p.IdProducto);
+                if (producto != null)
                 {
-                    Label lblProducto = new Label
+                    Panel panelProd = new Panel
                     {
-                        Text = $"- {producto.IdProducto} (x{producto.Cantidad}): ${producto.Precio * producto.Cantidad:F2}",
-                        Font = new Font("Century Gothic", 10),
-                        ForeColor = Color.Black,
-                        AutoSize = true,
-                        Location = new Point(20, yPosition)
+                        Size = new Size(ancho, alto),
+                        Location = new Point(X, Y),
+                        BorderStyle = BorderStyle.FixedSingle,
+                        BackColor = Color.White
                     };
-                    panelOxxo.Controls.Add(lblProducto);
-                    yPosition = lblProducto.Bottom + 5;
-                    total += producto.Precio * producto.Cantidad;
+
+                    Y += alto + margenY;
+
+                    Label label = new Label
+                    {
+                        Text = producto.Descripcion,
+                        ForeColor = Color.BlueViolet,
+                        Font = new Font("Century Gothic", 12, FontStyle.Bold),
+                        Location = new Point(10, 10),
+                        AutoSize = true
+                    };
+                    panelProd.Controls.Add(label);
+
+                    Label label2 = new Label
+                    {
+                        Text = "Cantidad: " + p.Cantidad,
+                        ForeColor = Color.Black,
+                        Font = new Font("Century Gothic", 11, FontStyle.Bold),
+                        Location = new Point(10, 40),
+                        AutoSize = true
+                    };
+                    panelProd.Controls.Add(label2);
+
+                    Label label3 = new Label
+                    {
+                        Text = "$ " + producto.Precio.ToString("F2"),
+                        ForeColor = Color.Black,
+                        Font = new Font("Century Gothic", 12, FontStyle.Regular),
+                        Location = new Point(200, 10),
+                        AutoSize = true
+                    };
+                    panelProd.Controls.Add(label3);
+
+                    Label label4 = new Label
+                    {
+                        Text = "Total: $ " + (producto.Precio * p.Cantidad).ToString("F2"),
+                        ForeColor = Color.DeepPink,
+                        Font = new Font("Century Gothic", 12, FontStyle.Regular),
+                        Location = new Point(200, 40),
+                        AutoSize = true
+                    };
+                    panelProd.Controls.Add(label4);
+
+                    panelOxxo.Controls.Add(panelProd);
+
+                    Total += producto.Precio * p.Cantidad;
+                    cuantos++;
                 }
+            }
 
-                // Total sin impuestos
-                Label lblTotal = new Label
-                {
-                    Text = $"Total: ${total:F2}",
-                    Font = new Font("Century Gothic", 12, FontStyle.Bold),
-                    ForeColor = Color.Black,
-                    AutoSize = true,
-                    Location = new Point(10, yPosition + 10)
-                };
+            labelProductos.Text = $"Productos ({cuantos})";
 
-                // Total con impuestos
-                decimal totalConImpuestos = total * 1.06m;
-                Label lblTotalConImpuestos = new Label
-                {
-                    Text = $"Total con impuestos (6%): ${totalConImpuestos:F2}",
-                    Font = new Font("Century Gothic", 12, FontStyle.Bold),
-                    ForeColor = Color.Black,
-                    AutoSize = true,
-                    Location = new Point(10, lblTotal.Bottom + 10)
-                };
+            decimal totalFinal = Total * 1.06m;
+            decimal totalImpuestos = totalFinal-Total;
 
-                panelOxxo.Controls.Add(lblTotal);
-                panelOxxo.Controls.Add(lblTotalConImpuestos);
-                panelOxxo.Visible = true;
-                panelOxxo.BringToFront();
+            Label labelTotal = new Label
+            {
+                Text = $"Total: ${Total:F2}",
+                ForeColor = Color.Black,
+                Font = new Font("Century Gothic", 12, FontStyle.Bold),
+                Location = new Point(20, Y + 10),
+                AutoSize = true
+            };
+            panelOxxo.Controls.Add(labelTotal);
+
+            Label labelImpuestos = new Label
+            {
+                Text = $"Impuestos (6%): ${totalImpuestos:F2}",
+                ForeColor = Color.Black,
+                Font = new Font("Century Gothic", 12, FontStyle.Bold),
+                Location = new Point(20, labelTotal.Bottom + 10),
+                AutoSize = true
             };
 
-            panelOxxo.Controls.Add(btnFinalizar);
+
+            Label labelTotalConImpuestos = new Label
+            {
+                Text = $"Total con impuestos: ${totalFinal:F2}",
+                ForeColor = Color.Black,
+                Font = new Font("Century Gothic", 12, FontStyle.Bold),
+                Location = new Point(20, labelImpuestos.Bottom + 10),
+                AutoSize = true
+            };
+
+            Button btnDescargar = new Button
+            {
+                Text = "Descargar Nota",
+                ForeColor = Color.White,
+                Font = new Font("Century Gothic", 12, FontStyle.Bold),
+                Location = new Point((panelOxxo.Width - 200) / 2, labelTotalConImpuestos.Bottom + 10),
+                AutoSize = true,
+                BackColor=Color.BlueViolet,
+
+            };
+            panelOxxo.Controls.Add(btnDescargar);
+            panelOxxo.Controls.Add(labelTotalConImpuestos);
+            panelOxxo.Controls.Add(labelImpuestos);
+
+            panelOxxo.Visible = true;
+            panelOxxo.BringToFront();
+
+            btnDescargar.Click += (s, e) =>
+            {
+                GenerarPDF generador = new GenerarPDF();
+                generador.CrearPDF(
+                    "NotaCompra.pdf",
+                    metodoPago,
+                    carritoPago,
+                    referenciaOTarjeta,
+                    nombreUsuario,
+                    Total,
+                    totalImpuestos,
+                    totalFinal
+                );
+                FormUsuario formUsuario = new FormUsuario();
+                formUsuario.Show();
+                this.Close();
+            };
         }
 
-
-        private bool ValidarTarjeta(string numeroTarjeta)
-        {
-            return System.Text.RegularExpressions.Regex.IsMatch(numeroTarjeta, @"^\d{4} \d{4} \d{4} \d{4}$");
-        }
 
         private void buttonCerrar_Click(object sender, EventArgs e)
         {

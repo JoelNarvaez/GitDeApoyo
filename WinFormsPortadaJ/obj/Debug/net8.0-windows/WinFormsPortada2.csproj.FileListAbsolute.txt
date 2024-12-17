@@ -217,3 +217,6 @@ D:\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\WinFormsPortada2.genrunt
 D:\GitDeApoyo\WinFormsPortadaJ\obj\Debug\net8.0-windows\ref\WinFormsPortada2.dll
 C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
 C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+D:\Proyecto\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+D:\Proyecto\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+D:\Proyecto\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\itextsharp.dll

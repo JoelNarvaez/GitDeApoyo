@@ -12,7 +12,7 @@ namespace projectM
         private string nombreUsuario;
         private int idUsuario;
         public bool isUsuario = true;
-        private List<carrito> carritoAux = new List<carrito>();
+        private List<carrito> carritoPago = new List<carrito>();
 
         public FormUsuario()
         {
@@ -265,11 +265,12 @@ namespace projectM
             usuario obj = new usuario();
 
             carritoAux = obj.getcarrito(idUsuario);
+            carritoPago = obj.getcarrito(idUsuario);
 
             if (carritoAux.Count == 0)
             {
                 MessageBox.Show("NO HAY PRODUCTOS");
-                return; // Salir si no hay productos
+                return; 
             }
 
             foreach (var p in carritoAux)
@@ -407,15 +408,14 @@ namespace projectM
                 AutoScroll = true,
                 FlowDirection = FlowDirection.TopDown,
                 WrapContents = false,
-                Padding = new Padding(0), // Sin relleno
-                Margin = new Padding(0)   // Sin margen
+                Padding = new Padding(0), 
+                Margin = new Padding(0)
             };
 
             foreach (Control control in originalPanel.Controls)
             {
                 Control newControl = (Control)Activator.CreateInstance(control.GetType());
 
-                // Copiar las propiedades del control original al nuevo control
                 newControl.Text = control.Text;
                 newControl.Size = new Size(newPanel.Width - 20, control.Height); // Ajustar ancho al newPanel
                 newControl.Font = control.Font;
@@ -427,11 +427,11 @@ namespace projectM
                 {
                     PictureBox newPictureBox = new PictureBox
                     {
-                        Size = new Size(newPanel.Width - 20, pictureBox.Height), // Ajustar ancho al newPanel
+                        Size = new Size(newPanel.Width - 20, pictureBox.Height), 
                         Image = pictureBox.Image,
                         SizeMode = pictureBox.SizeMode,
                         BackColor = pictureBox.BackColor,
-                        Margin = new Padding(0, 5, 0, 0) // Sin margen superior, solo inferior
+                        Margin = new Padding(0, 5, 0, 0)
                     };
                     newControl = newPictureBox;
                 }
@@ -446,7 +446,7 @@ namespace projectM
         private void botonRedondo1_Click(object sender, EventArgs e)
         { 
             FlowLayoutPanel clonedPanel = ClonePanel(pnlCarrito) as FlowLayoutPanel;
-            FormPago formPago = new FormPago(clonedPanel, nombreUsuario, carritoAux);
+            FormPago formPago = new FormPago(clonedPanel, nombreUsuario, carritoPago);
             formPago.Show();
             this.Close();
         }
