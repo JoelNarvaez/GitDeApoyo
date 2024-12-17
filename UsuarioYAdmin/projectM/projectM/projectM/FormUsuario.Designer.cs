@@ -552,6 +552,7 @@
             botonRedondo2.Text = "Borrar el carrito";
             botonRedondo2.TextColor = Color.BlueViolet;
             botonRedondo2.UseVisualStyleBackColor = false;
+            botonRedondo2.Click += botonRedondo2_Click;
             // 
             // FormUsuario
             // 

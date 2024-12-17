@@ -164,6 +164,7 @@ namespace projectM
             int precio;
             int existencias;
             string coleccion = string.Empty;
+            txtBtImg.PlaceholderText = "Nombre de la imagen";
 
 
             id = Convert.ToInt32(txtBtId.Text);
@@ -180,7 +181,7 @@ namespace projectM
             
 
             imagen = imagenSeleccionada;
-            txtBtImg.Text = imagen;
+            txtBtImg.PlaceholderText = imagen;
 
             if (radioBtnGaming.Checked)
             {
@@ -271,15 +272,30 @@ namespace projectM
                 SizeMode = PictureBoxSizeMode.Zoom
             };
 
+            //try
+            //{
+              //  var imagen = (Image)Properties.Resources.ResourceManager.GetObject(producto.Imagen.Split('.')[0]);
+                //pictureBox.Image = imagen ?? Properties.Resources.NavigaLogoLog; // Imagen por defecto
+            //}
+            //catch
+            //{
+              //  pictureBox.Image = Properties.Resources.NavigaLogoLog;
+            //}
+
             try
             {
-                var imagen = (Image)Properties.Resources.ResourceManager.GetObject(producto.Imagen.Split('.')[0]);
-                pictureBox.Image = imagen ?? Properties.Resources.NavigaLogoLog; // Imagen por defecto
+                string rutaImg = Path.Combine(Application.StartupPath, "ImagenesProducto", producto.Imagen);
+                if (File.Exists(rutaImg))
+                {
+                    pictureBox.Image = Image.FromFile(rutaImg);
+                }
+                else
+                {
+                    pictureBox.Image = Properties.Resources.NavigaLogoLog;
+                }
             }
             catch
-            {
-                pictureBox.Image = Properties.Resources.NavigaLogoLog;
-            }
+            {            }
 
             eliminar.Controls.Add(pictureBox);
 
@@ -367,16 +383,32 @@ namespace projectM
                 SizeMode = PictureBoxSizeMode.Zoom
             };
 
+            //try
+            //{
+              //  var imagen = (Image)Properties.Resources.ResourceManager.GetObject(txtBtImg.Text.Split('.')[0]);
+                //pictureBox.Image = imagen ?? Properties.Resources.NavigaLogoLog; // Imagen por defecto
+
+            //}
+            //catch
+            //{
+              //  pictureBox.Image = Properties.Resources.NavigaLogoLog;
+            //}
+
+
             try
             {
-                var imagen = (Image)Properties.Resources.ResourceManager.GetObject(txtBtImg.Text.Split('.')[0]);
-                pictureBox.Image = imagen ?? Properties.Resources.NavigaLogoLog; // Imagen por defecto
-
+                string rutaImg = Path.Combine(Application.StartupPath, "ImagenesProducto", txtBtImg.Text);
+                if (File.Exists(rutaImg))
+                {
+                    pictureBox.Image = Image.FromFile(rutaImg);
+                }
+                else
+                {
+                    pictureBox.Image = Properties.Resources.NavigaLogoLog;
+                }
             }
             catch
-            {
-                pictureBox.Image = Properties.Resources.NavigaLogoLog;
-            }
+            { }
 
             vistaPrevia.Controls.Add(pictureBox);
 

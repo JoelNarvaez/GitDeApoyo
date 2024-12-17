@@ -185,7 +185,7 @@ namespace projectM
                     Dock = DockStyle.Fill
                 };
                 viewGaming.Show();
-                
+
             }
         }
 
@@ -270,7 +270,7 @@ namespace projectM
             if (carritoAux.Count == 0)
             {
                 MessageBox.Show("NO HAY PRODUCTOS");
-                return; 
+                return;
             }
 
             foreach (var p in carritoAux)
@@ -291,16 +291,34 @@ namespace projectM
                     pictureBox.Size = new Size(190, 190);
                     pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
 
+                   // try
+                    //{
+                      //  var imagen = (Image)Properties.Resources.ResourceManager.GetObject(producto.Imagen.Split('.')[0]);
+                        //if (imagen != null)
+                        //{
+                          //  pictureBox.Image = imagen;
+                            //cuantos++;
+                        //}
+                    //}
+                    //catch { }
+
                     try
                     {
-                        var imagen = (Image)Properties.Resources.ResourceManager.GetObject(producto.Imagen.Split('.')[0]);
-                        if (imagen != null)
+                        string rutaImg = Path.Combine(Application.StartupPath, "ImagenesProducto", producto.Imagen);
+                        if (File.Exists(rutaImg))
                         {
-                            pictureBox.Image = imagen;
+                            pictureBox.Image = Image.FromFile(rutaImg);
                             cuantos++;
                         }
+                        else
+                        {
+                            //pictureBox.Image = Properties.Resources.ImgDefecto;
+                        }
                     }
-                    catch { }
+                    catch{  }
+
+
+
                     panelProd.Controls.Add(pictureBox);
 
                     Label label = new Label();
@@ -316,23 +334,6 @@ namespace projectM
                     label2.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                     label2.Location = new Point(210, 50);
                     panelProd.Controls.Add(label2);
-
-                    /*Button button = new Button();
-                    button.Image = Properties.Resources.comp;
-                    button.ImageAlign = ContentAlignment.MiddleCenter;
-                    button.Size = new Size(35, 35);
-                    button.Location = new Point(120, 10);
-                    button.FlatStyle = FlatStyle.Flat;
-                    button.Tag = p.Id;
-                    //button.Click += new EventHandler(button_Click);
-                    panelProd.Controls.Add(button);
-
-                    Label label2 = new Label();
-                    label2.Text = Convert.ToString(p.Existencias);
-                    label2.ForeColor = Color.Black;
-                    label2.Font = new Font("Century Gothic", 12, FontStyle.Bold);
-                    label2.Location = new Point(200, 10);
-                    panelProd.Controls.Add(label2);*/
 
                     Label label3 = new Label();
                     label3.Text = "$ " + producto.Precio.ToString("F2");
@@ -408,7 +409,7 @@ namespace projectM
                 AutoScroll = true,
                 FlowDirection = FlowDirection.TopDown,
                 WrapContents = false,
-                Padding = new Padding(0), 
+                Padding = new Padding(0),
                 Margin = new Padding(0)
             };
 
@@ -427,7 +428,7 @@ namespace projectM
                 {
                     PictureBox newPictureBox = new PictureBox
                     {
-                        Size = new Size(newPanel.Width - 20, pictureBox.Height), 
+                        Size = new Size(newPanel.Width - 20, pictureBox.Height),
                         Image = pictureBox.Image,
                         SizeMode = pictureBox.SizeMode,
                         BackColor = pictureBox.BackColor,
@@ -444,7 +445,7 @@ namespace projectM
 
 
         private void botonRedondo1_Click(object sender, EventArgs e)
-        { 
+        {
             FlowLayoutPanel clonedPanel = ClonePanel(pnlCarrito) as FlowLayoutPanel;
             FormPago formPago = new FormPago(clonedPanel, nombreUsuario, carritoPago);
             formPago.Show();
@@ -454,6 +455,11 @@ namespace projectM
         private void labelFecha_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void botonRedondo2_Click(object sender, EventArgs e)
+        {
+            //borrar el carrito
         }
     }
 }

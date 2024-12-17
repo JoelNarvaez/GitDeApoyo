@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyecto\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj": {}
+    "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj": {}
   },
   "projects": {
-    "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj": {
+    "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
+        "projectUniqueName": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
         "projectName": "projectM",
-        "projectPath": "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
-        "packagesPath": "C:\\Users\\Tania\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\obj\\",
+        "projectPath": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj",
+        "packagesPath": "C:\\Users\\marie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Tania\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\marie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,9 +38,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -86,25 +81,21 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Proyecto\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj": {
+    "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyecto\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
+        "projectUniqueName": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
         "projectName": "WinFormsPortada2",
-        "projectPath": "D:\\Proyecto\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
-        "packagesPath": "C:\\Users\\Tania\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyecto\\GitDeApoyo\\WinFormsPortadaJ\\obj\\",
+        "projectPath": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\WinFormsPortadaJ\\WinFormsPortada2.csproj",
+        "packagesPath": "C:\\Users\\marie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\WinFormsPortadaJ\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Tania\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\marie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,8 +109,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj": {
-                "projectPath": "D:\\Proyecto\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj"
+              "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj": {
+                "projectPath": "C:\\Users\\marie\\OneDrive\\Documents\\GitHub\\GitDeApoyo\\UsuarioYAdmin\\projectM\\projectM\\projectM\\projectM.csproj"
               }
             }
           }
@@ -132,9 +123,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -164,7 +154,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
