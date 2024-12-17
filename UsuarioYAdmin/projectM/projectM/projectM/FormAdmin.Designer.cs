@@ -458,6 +458,9 @@
             // dgvExistencias
             // 
             dgvExistencias.AllowUserToOrderColumns = true;
+            dgvExistencias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvExistencias.BackgroundColor = Color.White;
+            dgvExistencias.BorderStyle = BorderStyle.None;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = SystemColors.Control;
             dataGridViewCellStyle1.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -478,7 +481,7 @@
             dgvExistencias.DefaultCellStyle = dataGridViewCellStyle2;
             dgvExistencias.Location = new Point(15, 64);
             dgvExistencias.Name = "dgvExistencias";
-            dgvExistencias.Size = new Size(594, 545);
+            dgvExistencias.Size = new Size(594, 351);
             dgvExistencias.TabIndex = 1;
             // 
             // IdProducto

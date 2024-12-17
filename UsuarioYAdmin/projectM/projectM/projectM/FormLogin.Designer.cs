@@ -272,7 +272,7 @@ namespace projectM
             botonRedondo2.Name = "botonRedondo2";
             botonRedondo2.Size = new Size(219, 58);
             botonRedondo2.TabIndex = 64;
-            botonRedondo2.Text = "Comparar YA";
+            botonRedondo2.Text = "Comprar YA";
             botonRedondo2.TextColor = Color.White;
             botonRedondo2.UseVisualStyleBackColor = false;
             botonRedondo2.Click += botonRedondo2_Click;

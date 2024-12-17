@@ -41,7 +41,7 @@ namespace projectM
             this.nombreUsuario = nombreUsuario;
             this.idUsuario = idUsuario;
             this.Load += FormAdmin_Load;
-            viewhome = new home()
+            viewhome = new home(isUsuario)
 
             {
                 MdiParent = this,
@@ -112,7 +112,7 @@ namespace projectM
         {
             if (viewhome == null)
             {
-                viewhome = new home
+                viewhome = new home(false)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill
@@ -121,7 +121,13 @@ namespace projectM
             }
             else
             {
-                viewhome.Activate();
+                viewhome = new home(false)
+                {
+                    MdiParent = this,
+                    Dock = DockStyle.Fill
+                };
+                viewhome.Show();
+                //viewhome.Activate();
             }
         }
 

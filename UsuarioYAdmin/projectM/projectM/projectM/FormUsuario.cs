@@ -34,7 +34,7 @@ namespace projectM
             InitializeComponent();
             this.nombreUsuario = nombreUsuario;
             this.idUsuario = idUsuario;
-            viewHome = new home()
+            viewHome = new home(isUsuario)
 
             {
                 MdiParent = this,
@@ -138,7 +138,7 @@ namespace projectM
         {
             if (viewHome == null)
             {
-                viewHome = new home
+                viewHome = new home(true)
                 {
                     MdiParent = this,
                     Dock = DockStyle.Fill
@@ -147,7 +147,13 @@ namespace projectM
             }
             else
             {
-                viewHome.Activate();
+                viewHome = new home(true)
+                {
+                    MdiParent = this,
+                    Dock = DockStyle.Fill
+                };
+                viewHome.Show();
+                //viewHome.Activate();
             }
         }
 
