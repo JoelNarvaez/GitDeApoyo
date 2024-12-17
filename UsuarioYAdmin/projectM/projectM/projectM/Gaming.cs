@@ -58,11 +58,19 @@ namespace projectM
         {
 
             this.Controls.Clear();
+            Label label = new Label();
+            label.Size = new Size(300, 30);
+            label.Text = "Productos Gaming";
+            label.ForeColor = Color.DeepPink;
+            label.Font = new Font("Century Gothic", 17, FontStyle.Bold);
+            label.Location = new Point(440, 10);
+            this.Controls.Add(label);
+            label1.Visible = true;
             if (this.isUsuario == false)
             {
                 this.Width = 1200;
             }
-            int X = 25, Y = 50;
+            int X = 30, Y = 60;
             foreach (var productos in gaming)
             {
                 Panel panel = new Panel();
@@ -100,12 +108,12 @@ namespace projectM
                 }
                 panel.Controls.Add(pictureBox);
 
-                Label label = new Label();
-                label.Text = productos.Descripcion;
-                label.ForeColor = Color.Black;
-                label.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                label.Location = new Point(14, 210);
-                panel.Controls.Add(label);
+                Label label8 = new Label();
+                label8.Text = productos.Descripcion;
+                label8.ForeColor = Color.Black;
+                label8.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                label8.Location = new Point(14, 210);
+                panel.Controls.Add(label8);
 
 
                 if (this.isUsuario == true)
@@ -148,7 +156,7 @@ namespace projectM
                 Label label3 = new Label();
                 label3.Text = "$ "+ Convert.ToString(productos.Precio);
                 label3.ForeColor = Color.Black;
-                label3.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                label3.Font = new Font("Century Gothic", 12, FontStyle.Regular);
                 label3.Location = new Point(14, 240);
                 panel.Controls.Add(label3);
 

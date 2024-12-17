@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            label1 = new Label();
             SuspendLayout();
             // 
-            // panel1
+            // label1
             // 
-            panel1.BackColor = Color.DarkOrchid;
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(985, 55);
-            panel1.TabIndex = 1;
+            label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DeepPink;
+            label1.Location = new Point(349, 16);
+            label1.Name = "label1";
+            label1.Size = new Size(238, 25);
+            label1.TabIndex = 0;
+            label1.Text = "Bienvenido a NAVIGA";
             // 
             // home
             // 
@@ -46,14 +49,16 @@
             AutoScroll = true;
             BackColor = Color.White;
             ClientSize = new Size(985, 660);
-            Controls.Add(panel1);
+            Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "home";
             Text = "home";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-        private Panel panel1;
+
+        private Label label1;
     }
 }

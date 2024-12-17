@@ -59,12 +59,19 @@ namespace projectM
         public void mostrar(List<productos> perifericos)
         {
             this.Controls.Clear();
+            Label label9 = new Label();
+            label9.Size = new Size(300, 30);
+            label9.Text = "Productos perifericos";
+            label9.ForeColor = Color.DeepPink;
+            label9.Font = new Font("Century Gothic", 17, FontStyle.Bold);
+            label9.Location = new Point(440, 10);
+            this.Controls.Add(label9);
             if (this.isUsuario == false)
             {
                 this.Width = 1200;
             }
 
-            int X = 25, Y = 50;
+            int X = 30, Y = 60;
             foreach (var productos in perifericos)
             {
                 Panel panel = new Panel();
@@ -148,7 +155,7 @@ namespace projectM
                 Label label3 = new Label();
                 label3.Text = "$ " + Convert.ToString(productos.Precio);
                 label3.ForeColor = Color.Black;
-                label3.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                label3.Font = new Font("Century Gothic", 12, FontStyle.Regular);
                 label3.Location = new Point(14, 240);
                 panel.Controls.Add(label3);
 

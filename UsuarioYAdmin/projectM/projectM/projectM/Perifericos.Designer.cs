@@ -28,7 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DeepPink;
+            label1.Location = new Point(330, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(255, 28);
+            label1.TabIndex = 2;
+            label1.Text = "Productos perifericos";
             // 
             // Perifericos
             // 
@@ -37,12 +50,16 @@
             AutoScroll = true;
             BackColor = Color.White;
             ClientSize = new Size(985, 660);
+            Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Perifericos";
             Text = "Perifericos";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }

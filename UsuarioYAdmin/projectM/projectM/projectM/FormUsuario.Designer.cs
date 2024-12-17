@@ -132,23 +132,23 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(0, 0, 192);
+            label1.Font = new Font("Century Gothic", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.DarkViolet;
             label1.Location = new Point(75, 23);
             label1.Name = "label1";
-            label1.Size = new Size(152, 19);
+            label1.Size = new Size(157, 19);
             label1.TabIndex = 3;
             label1.Text = "Mariel Villalpando";
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.iconoUs;
+            pictureBox1.Image = Properties.Resources.log_in;
             pictureBox1.Location = new Point(23, 10);
             pictureBox1.Margin = new Padding(0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(40, 40);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -190,7 +190,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.Magenta;
+            label2.ForeColor = Color.DarkViolet;
             label2.Location = new Point(63, 11);
             label2.Name = "label2";
             label2.Size = new Size(110, 28);
@@ -199,18 +199,18 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.NavigaLogo1;
+            pictureBox2.Image = Properties.Resources.NavigaLogoLog;
             pictureBox2.Location = new Point(20, 10);
             pictureBox2.Margin = new Padding(0);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(40, 40);
-            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 5;
             pictureBox2.TabStop = false;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.Magenta;
+            panel2.BackColor = Color.BlueViolet;
             panel2.Controls.Add(labelHora);
             panel2.Controls.Add(labelFecha);
             panel2.Controls.Add(btnMinimized);
@@ -252,7 +252,7 @@
             // 
             // btnMinimized
             // 
-            btnMinimized.BackColor = Color.Magenta;
+            btnMinimized.BackColor = Color.BlueViolet;
             btnMinimized.Dock = DockStyle.Right;
             btnMinimized.FlatAppearance.BorderSize = 0;
             btnMinimized.FlatAppearance.MouseDownBackColor = Color.Transparent;
@@ -270,7 +270,7 @@
             // 
             // btnMaximized
             // 
-            btnMaximized.BackColor = Color.Magenta;
+            btnMaximized.BackColor = Color.BlueViolet;
             btnMaximized.Dock = DockStyle.Right;
             btnMaximized.FlatAppearance.BorderSize = 0;
             btnMaximized.FlatAppearance.MouseDownBackColor = Color.Transparent;
@@ -288,7 +288,7 @@
             // 
             // btnClose
             // 
-            btnClose.BackColor = Color.Magenta;
+            btnClose.BackColor = Color.Red;
             btnClose.Dock = DockStyle.Right;
             btnClose.FlatAppearance.BorderSize = 0;
             btnClose.FlatAppearance.MouseDownBackColor = Color.FromArgb(252, 97, 97);
@@ -511,7 +511,7 @@
             botonRedondo1.FlatStyle = FlatStyle.Flat;
             botonRedondo1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             botonRedondo1.ForeColor = Color.White;
-            botonRedondo1.Location = new Point(648, 271);
+            botonRedondo1.Location = new Point(648, 443);
             botonRedondo1.Name = "botonRedondo1";
             botonRedondo1.Size = new Size(194, 52);
             botonRedondo1.TabIndex = 3;
@@ -528,7 +528,7 @@
             pnlCarrito.Controls.Add(botonRedondo2);
             pnlCarrito.Controls.Add(botonRedondo1);
             pnlCarrito.Controls.Add(pnlProductos);
-            pnlCarrito.Location = new Point(237, 96);
+            pnlCarrito.Location = new Point(246, 107);
             pnlCarrito.Name = "pnlCarrito";
             pnlCarrito.Size = new Size(904, 615);
             pnlCarrito.TabIndex = 7;
@@ -545,7 +545,7 @@
             botonRedondo2.FlatStyle = FlatStyle.Flat;
             botonRedondo2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             botonRedondo2.ForeColor = Color.BlueViolet;
-            botonRedondo2.Location = new Point(648, 341);
+            botonRedondo2.Location = new Point(648, 516);
             botonRedondo2.Name = "botonRedondo2";
             botonRedondo2.Size = new Size(194, 52);
             botonRedondo2.TabIndex = 4;

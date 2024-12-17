@@ -49,9 +49,11 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Indigo;
+            panel1.BackColor = Color.White;
             panel1.Controls.Add(label2);
             panel1.Dock = DockStyle.Top;
+            panel1.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            panel1.ForeColor = Color.DeepPink;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(985, 50);
@@ -61,12 +63,12 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(366, 9);
+            label2.ForeColor = Color.DeepPink;
+            label2.Location = new Point(328, 9);
             label2.Name = "label2";
-            label2.Size = new Size(155, 32);
+            label2.Size = new Size(273, 32);
             label2.TabIndex = 2;
-            label2.Text = "Acerca de";
+            label2.Text = "Acerca de NAVIGA";
             // 
             // Acerca
             // 
