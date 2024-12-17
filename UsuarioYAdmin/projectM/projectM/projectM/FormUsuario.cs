@@ -14,7 +14,6 @@ namespace projectM
         private int idUsuario;
         public bool isUsuario = true;
         private List<carrito> carritoPago = new List<carrito>();
-
         public FormUsuario()
         {
             InitializeComponent();
@@ -29,6 +28,7 @@ namespace projectM
             viewHome.Show();
 
         }
+
         public FormUsuario(string nombreUsuario, int idUsuario)
         {
             InitializeComponent();
@@ -253,25 +253,32 @@ namespace projectM
 
         private void btnPagaroComp_Click(object sender, EventArgs e)
         {
+            pnlProductos.Controls.Clear();
+            mostrarCarro();
+        }
+
+        private void mostrarCarro()
+        {
+            usuario obj = new usuario();
+
+            List<carrito> carritoAux = obj.getcarrito(idUsuario);
+            carritoPago = obj.getcarrito(idUsuario);
             int cuantos = 0;
             pnlProductos.AutoScroll = true;
             pnlProductos.Size = new Size(550, 900);
             pnlProductos.Location = new Point(25, 25);
             pnlProductos.Visible = true;
+
             int X = 20, Y = 20;
             int ancho = 450, alto = 200, margenY = 10;
             int Total = 0;
-            List<carrito> carritoAux = new List<carrito>();
-            usuario obj = new usuario();
-
-            carritoAux = obj.getcarrito(idUsuario);
-            carritoPago = obj.getcarrito(idUsuario);
 
             if (carritoAux.Count == 0)
             {
                 MessageBox.Show("NO HAY PRODUCTOS");
                 return;
             }
+
 
             foreach (var p in carritoAux)
             {
@@ -291,31 +298,20 @@ namespace projectM
                     pictureBox.Size = new Size(190, 190);
                     pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
 
-                   // try
-                    //{
-                      //  var imagen = (Image)Properties.Resources.ResourceManager.GetObject(producto.Imagen.Split('.')[0]);
-                        //if (imagen != null)
-                        //{
-                          //  pictureBox.Image = imagen;
-                            //cuantos++;
-                        //}
-                    //}
-                    //catch { }
-
                     try
                     {
                         string rutaImg = Path.Combine(Application.StartupPath, "ImagenesProducto", producto.Imagen);
                         if (File.Exists(rutaImg))
                         {
                             pictureBox.Image = Image.FromFile(rutaImg);
-                            cuantos++;
+                            
                         }
                         else
                         {
                             //pictureBox.Image = Properties.Resources.ImgDefecto;
                         }
                     }
-                    catch{  }
+                    catch { }
 
 
 
@@ -330,6 +326,7 @@ namespace projectM
 
                     Label label2 = new Label();
                     label2.Text = "Cantidad: " + p.Cantidad;
+                    cuantos += p.Cantidad;
                     label2.ForeColor = Color.Black;
                     label2.Font = new Font("Century Gothic", 11, FontStyle.Bold);
                     label2.Location = new Point(210, 50);
@@ -353,14 +350,16 @@ namespace projectM
 
                     Total += producto.Precio * p.Cantidad;
 
-
-                    if (p == carritoAux.Last())
+                    if (p==carritoAux.Last())
                     {
+                        Y += 80;
                         Label labelResumen = new Label();
                         labelResumen.ForeColor = Color.Black;
                         labelResumen.Font = new Font("Century Gothic", 16, FontStyle.Bold);
-                        labelResumen.Location = new Point(20, 20);
-                        pnlCarrito.Controls.Add(labelResumen);
+                        labelResumen.Location = new Point(70, Y);
+                        pnlProductos.Controls.Add(labelResumen);
+
+                        Y += 50;
 
                         Label labelProductos = new Label();
                         labelProductos.Text = $"Productos ({cuantos}):                   ${Total}";
@@ -368,8 +367,10 @@ namespace projectM
                         labelProductos.Font = new Font("Century Gothic", 12, FontStyle.Regular);
                         labelProductos.AutoSize = false; // Desactiva AutoSize
                         labelProductos.Size = new Size(300, 30); // Aumenta el tamaño de la etiqueta
-                        labelProductos.Location = new Point(600, 60);
-                        pnlCarrito.Controls.Add(labelProductos);
+                        labelProductos.Location = new Point(70, Y);
+                        pnlProductos.Controls.Add(labelProductos);
+
+                        Y += 50;
 
                         Label labelEnvios = new Label();
                         labelEnvios.Text = $"Envios ({cuantos}):                          Gratis";
@@ -377,8 +378,10 @@ namespace projectM
                         labelEnvios.Font = new Font("Century Gothic", 12, FontStyle.Regular);
                         labelEnvios.AutoSize = false;
                         labelEnvios.Size = new Size(300, 30);
-                        labelEnvios.Location = new Point(600, 90);
-                        pnlCarrito.Controls.Add(labelEnvios);
+                        labelEnvios.Location = new Point(70, Y);
+                        pnlProductos.Controls.Add(labelEnvios);
+
+                        Y += 50;
 
                         Label labelTotal = new Label();
                         labelTotal.Text = $"Total a pagar:                     ${Total}";
@@ -386,16 +389,18 @@ namespace projectM
                         labelTotal.Font = new Font("Century Gothic", 12, FontStyle.Bold);
                         labelTotal.AutoSize = false;
                         labelTotal.Size = new Size(300, 30);
-                        labelTotal.Location = new Point(600, 160);
-                        pnlCarrito.Controls.Add(labelTotal);
-
+                        labelTotal.Location = new Point(70, Y);
+                        pnlProductos.Controls.Add(labelTotal);
                     }
 
                 }
             }
+            
+
             pnlProductos.Height = Y + 100;
+            pnlProductos.Visible = true;
+
             pnlCarrito.Visible = !pnlCarrito.Visible;
-            carritoAux.Clear();
         }
 
         private FlowLayoutPanel ClonePanel(Panel originalPanel)
@@ -466,6 +471,7 @@ namespace projectM
             {
                 usuario obj = new usuario();
                 obj.borrarCarrito(idUsuario);
+                pnlCarrito.Hide();
             }
             else
             {

@@ -191,14 +191,26 @@ namespace projectM
 
         public void borrarCarrito(int idUsuario)
         {
-            //
+            string query = "";
+            try
+            {
+                query = "DELETE FROM comprasaux WHERE idUsuario = @idUsuario";
+
+                MySqlCommand cmdDelete = new MySqlCommand(query, connection);
+                cmdDelete.Parameters.AddWithValue("@idUsuario", idUsuario);
+
+                cmdDelete.ExecuteNonQuery();
+            }
+            catch
+            {
+                this.Disconnect();
+            }
         }
         public void Disconnect()
         {
             if (connection != null && connection.State == System.Data.ConnectionState.Open)
             {
                 connection.Close();
-                //MessageBox.Show("Conexión cerrada correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -209,11 +221,9 @@ namespace projectM
             {
                 connection = new MySqlConnection(cadena);
                 connection.Open();
-                //MessageBox.Show("Conexión establecida exitosamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                //MessageBox.Show($"Error al conectar con la base de datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

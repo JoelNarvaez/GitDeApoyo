@@ -159,7 +159,6 @@ namespace projectM
             if (connection != null && connection.State == System.Data.ConnectionState.Open)
             {
                 connection.Close();
-                //MessageBox.Show("Conexión cerrada correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -170,12 +169,9 @@ namespace projectM
             {
                 connection = new MySqlConnection(cadena);
                 connection.Open();
-                //MessageBox.Show("Conexión establecida exitosamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
-            {
-                //MessageBox.Show($"Error al conectar con la base de datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            {   }
         }
     }
 }
