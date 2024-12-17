@@ -411,56 +411,67 @@ namespace projectM
 
         private FlowLayoutPanel ClonePanel(Panel originalPanel)
         {
+            // Crear un nuevo FlowLayoutPanel con las mismas propiedades generales
             FlowLayoutPanel newPanel = new FlowLayoutPanel
             {
                 Size = originalPanel.Size,
                 Location = originalPanel.Location,
                 BackColor = originalPanel.BackColor,
                 BorderStyle = originalPanel.BorderStyle,
-                AutoScroll = true,
+                AutoScroll = true, // Habilitar desplazamiento si es necesario
                 FlowDirection = FlowDirection.TopDown,
                 WrapContents = false,
-                Padding = new Padding(0),
-                Margin = new Padding(0)
+                Padding = new Padding(5),
+                Margin = new Padding(5)
             };
 
+            // Iterar sobre los controles del panel original
             foreach (Control control in originalPanel.Controls)
             {
-                Control newControl = (Control)Activator.CreateInstance(control.GetType());
-
-                newControl.Text = control.Text;
-                newControl.Size = new Size(newPanel.Width - 20, control.Height); // Ajustar ancho al newPanel
-                newControl.Font = control.Font;
-                newControl.ForeColor = control.ForeColor;
-                newControl.BackColor = control.BackColor;
-                newControl.Margin = new Padding(0, 5, 0, 0); // Sin margen superior, solo inferior
-
-                if (control is PictureBox pictureBox)
+                if (control is Label originalLabel)
                 {
-                    PictureBox newPictureBox = new PictureBox
+                    // Crear un nuevo Label con las propiedades de texto y estilo
+                    Label newLabel = new Label
                     {
-                        Size = new Size(newPanel.Width - 20, pictureBox.Height),
-                        Image = pictureBox.Image,
-                        SizeMode = pictureBox.SizeMode,
-                        BackColor = pictureBox.BackColor,
+                        Text = originalLabel.Text,
+                        Font = originalLabel.Font,
+                        ForeColor = originalLabel.ForeColor,
+                        BackColor = originalLabel.BackColor,
+                        AutoSize = true, // Ajustar automáticamente el tamaño
+                        Margin = new Padding(0, 5, 0, 0) // Márgenes
+                    };
+                    newPanel.Controls.Add(newLabel);
+                }
+                else if (control is Button originalButton || control is PictureBox originalPictureBox)
+                {
+                    continue;
+                }
+                else if (control is TextBox originalTextBox)
+                {
+                    // Crear un nuevo TextBox con las propiedades de texto
+                    TextBox newTextBox = new TextBox
+                    {
+                        Text = originalTextBox.Text,
+                        Font = originalTextBox.Font,
+                        ForeColor = originalTextBox.ForeColor,
+                        BackColor = originalTextBox.BackColor,
+                        Size = originalTextBox.Size,
                         Margin = new Padding(0, 5, 0, 0)
                     };
-                    newControl = newPictureBox;
+                    newPanel.Controls.Add(newTextBox);
                 }
-
-                newPanel.Controls.Add(newControl);
             }
 
             return newPanel;
         }
 
-
         private void botonRedondo1_Click(object sender, EventArgs e)
         {
-            FlowLayoutPanel clonedPanel = ClonePanel(pnlCarrito) as FlowLayoutPanel;
+            FlowLayoutPanel clonedPanel = ClonePanel(pnlProductos);
             FormPago formPago = new FormPago(clonedPanel, nombreUsuario, carritoPago, idUsuario);
             formPago.Show();
             this.Close();
+
         }
 
         private void labelFecha_Click(object sender, EventArgs e)

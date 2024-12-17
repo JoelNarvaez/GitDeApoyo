@@ -10,12 +10,14 @@ namespace projectM
     {
         public void CrearPDF(string nombreArchivo, string metodoPago, List<carrito> carritoPago, string referenciaOTarjeta, string nombreUsuario, decimal total, decimal totalImpuestos, decimal totalFinal)
         {
+            // Ruta del archivo PDF
             string ruta = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), nombreArchivo);
 
             Document documento = new Document(PageSize.A4, 50, 50, 25, 25);
 
             try
             {
+                // Creación del archivo PDF en la ruta especificada
                 PdfWriter.GetInstance(documento, new FileStream(ruta, FileMode.Create));
                 documento.Open();
 
@@ -30,6 +32,7 @@ namespace projectM
                     Alignment = Element.ALIGN_CENTER
                 };
                 documento.Add(eslogan);
+                documento.Add(new Paragraph(" "));
 
                 var fuenteNormal = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10);
                 documento.Add(new Paragraph($"Fecha: {DateTime.Now:F}", fuenteNormal));
@@ -39,7 +42,7 @@ namespace projectM
                     metodoPago == "OXXO" ? $"Número de referencia: {referenciaOTarjeta}" : $"Número de tarjeta: {referenciaOTarjeta}",
                     fuenteNormal
                 ));
-                documento.Add(new Paragraph(" ")); // Espacio en blanco
+                documento.Add(new Paragraph(" "));
 
                 var fuenteTitulo = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.BOLD);
                 Paragraph tituloProductos = new Paragraph("Productos", fuenteTitulo)
@@ -47,9 +50,10 @@ namespace projectM
                     Alignment = Element.ALIGN_LEFT
                 };
                 documento.Add(tituloProductos);
+                documento.Add(new Paragraph(" "));
 
                 PdfPTable tabla = new PdfPTable(4) { WidthPercentage = 100 };
-                tabla.SetWidths(new float[] { 40f, 20f, 20f, 20f }); // Correcto uso de floats
+                tabla.SetWidths(new float[] { 40f, 20f, 20f, 20f });
 
                 AgregarCelda(tabla, "Descripción", true);
                 AgregarCelda(tabla, "Cantidad", true);
@@ -70,12 +74,14 @@ namespace projectM
                 }
 
                 documento.Add(tabla);
+                documento.Add(new Paragraph(" "));
 
                 documento.Add(new Paragraph($"Total: ${total:F2}", fuenteTitulo));
                 documento.Add(new Paragraph($"Impuestos (6%): ${totalImpuestos:F2}", fuenteTitulo));
                 documento.Add(new Paragraph($"Total con impuestos: ${totalFinal:F2}", fuenteTitulo));
 
                 documento.Close();
+
                 System.Windows.Forms.MessageBox.Show($"Archivo PDF generado correctamente en: {ruta}", "PDF Generado", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -83,7 +89,6 @@ namespace projectM
                 System.Windows.Forms.MessageBox.Show($"Error al generar PDF: {ex.Message}", "Error", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
             }
         }
-
         private void AgregarCelda(PdfPTable tabla, string texto, bool esEncabezado = false)
         {
             var fuente = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 10, esEncabezado ? iTextSharp.text.Font.BOLD : iTextSharp.text.Font.NORMAL);

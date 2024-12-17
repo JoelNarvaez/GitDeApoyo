@@ -21,14 +21,15 @@ namespace projectM
     {
         private PictureBox pictureBoxQR;
         private string nombreUsuario;
-        private FlowLayoutPanel panelResumen;
+        private FlowLayoutPanel panelClonado;
         List<carrito> carritoPago;
         private decimal monto;
         private int idUsuario;
 
-        public FormPago(FlowLayoutPanel panelCarrito, string nombreUsuario, List<carrito> carritoPago, int idUsuario)
+        public FormPago(FlowLayoutPanel clonedPanel, string nombreUsuario, List<carrito> carritoPago, int idUsuario)
         {
             InitializeComponent();
+            this.panelClonado = clonedPanel;
             this.nombreUsuario = nombreUsuario;
             this.idUsuario = idUsuario;
             label1.Text = nombreUsuario;
@@ -39,7 +40,7 @@ namespace projectM
             rbtnOxxo.CheckedChanged += rbtnOxxo_CheckedChanged;
             rbtnTarjeta.CheckedChanged += rbtnTarjeta_CheckedChanged;
 
-            panelResumen = new FlowLayoutPanel
+            panelClonado = new FlowLayoutPanel
             {
                 Size = new Size(350, 200),
                 Location = new Point(740, 150),
@@ -50,38 +51,38 @@ namespace projectM
                 Padding = new Padding(10),
                 Margin = new Padding(0)
             };
-            this.Controls.Add(panelResumen);
+            this.Controls.Add(panelClonado);
 
             Label labelEncabezado = new Label
             {
                 Text = "Resumen de Compra",
                 Font = new Font("Century Gothic", 14, FontStyle.Bold),
                 ForeColor = Color.Black,
-                Size = new Size(panelResumen.Width - 20, 30),
+                Size = new Size(panelClonado.Width - 20, 30),
                 TextAlign = ContentAlignment.MiddleCenter,
                 BackColor = Color.White,
             };
 
             Panel panelDecorativo = new Panel
             {
-                Size = new Size(panelResumen.Width - 20, 3),
+                Size = new Size(panelClonado.Width - 20, 3),
                 BackColor = Color.Black,
                 Margin = new Padding(0, 5, 0, 5)
             };
 
-            panelResumen.Controls.Add(labelEncabezado);
-            panelResumen.Controls.Add(panelDecorativo);
+            panelClonado.Controls.Add(labelEncabezado);
+            panelClonado.Controls.Add(panelDecorativo);
 
-            foreach (Control control in panelCarrito.Controls)
+            foreach (Control control in clonedPanel.Controls)
             {
                 if (control is Button)
                     continue;
 
-                Control newControl = CloneControl(control, panelResumen.Width - 20);
-                panelResumen.Controls.Add(newControl);
+                Control newControl = CloneControl(control, panelClonado.Width - 20);
+                panelClonado.Controls.Add(newControl);
             }
 
-            ResizeFlowLayoutPanel(panelResumen);
+            ResizeFlowLayoutPanel(panelClonado);
 
         }
 
@@ -231,9 +232,7 @@ namespace projectM
             {
                 MessageBox.Show("Procesando informacion de pago.");
                 MostrarConfirmacion("OXXO", carritoPago, referencia);
-                agregarMonto();
-                modificarExistencias();
-                actualizarTablaVentasYBorrarCarrito();
+
             };
 
             btnAtras.Click += (sender, e) =>
@@ -265,9 +264,21 @@ namespace projectM
             QRCodeData qrCodeData = qrGenerator.CreateQrCode(texto, QRCodeGenerator.ECCLevel.Q);
             QRCode qrCode = new QRCode(qrCodeData);
 
-            int tamañoCuadro = 5;
-            Bitmap qrCodeImage = qrCode.GetGraphic(tamañoCuadro);
-            pictureBoxQR.Image = qrCodeImage;
+            int tamañoCuadro = 7;
+
+            string logoPath = Path.Combine(Application.StartupPath, "Resources", "NavigaLogoLog.png");
+
+                Bitmap logo = new Bitmap(logoPath);
+
+                int logoWidth = qrCode.GetGraphic(tamañoCuadro).Width / 5; 
+                int logoHeight = qrCode.GetGraphic(tamañoCuadro).Height / 5;  
+
+                Bitmap resizedLogo = new Bitmap(logo, new Size(logoWidth, logoHeight));
+
+                Bitmap qrCodeImage = qrCode.GetGraphic(tamañoCuadro, Color.Black, Color.White, resizedLogo);
+
+                pictureBoxQR.Size = qrCodeImage.Size;
+                pictureBoxQR.Image = qrCodeImage;
         }
 
         private void btnGenerarCodigoQR_Click(object sender, EventArgs e)
@@ -439,7 +450,7 @@ namespace projectM
         {
             panelOxxo.Controls.Clear();
             panelOxxo.AutoScroll = true;
-            panelResumen.Visible = false;
+            panelClonado.Visible = false;
 
             PictureBox logo = new PictureBox
             {
@@ -636,8 +647,10 @@ namespace projectM
             btnDescargar.Click += (s, e) =>
             {
                 GenerarPDF generador = new GenerarPDF();
+                string nombreArchivo = $"NotaCompra_{DateTime.Now.ToString("yyyyMMdd_HHmmss")}.pdf";
+
                 generador.CrearPDF(
-                    "NotaCompra.pdf",
+                    nombreArchivo,
                     metodoPago,
                     carritoPago,
                     referenciaOTarjeta,
@@ -646,7 +659,7 @@ namespace projectM
                     totalImpuestos,
                     totalFinal
                 );
-                FormUsuario formUsuario = new FormUsuario(nombreUsuario, idUsuario);
+                FormUsuario formUsuario = new FormUsuario();
                 formUsuario.Show();
                 this.Close();
             };
