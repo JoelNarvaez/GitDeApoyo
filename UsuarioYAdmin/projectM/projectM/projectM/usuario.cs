@@ -13,10 +13,14 @@ namespace projectM
 {
     public class usuario
     {
+        private ListaProductos prodAux;
         private MySqlConnection connection;
 
+
+        private List<carrito> carritoAux=new List<carrito>();
         public usuario()
         {
+            this.prodAux=new ListaProductos();
             this.Connect();
         }
         public void compra(List<carrito> carrito)
@@ -83,43 +87,72 @@ namespace projectM
             string query = "";
             try
             {
-                //Comprobar si el producto ya esta en el carrito con el mismo usuario
-                query = "SELECT cantidad FROM comprasaux WHERE idUsuario = @idUsuario AND idProd = @idProd";
 
-                MySqlCommand cmdCheck = new MySqlCommand(query, connection);
-                cmdCheck.Parameters.AddWithValue("@idUsuario", idUsuario);
-                cmdCheck.Parameters.AddWithValue("@idProd", idProd);
-
-                var result = cmdCheck.ExecuteScalar(); 
-
-                if (result != null)//si ya se encuentra en el carrito para ese usuario se aumenta solo en cantidad
+                var producto = prodAux.crear().FirstOrDefault(p => p.Id == idProd);
+                if (producto != null)
                 {
-                    int cantActual=Convert.ToInt32(result);
-                    int nuevaCant = cantActual + 1;
-                    query = "UPDATE comprasaux SET cantidad = @nuevaCant WHERE idUsuario = @idUsuario AND idProd = @idProd";
-                    MySqlCommand cmdUpdate = new MySqlCommand(query, connection);
-                    cmdUpdate.Parameters.AddWithValue("@nuevaCant", nuevaCant);
-                    cmdUpdate.Parameters.AddWithValue("@idUsuario", idUsuario);
-                    cmdUpdate.Parameters.AddWithValue("@idProd", idProd);
+                    MessageBox.Show($"{producto.Existencias}");
+                    if(producto.Existencias == 0)
+                    {
+                        MessageBox.Show("No hay unidades en stock");
+                        return;
+                    }
 
-                    cmdUpdate.ExecuteNonQuery ();
+                    if(cantidad > producto.Existencias)
+                    {
+                        MessageBox.Show($"Ya no hay unidades disponibles  {producto.Existencias} ");
+                        return;
+                    }
+
+                    //SI TODO ESTA BIEN SI SE AGREGA AL CARRITO
+
+                    try
+                    {
+                        //Comprobar si el producto ya esta en el carrito con el mismo usuario
+                        query = "SELECT cantidad FROM comprasaux WHERE idUsuario = @idUsuario AND idProd = @idProd";
+
+                        MySqlCommand cmdCheck = new MySqlCommand(query, connection);
+                        cmdCheck.Parameters.AddWithValue("@idUsuario", idUsuario);
+                        cmdCheck.Parameters.AddWithValue("@idProd", idProd);
+
+                        var result = cmdCheck.ExecuteScalar();
+
+                        if (result != null)//si ya se encuentra en el carrito para ese usuario se aumenta solo en cantidad
+                        {
+                            int cantActual = Convert.ToInt32(result);
+                            int nuevaCant = cantActual + 1;
+                            query = "UPDATE comprasaux SET cantidad = @nuevaCant WHERE idUsuario = @idUsuario AND idProd = @idProd";
+                            MySqlCommand cmdUpdate = new MySqlCommand(query, connection);
+                            cmdUpdate.Parameters.AddWithValue("@nuevaCant", nuevaCant);
+                            cmdUpdate.Parameters.AddWithValue("@idUsuario", idUsuario);
+                            cmdUpdate.Parameters.AddWithValue("@idProd", idProd);
+
+                            cmdUpdate.ExecuteNonQuery();
+                        }
+                        else
+                        {
+                            query = "INSERT INTO comprasaux (idUsuario,idProd,cantidad,precio) VALUES ("
+                               + "'" + idUsuario + "',"
+                               + "'" + idProd + "', "
+                               + "'" + cantidad + "',"
+                               + "'" + precio + "')";
+
+
+
+                            MySqlCommand cmd = new MySqlCommand(query, connection);
+                            cmd.ExecuteNonQuery();
+
+                        }
+                        producto.Existencias-=1;
+
+                        MessageBox.Show("Producto agregado al carrito");
+                        MessageBox.Show($"{producto.Existencias}");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error");
+                    }     
                 }
-                else
-                {
-                    query = "INSERT INTO comprasaux (idUsuario,idProd,cantidad,precio) VALUES ("
-                       + "'" + idUsuario + "',"
-                       + "'" + idProd + "', "
-                       + "'" + cantidad + "',"
-                       + "'" + precio + "')";
-
-
-
-                    MySqlCommand cmd = new MySqlCommand(query, connection);
-                    cmd.ExecuteNonQuery();
-                    
-                }
-
-                MessageBox.Show("Se agrego al carrito");
 
             }
             catch (Exception ex)
