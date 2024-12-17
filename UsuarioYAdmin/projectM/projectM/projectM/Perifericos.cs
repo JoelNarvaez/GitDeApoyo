@@ -108,7 +108,7 @@ namespace projectM
                 label.Text = productos.Descripcion;
                 label.ForeColor = Color.Black;
                 label.Font = new Font("Century Gothic", 11, FontStyle.Bold);
-                label.Location = new Point(14, 210);
+                label.Location = new Point(14, 215);
                 panel.Controls.Add(label);
 
 
@@ -146,10 +146,11 @@ namespace projectM
 
 
                 Label label2 = new Label();
-                label2.Text = Convert.ToString(productos.Existencias);
-                label2.ForeColor = Color.Black;
+                label2.Size = new Size(300, 30);
+                label2.Text = ($"Existencia: {Convert.ToString(productos.Existencias)}");
+                label2.ForeColor = Color.BlueViolet;
                 label2.Font = new Font("Century Gothic", 12, FontStyle.Bold);
-                label2.Location = new Point(170, 215);
+                label2.Location = new Point(138, 215);
                 panel.Controls.Add(label2);
 
                 Label label3 = new Label();

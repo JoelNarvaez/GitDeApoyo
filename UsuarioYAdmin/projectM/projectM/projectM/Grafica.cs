@@ -71,8 +71,25 @@ namespace projectM
 
         private void botonRedondo1_Click(object sender, EventArgs e)
         {
-            
-            
+            //Boton ventas totales
+            pnlVentas.Visible = !pnlVentas.Visible;
+            label1.Visible = !label1.Visible;
+            if (pnlVentas.Visible)
+            {
+                mostrar();
+            }
+
+        }
+
+        private void botonRedondo2_Click(object sender, EventArgs e)
+        {   //Boton buscar
+            mostrar();
+        }
+
+
+
+        private void mostrar()
+        {
             administrador obj = new administrador();
             panelProductos.Controls.Clear(); // Limpiar el panel para evitar duplicados
             panelProductos.Visible = true;
@@ -88,7 +105,6 @@ namespace projectM
 
             List<carrito> carritoVentas = new List<carrito>();
 
-            // Validar si el TextBox está vacío o tiene un número
             if (string.IsNullOrWhiteSpace(idUsuario.Text))
             {
                 // Si está vacío, obtén toda la tabla de ventas
@@ -195,8 +211,9 @@ namespace projectM
 
             panelProductos.Height = Y + 100;
             panelProductos.Visible = true;
-            pnlVentas.Visible = !pnlVentas.Visible;
+            pnlVentas.Visible = true;
         }
-
     }
+
+
 }
