@@ -68,5 +68,135 @@ namespace projectM
                 s.Points.Add(montos[i]);
             }
         }
+
+        private void botonRedondo1_Click(object sender, EventArgs e)
+        {
+            
+            
+            administrador obj = new administrador();
+            panelProductos.Controls.Clear(); // Limpiar el panel para evitar duplicados
+            panelProductos.Visible = true;
+
+            panelProductos.AutoScroll = true;
+            panelProductos.Size = new Size(550, 900);
+            panelProductos.Location = new Point(550, 25);
+
+            int X = 20, Y = 20;
+            int ancho = 450, alto = 200, margenY = 10;
+            int Total = 0;
+            int cuantos = 0;
+
+            List<carrito> carritoVentas = new List<carrito>();
+
+            // Validar si el TextBox está vacío o tiene un número
+            if (string.IsNullOrWhiteSpace(idUsuario.Text))
+            {
+                // Si está vacío, obtén toda la tabla de ventas
+                carritoVentas = obj.getTodasLasVentas();
+            }
+            else
+            {
+                // Si tiene un número, obtén las ventas específicas
+                int id;
+                if (int.TryParse(idUsuario.Text, out id))
+                {
+                    carritoVentas = obj.getVentas(id);
+                }
+                else
+                {
+                    MessageBox.Show("ID de usuario no válido.");
+                    return;
+                }
+            }
+
+            if (carritoVentas.Count == 0)
+            {
+                MessageBox.Show("No hay ventas registradas para mostrar.");
+                return;
+            }
+
+            foreach (var p in carritoVentas)
+            {
+                productos producto = obj.obtenerProductoPorId(p.IdProducto);
+                if (producto != null)
+                {
+                    Panel panelProd = new Panel();
+                    panelProd.Size = new Size(ancho, alto);
+                    panelProd.Location = new Point(X, Y);
+                    panelProd.BorderStyle = BorderStyle.FixedSingle;
+                    panelProd.BackColor = Color.White;
+
+                    Y += alto + margenY;
+
+                    PictureBox pictureBox = new PictureBox();
+                    pictureBox.Location = new Point(10, 10);
+                    pictureBox.Size = new Size(190, 190);
+                    pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+
+                    try
+                    {
+                        string rutaImg = Path.Combine(Application.StartupPath, "ImagenesProducto", producto.Imagen);
+                        if (File.Exists(rutaImg))
+                        {
+                            pictureBox.Image = Image.FromFile(rutaImg);
+                        }
+                    }
+                    catch { }
+
+                    panelProd.Controls.Add(pictureBox);
+
+                    Label label = new Label();
+                    label.Text = producto.Descripcion;
+                    label.ForeColor = Color.BlueViolet;
+                    label.Font = new Font("Century Gothic", 12, FontStyle.Bold);
+                    label.Location = new Point(210, 20);
+                    panelProd.Controls.Add(label);
+
+                    Label label2 = new Label();
+                    label2.Text = "Cantidad: " + p.Cantidad;
+                    cuantos += p.Cantidad;
+                    label2.ForeColor = Color.Black;
+                    label2.Font = new Font("Century Gothic", 11, FontStyle.Bold);
+                    label2.Location = new Point(210, 50);
+                    panelProd.Controls.Add(label2);
+
+                    Label label3 = new Label();
+                    label3.Text = "$ " + producto.Precio.ToString("F2");
+                    label3.ForeColor = Color.Black;
+                    label3.Font = new Font("Century Gothic", 12, FontStyle.Regular);
+                    label3.Location = new Point(210, 80);
+                    panelProd.Controls.Add(label3);
+
+                    Label label4 = new Label();
+                    label4.Text = "Total " + (producto.Precio * p.Cantidad);
+                    label4.ForeColor = Color.DeepPink;
+                    label4.Font = new Font("Century Gothic", 12, FontStyle.Regular);
+                    label4.Location = new Point(210, 105);
+                    panelProd.Controls.Add(label4);
+
+                    panelProductos.Controls.Add(panelProd);
+
+                    Total += producto.Precio * p.Cantidad;
+
+                    if (p == carritoVentas.Last())
+                    {
+                        Y += 80;
+
+                        Label labelTotal = new Label();
+                        labelTotal.Text = $"Total a pagar: ${Total}";
+                        labelTotal.ForeColor = Color.Black;
+                        labelTotal.Font = new Font("Century Gothic", 16, FontStyle.Bold);
+                        labelTotal.AutoSize = true;
+                        labelTotal.Location = new Point(70, Y);
+                        panelProductos.Controls.Add(labelTotal);
+                    }
+                }
+            }
+
+            panelProductos.Height = Y + 100;
+            panelProductos.Visible = true;
+            pnlVentas.Visible = !pnlVentas.Visible;
+        }
+
     }
 }

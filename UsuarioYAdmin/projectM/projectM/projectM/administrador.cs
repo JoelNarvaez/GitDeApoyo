@@ -153,6 +153,114 @@ namespace projectM
         }
 
 
+        public List<carrito> getVentas(int idUsuario)
+        {
+            List<carrito> ventas = new List<carrito>();
+            carrito iterador;
+            int idProducto;
+            int cantidad;
+            int precio;
+
+            try
+            {
+                string query = "SELECT * FROM ventas WHERE idUsuario = @idUsuario";
+
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+
+                command.Parameters.AddWithValue("@idUsuario", idUsuario);
+                MySqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                }
+
+                while (reader.Read())
+                {
+                    idProducto = Convert.ToInt32(reader["idProd"]);
+                    cantidad = Convert.ToInt32(reader["cantidad"]);
+                    precio = Convert.ToInt32(reader["precio"]);
+                    iterador = new carrito(idProducto, cantidad, precio);
+                    ventas.Add(iterador);
+
+
+                }
+                reader.Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                this.Disconnect();
+            }
+
+            return ventas;
+        }
+
+        public productos obtenerProductoPorId(int idProducto)
+        {
+            productos producto = null;
+            try
+            {
+                string query = "SELECT * FROM productos WHERE id = @id";
+                MySqlCommand command = new MySqlCommand(query, this.connection);
+                command.Parameters.AddWithValue("@id", idProducto);
+
+                MySqlDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    int id = Convert.ToInt32(reader["id"]);
+                    string descripcion = Convert.ToString(reader["descripcion"]);
+                    int precio = Convert.ToInt32(reader["precio"]);
+                    string imagen = Convert.ToString(reader["imagen"]);
+
+                    producto = new productos(id, imagen, descripcion, precio, 0, "");
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al obtener el producto: {ex.Message}");
+            }
+
+            return producto;
+        }
+
+        public List<carrito> getTodasLasVentas()
+        {
+           
+            List<carrito> ventas = new List<carrito>();
+            try
+            {
+                string query = "SELECT * FROM ventas;";
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int idProducto = Convert.ToInt32(reader["idProd"]);
+                    int cantidad = Convert.ToInt32(reader["cantidad"]);
+                    int precio = Convert.ToInt32(reader["precio"]);
+
+                    ventas.Add(new carrito
+                    {
+                        IdProducto = idProducto,
+                        Cantidad = cantidad,
+                        Precio = precio
+                    });
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al obtener todas las ventas: " + ex.Message);
+            }
+            return ventas;
+            
+
+        }
+
 
         public void Disconnect()
         {
@@ -173,5 +281,8 @@ namespace projectM
             catch (Exception ex)
             {   }
         }
+
+
+
     }
 }
