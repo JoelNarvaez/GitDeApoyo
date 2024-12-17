@@ -158,7 +158,7 @@ namespace projectM
         private void button_Click(object sender, EventArgs e)
         {
             int idComprar = 0;
-            int cantidad = 0;
+            int cantidad = 1;
             Button btn = sender as Button;
 
             DialogResult result = MessageBox.Show("¿Agregar el producto al carrito?", "Confirmacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -173,7 +173,7 @@ namespace projectM
                     int precio = productoSeleccionado.Precio;
 
                     usuario usuario = new usuario();
-                    usuario.agregaCarrito(idUsuario, idComprar, ++cantidad, precio);
+                    usuario.agregaCarrito(idUsuario, idComprar, cantidad, precio);
                 }
 
 

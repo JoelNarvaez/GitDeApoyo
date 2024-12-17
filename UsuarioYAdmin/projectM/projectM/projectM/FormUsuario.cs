@@ -1,5 +1,6 @@
 using System.Drawing.Printing;
 using System.Runtime.InteropServices;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace projectM
 {
@@ -261,7 +262,6 @@ namespace projectM
             int ancho = 450, alto = 200, margenY = 10;
             int Total = 0;
             List<carrito> carritoAux = new List<carrito>();
-
             usuario obj = new usuario();
 
             carritoAux = obj.getcarrito(idUsuario);
@@ -395,7 +395,7 @@ namespace projectM
             }
             pnlProductos.Height = Y + 100;
             pnlCarrito.Visible = !pnlCarrito.Visible;
-
+            carritoAux.Clear();
         }
 
         private FlowLayoutPanel ClonePanel(Panel originalPanel)
@@ -459,7 +459,19 @@ namespace projectM
 
         private void botonRedondo2_Click(object sender, EventArgs e)
         {
-            //borrar el carrito
+            Button btn = sender as Button;
+            DialogResult result = MessageBox.Show("¿Eliminar carrito definitivamente?", "Confirmacion", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (btn != null)
+            {
+                usuario obj = new usuario();
+                obj.borrarCarrito(idUsuario);
+            }
+            else
+            {
+                MessageBox.Show("Se cancelo la eliminacion");
+            }
+           
         }
     }
 }

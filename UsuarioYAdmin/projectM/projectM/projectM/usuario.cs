@@ -189,7 +189,10 @@ namespace projectM
             return producto;
         }
 
-
+        public void borrarCarrito(int idUsuario)
+        {
+            //
+        }
         public void Disconnect()
         {
             if (connection != null && connection.State == System.Data.ConnectionState.Open)
