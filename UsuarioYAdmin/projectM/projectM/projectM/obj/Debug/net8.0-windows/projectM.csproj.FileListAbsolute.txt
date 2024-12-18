@@ -270,3 +270,4 @@ C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\Usua
 D:\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\itextsharp.dll
 D:\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\Resources\NavigaLogoLog.png
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\Resources\NavigaLogoLog.png
+C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\UsuarioYAdmin\projectM\projectM\projectM\bin\Debug\net8.0-windows\Resources\NavigaLogoLog.png

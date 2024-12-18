@@ -667,7 +667,7 @@ namespace projectM
                     totalImpuestos,
                     totalFinal
                 );
-                FormUsuario formUsuario = new FormUsuario();
+                FormUsuario formUsuario = new FormUsuario(nombreUsuario,idUsuario);
                 formUsuario.Show();
                 this.Close();
             };
