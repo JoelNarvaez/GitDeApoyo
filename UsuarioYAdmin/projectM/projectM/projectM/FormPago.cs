@@ -268,17 +268,17 @@ namespace projectM
 
             string logoPath = Path.Combine(Application.StartupPath, "Resources", "NavigaLogoLog.png");
 
-                Bitmap logo = new Bitmap(logoPath);
+            Bitmap logo = new Bitmap(logoPath);
 
-                int logoWidth = qrCode.GetGraphic(tamañoCuadro).Width / 5; 
-                int logoHeight = qrCode.GetGraphic(tamañoCuadro).Height / 5;  
+            int logoWidth = qrCode.GetGraphic(tamañoCuadro).Width / 5;
+            int logoHeight = qrCode.GetGraphic(tamañoCuadro).Height / 5;
 
-                Bitmap resizedLogo = new Bitmap(logo, new Size(logoWidth, logoHeight));
+            Bitmap resizedLogo = new Bitmap(logo, new Size(logoWidth, logoHeight));
 
-                Bitmap qrCodeImage = qrCode.GetGraphic(tamañoCuadro, Color.Black, Color.White, resizedLogo);
+            Bitmap qrCodeImage = qrCode.GetGraphic(tamañoCuadro, Color.Black, Color.White, resizedLogo);
 
-                pictureBoxQR.Size = qrCodeImage.Size;
-                pictureBoxQR.Image = qrCodeImage;
+            pictureBoxQR.Size = qrCodeImage.Size;
+            pictureBoxQR.Image = qrCodeImage;
         }
 
         private void btnGenerarCodigoQR_Click(object sender, EventArgs e)
@@ -587,16 +587,16 @@ namespace projectM
                     panelProd.Controls.Add(label4);
 
                     panelOxxo.Controls.Add(panelProd);
-                   
+
                     Total += producto.Precio * p.Cantidad;
-                   
+
                 }
             }
             monto = Total;
             labelProductos.Text = $"Productos ({cuantos})";
 
             decimal totalFinal = Total * 1.06m;
-            decimal totalImpuestos = totalFinal-Total;
+            decimal totalImpuestos = totalFinal - Total;
 
             Label labelTotal = new Label
             {
@@ -634,7 +634,7 @@ namespace projectM
                 Font = new Font("Century Gothic", 12, FontStyle.Bold),
                 Location = new Point((panelOxxo.Width - 200) / 2, labelTotalConImpuestos.Bottom + 10),
                 AutoSize = true,
-                BackColor=Color.BlueViolet,
+                BackColor = Color.BlueViolet,
 
             };
             panelOxxo.Controls.Add(btnDescargar);
@@ -676,8 +676,8 @@ namespace projectM
 
         public void agregarMonto()
         {
-           usuario obj = new usuario();
-           obj.agregarPersonaMonto(monto, nombreUsuario);
+            usuario obj = new usuario();
+            obj.agregarPersonaMonto(monto, nombreUsuario);
         }
 
         public void modificarExistencias()
@@ -691,6 +691,12 @@ namespace projectM
             usuario obj = new usuario();
             obj.actualVentas(carritoPago, idUsuario);
             obj.borrarCarrito(idUsuario);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            labelHora.Text = DateTime.Now.ToLongTimeString();
+            labelFecha.Text = DateTime.Now.ToLongDateString();
         }
     }
 }

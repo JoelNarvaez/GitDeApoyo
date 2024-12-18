@@ -148,10 +148,10 @@ namespace projectM
 
                 Label label2 = new Label();
                 label2.Size = new Size(300, 30);
-                label2.Text = ($"Existencia: {Convert.ToString(productos.Existencias)}");
+                label2.Text = ($"Exis: {Convert.ToString(productos.Existencias)}");
                 label2.ForeColor = Color.BlueViolet;
+                label2.Location = new Point(145, 215);
                 label2.Font = new Font("Century Gothic", 12, FontStyle.Bold);
-                label2.Location = new Point(135, 215);
                 panel.Controls.Add(label2);
 
                 Label label3 = new Label();

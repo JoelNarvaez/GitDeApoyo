@@ -224,3 +224,4 @@ C:\Users\marie\OneDrive\Documents\GitHub\GitDeApoyo\WinFormsPortadaJ\bin\Debug\n
 C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\itextsharp.dll
 D:\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\itextsharp.dll
 D:\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\Resources\NavigaLogoLog.png
+C:\Users\joeln\OneDrive\Desktop\Repositorio Proyecto Final\Final\GitDeApoyo\WinFormsPortadaJ\bin\Debug\net8.0-windows\Resources\NavigaLogoLog.png
