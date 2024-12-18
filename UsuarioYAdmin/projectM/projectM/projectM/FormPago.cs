@@ -232,6 +232,10 @@ namespace projectM
             {
                 MessageBox.Show("Procesando informacion de pago.");
                 MostrarConfirmacion("OXXO", carritoPago, referencia);
+                agregarMonto();
+                actualizarTablaVentasYBorrarCarrito();
+                modificarExistencias();
+
 
             };
 
@@ -395,6 +399,10 @@ namespace projectM
                 MessageBox.Show("Procesando informacion de pago.");
                 string numeroTarjeta = txtNumeroTarjeta.Text;
                 MostrarConfirmacion("Tarjeta de Crédito", carritoPago, txtNumeroTarjeta.Text);
+                agregarMonto();
+                actualizarTablaVentasYBorrarCarrito();
+                modificarExistencias();
+
             };
 
             panelOxxo.Controls.Add(lblTitulo);
