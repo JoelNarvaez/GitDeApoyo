@@ -29,7 +29,7 @@ namespace projectM
             {
                 foreach (var itemCarrito in carrito)
                 {
-                    // 1. Obtén el producto actual
+                 
                     int idProducto = itemCarrito.IdProducto;
                     int cantidadComprada = itemCarrito.Cantidad;
 
@@ -39,7 +39,7 @@ namespace projectM
 
                     int existenciasActuales = 0;
 
-                    // 2. Leer existencias actuales
+                    //Leer existencias actuales
                     using (MySqlDataReader reader = command.ExecuteReader())
                     {
                         if (reader.Read())
@@ -48,13 +48,13 @@ namespace projectM
                         }
                     }
 
-                    // 3. Verificar si hay suficientes existencias
+                    // Verificar si hay suficientes existencias
                     if (existenciasActuales >= cantidadComprada)
                     {
                         // Resta la cantidad comprada a las existencias actuales
                         int nuevasExistencias = existenciasActuales - cantidadComprada;
 
-                        // 4. Actualiza la base de datos
+                        //Actualiza la base de datos
                         string updateQuery = "UPDATE productos SET existencias = @nuevasExistencias WHERE id = @idProducto;";
                         MySqlCommand updateCommand = new MySqlCommand(updateQuery, this.connection);
                         updateCommand.Parameters.AddWithValue("@nuevasExistencias", nuevasExistencias);
@@ -91,7 +91,6 @@ namespace projectM
                 var producto = prodAux.crear().FirstOrDefault(p => p.Id == idProd);
                 if (producto != null)
                 {
-                    MessageBox.Show($"{producto.Existencias}");
                     if(producto.Existencias == 0)
                     {
                         MessageBox.Show("No hay unidades en stock");
@@ -146,7 +145,6 @@ namespace projectM
                         producto.Existencias-=1;
 
                         MessageBox.Show("Producto agregado al carrito");
-                        MessageBox.Show($"{producto.Existencias}");
                     }
                     catch (Exception ex)
                     {
@@ -300,10 +298,6 @@ namespace projectM
                     if (result == 0)
                     {
                         MessageBox.Show("Usuario no encontrado.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Monto sumado correctamente.");
                     }
                 }
             }

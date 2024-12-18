@@ -65,7 +65,6 @@ namespace projectM
                     tipoUsuario = reader["tipo"].ToString();
                     nombreUsuario = reader["nombre"].ToString();
                     idUsuario=Convert.ToInt32(reader["id"]);
-                    MessageBox.Show($"el id es: {idUsuario}");
                 }
 
                 reader.Close();
